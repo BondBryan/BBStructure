@@ -253,6 +253,10 @@
       gap: 20px;
       width: 100%;
     }
+    .section-divider {
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
     .focus-row {
       display: flex;
       gap: 24px;
@@ -347,8 +351,8 @@
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
     }
     @media (max-width: 900px) {
-      .path-panel {
-        padding-top: 4px;
+      .section-divider {
+        padding-top: 16px;
       }
       .home-btn {
         margin-top: 0;
@@ -375,7 +379,7 @@
         <img src="BB_Logo_Full.png" alt="BB Structure logo" class="logo" id="logo-btn">
         <div class="heading">
           <p class="eyebrow">List of files</p>
-          <h1>Version 3.2</h1>
+          <h1>Version 3.3</h1>
         </div>
       </div>
       <div class="status" id="status">Loading Files.json…</div>
@@ -399,12 +403,12 @@
               </div>
             </div>
           </div>
-          <aside class="path-panel">
+          <aside class="path-panel section-divider">
             <p class="path-title">📂 File location</p>
             <button class="home-btn" id="home-btn" type="button" aria-label="Project Folder">Project Folder</button>
             <div class="path-list" id="path-list"></div>
           </aside>
-          <div class="related-wrap">
+          <div class="related-wrap section-divider">
             <div class="related-section" id="subfolder-section">
               <h3>Subfolders</h3>
               <div class="related-grid" id="subfolder-grid"></div>
