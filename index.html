@@ -34,6 +34,12 @@
       gap: 16px;
       flex-wrap: wrap;
     }
+    .brand-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
     .brand {
       display: flex;
       align-items: center;
@@ -44,6 +50,18 @@
       width: auto;
       display: block;
       cursor: pointer;
+    }
+    .detail-back-btn {
+      border: none;
+      background: none;
+      padding: 0;
+      color: var(--ink);
+      font-size: 1.6rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .detail-back-btn:hover {
+      color: var(--muted);
     }
     .heading {
       display: flex;
@@ -375,12 +393,15 @@
 <body>
   <main>
     <header>
-      <div class="brand">
-        <img src="BB_Logo_Full.png" alt="BB Structure logo" class="logo" id="logo-btn">
-        <div class="heading">
-          <p class="eyebrow">List of files</p>
-          <h1>Version 3.3</h1>
+      <div class="brand-panel">
+        <div class="brand">
+          <img src="BB_Logo_Full.png" alt="BB Structure logo" class="logo" id="logo-btn">
+          <div class="heading">
+            <p class="eyebrow">List of files</p>
+            <h1>Version 3.3</h1>
+          </div>
         </div>
+        <button class="detail-back-btn hidden" id="detail-home-btn" type="button" aria-label="Back to home">←</button>
       </div>
       <div class="status" id="status">Loading Files.json…</div>
     </header>
@@ -439,6 +460,7 @@
       const descriptionEl = document.getElementById('item-description');
       const homeBtn = document.getElementById('home-btn');
       const logoBtn = document.getElementById('logo-btn');
+      const detailHomeBtn = document.getElementById('detail-home-btn');
 
       const CATEGORY_COLORS = {
         'Images and Photo': '#00ccde',
@@ -473,6 +495,7 @@
 
       homeBtn.addEventListener('click', goHome);
       logoBtn?.addEventListener('click', goHome);
+      detailHomeBtn?.addEventListener('click', goHome);
 
       init();
 
@@ -771,6 +794,7 @@
         if (isHome) state.currentSelection = null;
         homeView.classList.toggle('hidden', !isHome);
         detailView.classList.toggle('hidden', isHome);
+        detailHomeBtn?.classList.toggle('hidden', isHome);
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
 
