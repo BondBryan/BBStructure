@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Files Browser</title>
+  <style>
+    :root {
+      --bg: #e9eef6;
+      --panel: #ffffff;
+      --ink: #0f172a;
+      --muted: #5b6475;
+      --accent: #1d4ed8;
+      --border: #d7dce5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background: #e6f0cf;
+      color: var(--ink);
+    }
+    main {
+      min-height: 100vh;
+      padding: 24px clamp(16px, 4vw, 48px) 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo {
+      height: 55px;
+      width: auto;
+      display: block;
+      cursor: pointer;
+    }
+    .heading {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      font-size: 0.6rem;
+    }
+    .eyebrow {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .status {
+      color: var(--muted);
+      font-size: 0.95rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 8px;
+      min-height: 50px;
+    }
+    .helper-text {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.35;
+    }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .legend-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .legend-label {
+      font-weight: 700;
+      color: var(--ink);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+    .legend-item {
+      width: 50px;
+      height: 50px;
+      border-radius: 0 !important;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      font-size: 0.5rem;
+      font-weight: 600;
+      color: #0f172a;
+      padding: 4px;
+      line-height: 1;
+      white-space: normal;
+      word-break: break-word;
+      hyphens: auto;
+      cursor: pointer;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: #ffffff;
+    }
+    .legend-selected {
+      border-width: 1.5px;
+      border-color: #0f172a;
+      box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.15);
+    }
+    .view {
+      background: #e6f0cf;
+      border: none;
+      border-radius: 0;
+      padding: clamp(16px, 3vw, 28px);
+      box-shadow: none;
+    }
+    .hidden { display: none; }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 8px 0 24px;
+    }
+    .card {
+      flex: 0 0 150px;
+      width: 150px;
+      height: 150px;
+      max-width: 100%;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      padding: 16px;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.07);
+      word-break: break-word;
+      white-space: normal;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+      border-color: #c3c9d6;
+    }
+    .detail-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .path-panel {
+      background: #e6f0cf;
+      border: none;
+      border-radius: 0;
+      padding: 10px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .path-title {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.17em;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .path-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .path-node {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      line-height: 1.2;
+      padding-left: calc(var(--path-level, 0) * 28px);
+    }
+    .path-arrow {
+      text-align: left;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1;
+    }
+    .path-link {
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      font-size: 0.85rem;
+      font-weight: 650;
+      color: var(--ink);
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .path-link[disabled] {
+      color: var(--ink);
+      cursor: default;
+      text-decoration: none;
+    }
+    .path-leaf {
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+    .home-btn {
+      margin-bottom: 6px;
+      align-self: flex-start;
+      border: none;
+      background: none;
+      padding: 0;
+      font-size: 0.85rem;
+      font-weight: 650;
+      color: var(--ink);
+      cursor: pointer;
+      text-decoration: underline;
+      text-align: left;
+    }
+    .detail-main {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+    .focus-row {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .selected-info {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .selected-card {
+      width: 250px;
+      height: 250px;
+      border: 6px solid #e8eaf1;
+      border-radius: 0px;
+      padding: 18px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.07);
+      background: #ffffff;
+      word-break: break-word;
+      white-space: normal;
+    }
+    .related-wrap {
+      width: 100%;
+    }
+    .related-section + .related-section {
+      margin-top: 18px;
+    }
+    .related-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .related-card {
+      width: 90px;
+      height: 90px;
+      border: 3px solid #e8eaf1;
+      border-radius: 0px;
+      padding: 8px;
+      font-weight: 650;
+      font-size: 0.70rem;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      box-shadow: 0 6px 14px rgba(15, 23, 42, 0.08);
+      background: #ffffff;
+      cursor: pointer;
+      word-break: break-word;
+      white-space: normal;
+    }
+    .description-wrap {
+      flex: 1;
+      min-width: 260px;
+      max-width: 760px;
+      padding-top: 4px;
+    }
+    .item-description {
+      margin: 0;
+      font-weight: 500;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: var(--ink);
+    }
+    .placeholder {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .keyword-input {
+      border: 1px solid var(--border);
+      border-radius: 0px;
+      padding: 8px 10px;
+      font-size: 0.95rem;
+      min-width: 220px;
+      color: var(--ink);
+      background: #ffffff;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+    }
+    @media (max-width: 900px) {
+      .path-panel {
+        padding-top: 4px;
+      }
+      .home-btn {
+        margin-top: 0;
+        margin-left: 0;
+      }
+      .selected-card {
+        width: min(250px, 90vw);
+        height: min(250px, 90vw);
+      }
+      .description-wrap {
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 640px) {
+      main { padding: 16px 12px 32px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand">
+        <img src="BB_Logo_Full.png" alt="BB Structure logo" class="logo" id="logo-btn">
+        <div class="heading">
+          <p class="eyebrow">List of files</p>
+          <h1>Version 3.2</h1>
+        </div>
+      </div>
+      <div class="status" id="status">Loading Files.json…</div>
+    </header>
+
+    <section id="home-view" class="view">
+      <p class="helper-text">Click on a document type to see where to save it on the server ↓ , or filter / search for a specific document. ⬈ </p>
+      <div class="card-grid" id="card-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="detail-view" class="view hidden">
+      <div class="detail-layout">
+        <div class="detail-main">
+          <div class="focus-row">
+            <div class="selected-info">
+              <div class="selected-card" id="selected-card">
+                <span id="selected-title"></span>
+              </div>
+              <div class="description-wrap hidden" id="description-wrap">
+                <p class="item-description" id="item-description"></p>
+              </div>
+            </div>
+          </div>
+          <aside class="path-panel">
+            <p class="path-title">📂 File location</p>
+            <button class="home-btn" id="home-btn" type="button" aria-label="Project Folder">Project Folder</button>
+            <div class="path-list" id="path-list"></div>
+          </aside>
+          <div class="related-wrap">
+            <div class="related-section" id="subfolder-section">
+              <h3>Subfolders</h3>
+              <div class="related-grid" id="subfolder-grid"></div>
+            </div>
+            <div class="related-section">
+              <h3>Other items in this folder</h3>
+              <div class="related-grid" id="items-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function() {
+      const statusEl = document.getElementById('status');
+      const cardGrid = document.getElementById('card-grid');
+      const homeView = document.getElementById('home-view');
+      const detailView = document.getElementById('detail-view');
+      const pathList = document.getElementById('path-list');
+      const selectedCard = document.getElementById('selected-card');
+      const selectedTitle = document.getElementById('selected-title');
+      const subfolderSection = document.getElementById('subfolder-section');
+      const subfolderGrid = document.getElementById('subfolder-grid');
+      const itemsGrid = document.getElementById('items-grid');
+      const descriptionWrap = document.getElementById('description-wrap');
+      const descriptionEl = document.getElementById('item-description');
+      const homeBtn = document.getElementById('home-btn');
+      const logoBtn = document.getElementById('logo-btn');
+
+      const CATEGORY_COLORS = {
+        'Images and Photo': '#00ccde',
+        'Texts and Presentations': '#ff8fad',
+        'Schedules and Lists': '#ff8200',
+        'Contracts and legal': '#fff229',
+        'BIM and Models': '#5cba45',
+        'Drawings': '#d1c9ba',
+        Other: '#d9d9d9',
+        Undefined: '#d9d9d9',
+      };
+      const LEGEND_ITEMS = [
+        { label: 'Images and Photo', color: CATEGORY_COLORS['Images and Photo'], categories: ['Images and Photo'] },
+        { label: 'Texts and Presentations', color: CATEGORY_COLORS['Texts and Presentations'], categories: ['Texts and Presentations'] },
+        { label: 'Schedules and Lists', color: CATEGORY_COLORS['Schedules and Lists'], categories: ['Schedules and Lists'] },
+        { label: 'Contracts and legal', color: CATEGORY_COLORS['Contracts and legal'], categories: ['Contracts and legal'] },
+        { label: 'BIM and Models', color: CATEGORY_COLORS['BIM and Models'], categories: ['BIM and Models'] },
+        { label: 'Drawings', color: CATEGORY_COLORS['Drawings'], categories: ['Drawings'] },
+        { label: 'Other', color: CATEGORY_COLORS.Other, categories: ['Other', 'Undefined'] },
+      ];
+      const DEFAULT_COLOR = '#d9d9d9';
+
+      const state = {
+        items: [],
+        tree: createFolderNode('Root', []),
+        categoryLookup: new Map(), // Map<string, string[]>
+        selectedCategories: new Set(),
+        currentSelection: null,
+        keyword: '',
+        metaLookup: new Map(),
+      };
+
+      homeBtn.addEventListener('click', goHome);
+      logoBtn?.addEventListener('click', goHome);
+
+      init();
+
+      async function init() {
+        try {
+          statusEl.textContent = 'Loading data…';
+          const combined = await fetchJson('Files.json', 'Files.json');
+
+          state.metaLookup = buildMetaLookup(combined);
+          state.categoryLookup = buildCategoryLookup(combined);
+          state.selectedCategories = new Set(allCategories());
+
+          const { treeRoot, items } = buildTree(combined);
+          state.tree = treeRoot;
+          state.items = items;
+          state.items.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+
+          renderLegend();
+          renderHome();
+        } catch (error) {
+          console.error(error);
+          statusEl.textContent = 'Failed to load data';
+          cardGrid.innerHTML = '<p>Check that Files.json sits next to this HTML file.</p>';
+        }
+      }
+
+      async function fetchJson(path, label) {
+        const response = await fetch(path);
+        if (!response.ok) throw new Error(`Unable to load ${label}`);
+        return response.json();
+      }
+
+      function buildCategoryLookup(combinedData) {
+        const map = new Map();
+        if (!combinedData || typeof combinedData !== 'object') return map;
+        Object.entries(combinedData).forEach(([name, meta]) => {
+          const categories = parseCategories(meta?.Category);
+          map.set(name, categories);
+        });
+        return map;
+      }
+
+      function buildMetaLookup(combinedData) {
+        const map = new Map();
+        if (!combinedData || typeof combinedData !== 'object') return map;
+        Object.entries(combinedData).forEach(([name, meta]) => {
+          map.set(name, meta || {});
+        });
+        return map;
+      }
+
+      function buildTree(filesData) {
+        const treeRoot = createFolderNode('Root', []);
+        const items = [];
+        Object.entries(filesData || {}).forEach(([name, meta]) => {
+          const path = parsePath(meta?.Path);
+          const description = typeof meta?.Description === 'string' ? meta.Description : '';
+          items.push({ name, path, description });
+          insertItem(treeRoot, path, name);
+        });
+        return { treeRoot, items };
+      }
+
+      function createFolderNode(name, path) {
+        return { name, path, folders: new Map(), items: [] };
+      }
+
+      function insertItem(node, path, itemName) {
+        let pointer = node;
+        (path || []).forEach((segment) => {
+          if (!pointer.folders.has(segment)) {
+            pointer.folders.set(segment, createFolderNode(segment, [...pointer.path, segment]));
+          }
+          pointer = pointer.folders.get(segment);
+        });
+        pointer.items.push(itemName);
+      }
+
+      function getFolderAtPath(path = []) {
+        let pointer = state.tree;
+        for (const part of path || []) {
+          if (!pointer || !pointer.folders.has(part)) return null;
+          pointer = pointer.folders.get(part);
+        }
+        return pointer;
+      }
+
+      function parseCategories(value) {
+        if (!value || typeof value !== 'string') return ['Undefined'];
+        const parts = value.split('|').map((part) => part.trim()).filter(Boolean);
+        return parts.length ? parts : ['Undefined'];
+      }
+
+      function parsePath(value) {
+        if (!value || typeof value !== 'string') return [];
+        const first = value.split('|')[0].trim();
+        if (!first) return [];
+        return first.split('/').map((part) => part.trim()).filter(Boolean);
+      }
+
+      function goHome() {
+        renderHome();
+      }
+
+      function renderHome(options = {}) {
+        const { skipSwitch = false } = options;
+        cardGrid.innerHTML = '';
+        const filteredItems = state.items.filter((item) => matchesKeyword(item.name));
+        if (!filteredItems.length) {
+          const msg = document.createElement('p');
+          const hasData = state.items.length > 0;
+          const hasKeyword = Boolean((state.keyword || '').trim());
+          msg.textContent = hasData && hasKeyword
+            ? `No items match "${state.keyword}".`
+            : 'No items found in Files.json';
+          cardGrid.appendChild(msg);
+          return;
+        }
+
+        filteredItems.forEach((item) => {
+          const card = document.createElement('button');
+          card.type = 'button';
+          card.className = 'card';
+          card.textContent = item.name;
+          card.dataset.name = item.name;
+          applyColorStyles(card, item.name);
+          card.setAttribute('aria-label', `${item.name} (${categoryForName(item.name)})`);
+          card.addEventListener('click', () => renderItemDetail(item));
+          cardGrid.appendChild(card);
+        });
+
+        if (!skipSwitch) switchView('home');
+      }
+
+      function renderItemDetail(item) {
+        const folderPath = item.path || [];
+        const folder = getFolderAtPath(folderPath) || state.tree;
+        const breadcrumbPath = folderPath.slice();
+        const description = descriptionForName(item.name);
+        state.currentSelection = { type: 'item', name: item.name, path: item.path };
+        state.selectedCategories = new Set(allCategories());
+        renderLegend();
+        renderDetailView({
+          title: item.name,
+          colorName: item.name,
+          path: breadcrumbPath,
+          folder,
+          leafName: item.name,
+          description,
+        });
+      }
+
+      function renderFolderDetail(path = []) {
+        const folder = getFolderAtPath(path) || state.tree;
+        state.currentSelection = { type: 'folder', name: folder?.name || 'Folder', path: folder?.path || [] };
+        state.selectedCategories = new Set(allCategories());
+        renderLegend();
+        renderDetailView({
+          title: folder?.name || 'Folder',
+          colorName: 'Undefined',
+          path: folder?.path || [],
+          folder,
+          leafName: null,
+          description: '',
+        });
+      }
+
+      function renderDetailView({ title, colorName, path, folder, leafName, description = '', skipSwitch = false }) {
+        renderBreadcrumb(path, leafName);
+        applyColorStyles(selectedCard, colorName, { ignoreFilter: true });
+        selectedTitle.textContent = title;
+        selectedTitle.style.color = colorStylesForName(colorName, { ignoreFilter: true }).text;
+
+        renderSubfolders(folder);
+        renderItemsInLocation(folder, leafName);
+        renderDescription(description, leafName);
+        if (!skipSwitch) switchView('detail');
+      }
+
+      function renderBreadcrumb(path = [], leafName) {
+        pathList.innerHTML = '';
+        if (!path.length) {
+          const node = document.createElement('div');
+          node.className = 'path-node path-leaf';
+          node.textContent = 'Root';
+          pathList.appendChild(node);
+          return;
+        }
+
+        path.forEach((part, index) => {
+          const node = document.createElement('div');
+          node.className = 'path-node';
+          node.style.setProperty('--path-level', index);
+
+          const arrow = document.createElement('span');
+          arrow.className = 'path-arrow';
+          arrow.textContent = index === 0 ? '•' : '↳';
+          node.appendChild(arrow);
+
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'path-link';
+          button.textContent = part;
+          if (index === path.length - 1 && !leafName) {
+            button.disabled = true;
+            button.setAttribute('aria-current', 'location');
+          } else {
+            button.addEventListener('click', () => renderFolderDetail(path.slice(0, index + 1)));
+          }
+          node.appendChild(button);
+          pathList.appendChild(node);
+        });
+
+        if (leafName) {
+          const leaf = document.createElement('div');
+          leaf.className = 'path-node path-leaf';
+          leaf.style.setProperty('--path-level', path.length);
+
+          const arrow = document.createElement('span');
+          arrow.className = 'path-arrow';
+          arrow.textContent = '↳';
+          leaf.appendChild(arrow);
+
+          const label = document.createElement('span');
+          label.textContent = leafName;
+          leaf.appendChild(label);
+
+          pathList.appendChild(leaf);
+        }
+      }
+
+      function renderSubfolders(folder) {
+        subfolderGrid.innerHTML = '';
+        const subfolders = folder && folder.folders ? Array.from(folder.folders.values()) : [];
+        subfolders.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+
+        if (!subfolders.length) {
+          subfolderSection?.classList.add('hidden');
+          return;
+        }
+
+        subfolderSection?.classList.remove('hidden');
+
+        subfolders.forEach((child) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'related-card';
+          btn.textContent = child.name;
+          btn.dataset.kind = 'folder';
+          applyColorStyles(btn, 'Undefined', { ignoreFilter: true });
+          btn.addEventListener('click', () => renderFolderDetail(child.path.slice()));
+          subfolderGrid.appendChild(btn);
+        });
+      }
+
+      function renderItemsInLocation(folder, currentLeaf) {
+        itemsGrid.innerHTML = '';
+        const items = [...(folder?.items || [])]
+          .filter((entry) => !currentLeaf || entry !== currentLeaf)
+          .filter((entry) => matchesKeyword(entry))
+          .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+
+        if (!items.length) {
+          const empty = document.createElement('p');
+          empty.className = 'placeholder';
+          empty.textContent = 'No other items here';
+          itemsGrid.appendChild(empty);
+          return;
+        }
+
+        items.forEach((entry) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'related-card';
+          btn.textContent = entry;
+          btn.dataset.name = entry;
+          applyColorStyles(btn, entry, { ignoreFilter: true });
+          if (entry === currentLeaf) btn.setAttribute('aria-current', 'true');
+          btn.addEventListener('click', () => {
+            const nextItem = state.items.find((candidate) => candidate.name === entry);
+            if (nextItem) renderItemDetail(nextItem);
+          });
+          itemsGrid.appendChild(btn);
+        });
+      }
+
+      function renderDescription(description, leafName) {
+        if (!descriptionWrap || !descriptionEl) return;
+        const show = Boolean(description) && Boolean(leafName);
+        descriptionWrap.classList.toggle('hidden', !show);
+        descriptionEl.textContent = show ? description : '';
+      }
+
+      function switchView(view) {
+        const isHome = view === 'home';
+        if (isHome) state.currentSelection = null;
+        homeView.classList.toggle('hidden', !isHome);
+        detailView.classList.toggle('hidden', isHome);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      function colorStylesForName(name, options = {}) {
+        const { ignoreFilter = false } = options;
+        const categories = categoriesForName(name);
+        const selected = ignoreFilter ? true : categories.some((cat) => state.selectedCategories.has(cat));
+        const color = CATEGORY_COLORS[categories[0]] || DEFAULT_COLOR;
+        if (selected) {
+          return { background: color, border: color, text: '#0f172a' };
+        }
+        return { background: '#ffffff', border: '#cdd4e5', text: '#6b7280' };
+      }
+
+      function applyColorStyles(element, name, options = {}) {
+        const styles = colorStylesForName(name, options);
+        element.style.backgroundColor = styles.background;
+        element.style.borderColor = styles.border;
+        element.style.color = styles.text;
+      }
+
+      function matchesKeyword(value) {
+        const term = (state.keyword || '').trim().toLowerCase();
+        if (!term) return true;
+        return String(value || '').toLowerCase().includes(term);
+      }
+
+      function categoriesForName(name) {
+        return state.categoryLookup.get(name) || ['Undefined'];
+      }
+
+      function categoryForName(name) {
+        const list = categoriesForName(name);
+        return list[0] || 'Undefined';
+      }
+
+      function descriptionForName(name) {
+        const meta = state.metaLookup.get(name);
+        if (!meta) return '';
+        return typeof meta.Description === 'string' ? meta.Description : '';
+      }
+
+      function allCategories() {
+        return LEGEND_ITEMS.flatMap((entry) => entry.categories || []);
+      }
+
+      function refreshColors() {
+        cardGrid.querySelectorAll('.card').forEach((card) => {
+          const { name } = card.dataset;
+          if (name) applyColorStyles(card, name);
+        });
+        if (state.currentSelection) {
+          const colorTarget = state.currentSelection.type === 'item' ? state.currentSelection.name : 'Undefined';
+          applyColorStyles(selectedCard, colorTarget, { ignoreFilter: true });
+          selectedTitle.style.color = colorStylesForName(colorTarget, { ignoreFilter: true }).text;
+        }
+        itemsGrid.querySelectorAll('.related-card').forEach((btn) => {
+          const { name } = btn.dataset;
+          if (name) applyColorStyles(btn, name, { ignoreFilter: true });
+        });
+        subfolderGrid.querySelectorAll('.related-card').forEach((btn) => {
+          applyColorStyles(btn, 'Undefined', { ignoreFilter: true });
+        });
+      }
+
+      function rerenderCurrentDetail() {
+        if (!state.currentSelection || detailView.classList.contains('hidden')) return;
+        if (state.currentSelection.type === 'item') {
+          const item = state.items.find((entry) => entry.name === state.currentSelection.name);
+          if (!item) return;
+          const folderPath = item.path || [];
+          const folder = getFolderAtPath(folderPath) || state.tree;
+          const breadcrumbPath = folderPath.slice();
+          const description = descriptionForName(item.name);
+          renderDetailView({
+            title: item.name,
+            colorName: item.name,
+            path: breadcrumbPath,
+            folder,
+            leafName: item.name,
+            description,
+            skipSwitch: true,
+          });
+        } else {
+          const folder = getFolderAtPath(state.currentSelection.path) || state.tree;
+          renderDetailView({
+            title: folder?.name || 'Folder',
+            colorName: 'Undefined',
+            path: folder?.path || [],
+            folder,
+            leafName: null,
+            description: '',
+            skipSwitch: true,
+          });
+        }
+      }
+
+      function toggleLegend(entry) {
+        const isSelected = entry.categories.every((cat) => state.selectedCategories.has(cat));
+        entry.categories.forEach((cat) => {
+          if (isSelected) {
+            state.selectedCategories.delete(cat);
+          } else {
+            state.selectedCategories.add(cat);
+          }
+        });
+        renderLegend();
+        refreshColors();
+      }
+
+      function renderLegend() {
+        statusEl.textContent = '';
+        const wrap = document.createElement('div');
+        wrap.className = 'legend-wrap';
+        const label = document.createElement('div');
+        label.className = 'legend-label';
+        label.textContent = 'Filter';
+        const legend = document.createElement('div');
+        legend.className = 'legend';
+        LEGEND_ITEMS.forEach((entry) => {
+          const isSelected = entry.categories.every((cat) => state.selectedCategories.has(cat));
+          const item = document.createElement('button');
+          item.type = 'button';
+          item.className = 'legend-item';
+          if (isSelected) item.classList.add('legend-selected');
+          item.textContent = entry.label;
+          if (isSelected) {
+            item.style.backgroundColor = entry.color;
+            item.style.borderColor = '#0f172a';
+            item.style.color = '#0f172a';
+          } else {
+            item.style.backgroundColor = '#ffffff';
+            item.style.borderColor = '#cdd4e5';
+            item.style.color = '#6b7280';
+          }
+          item.addEventListener('click', () => toggleLegend(entry));
+          legend.appendChild(item);
+        });
+        wrap.appendChild(label);
+        wrap.appendChild(legend);
+        statusEl.appendChild(wrap);
+
+        const keywordWrap = document.createElement('div');
+        keywordWrap.className = 'legend-wrap';
+        const keywordLabel = document.createElement('div');
+        keywordLabel.className = 'legend-label';
+        keywordLabel.textContent = 'Keyword';
+        const keywordInput = document.createElement('input');
+        keywordInput.type = 'text';
+        keywordInput.className = 'keyword-input';
+        keywordInput.placeholder = 'Type to filter...';
+        keywordInput.value = state.keyword;
+        keywordInput.addEventListener('input', (event) => {
+          state.keyword = event.target.value || '';
+          renderHome({ skipSwitch: true });
+          rerenderCurrentDetail();
+        });
+        keywordWrap.appendChild(keywordLabel);
+        keywordWrap.appendChild(keywordInput);
+        statusEl.appendChild(keywordWrap);
+      }
+    })();
+  </script>
+</body>
+</html>
