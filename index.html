@@ -534,7 +534,7 @@
       const detailHomeBtn = document.getElementById('detail-home-btn');
       const welcomeModal = document.getElementById('welcome-modal');
       const welcomeModalOk = document.getElementById('welcome-modal-ok');
-      const WELCOME_MODAL_STORAGE_KEY = 'bbstructure.instructionsSeen';
+      const WELCOME_MODAL_STORAGE_KEY = 'bbstructure.instructionsSeen.session';
 
       const CATEGORY_COLORS = {
         'Images and Photo': '#00ccde',
@@ -690,7 +690,7 @@
         welcomeModal.hidden = true;
         document.body.classList.remove('modal-open');
         try {
-          window.localStorage.setItem(WELCOME_MODAL_STORAGE_KEY, 'true');
+          window.sessionStorage.setItem(WELCOME_MODAL_STORAGE_KEY, 'true');
         } catch (error) {
           // Ignore storage failures and still dismiss the modal for this visit.
         }
@@ -698,7 +698,7 @@
 
       function hasSeenWelcomeModal() {
         try {
-          return window.localStorage.getItem(WELCOME_MODAL_STORAGE_KEY) === 'true';
+          return window.sessionStorage.getItem(WELCOME_MODAL_STORAGE_KEY) === 'true';
         } catch (error) {
           return false;
         }
