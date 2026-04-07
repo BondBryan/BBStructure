@@ -368,6 +368,61 @@
       background: #ffffff;
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
     }
+    body.modal-open {
+      overflow: hidden;
+    }
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(15, 23, 42, 0.38);
+      z-index: 1000;
+    }
+    .modal-overlay[hidden] {
+      display: none;
+    }
+    .modal-card {
+      width: min(100%, 520px);
+      background: #ffffff;
+      border: 1px solid var(--border);
+      box-shadow: 0 24px 48px rgba(15, 23, 42, 0.2);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .modal-title {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+    .modal-text {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .modal-btn {
+      border: 1px solid var(--ink);
+      border-radius: 0;
+      background: var(--ink);
+      color: #ffffff;
+      padding: 10px 18px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .modal-btn:hover {
+      background: #1f2937;
+      border-color: #1f2937;
+    }
     @media (max-width: 900px) {
       .section-divider {
         padding-top: 16px;
@@ -398,7 +453,7 @@
           <img src="BB_Logo_Full.png" alt="BB Structure logo" class="logo" id="logo-btn">
           <div class="heading">
             <p class="eyebrow">List of files</p>
-            <h1>Version 3.3</h1>
+            <h1>Version 3.4</h1>
           </div>
         </div>
         <button class="detail-back-btn hidden" id="detail-home-btn" type="button" aria-label="Back to home">←</button>
@@ -444,6 +499,22 @@
     </section>
   </main>
 
+  <div class="modal-overlay" id="welcome-modal" hidden>
+    <div
+      class="modal-card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="welcome-modal-title"
+      aria-describedby="welcome-modal-text"
+    >
+      <h2 class="modal-title" id="welcome-modal-title">Instructions</h2>
+      <p class="modal-text" id="welcome-modal-text">Select a file type by clicking on it, or filtering/searching in the top right corner to find its location on the server.</p>
+      <div class="modal-actions">
+        <button class="modal-btn" id="welcome-modal-ok" type="button">Ok</button>
+      </div>
+    </div>
+  </div>
+
   <script>
     (function() {
       const statusEl = document.getElementById('status');
@@ -461,6 +532,9 @@
       const homeBtn = document.getElementById('home-btn');
       const logoBtn = document.getElementById('logo-btn');
       const detailHomeBtn = document.getElementById('detail-home-btn');
+      const welcomeModal = document.getElementById('welcome-modal');
+      const welcomeModalOk = document.getElementById('welcome-modal-ok');
+      const WELCOME_MODAL_STORAGE_KEY = 'bbstructure.instructionsSeen';
 
       const CATEGORY_COLORS = {
         'Images and Photo': '#00ccde',
@@ -496,7 +570,9 @@
       homeBtn.addEventListener('click', goHome);
       logoBtn?.addEventListener('click', goHome);
       detailHomeBtn?.addEventListener('click', goHome);
+      welcomeModalOk?.addEventListener('click', dismissWelcomeModal);
 
+      maybeShowWelcomeModal();
       init();
 
       async function init() {
@@ -598,6 +674,34 @@
 
       function goHome() {
         renderHome();
+      }
+
+      function maybeShowWelcomeModal() {
+        if (!welcomeModal || hasSeenWelcomeModal()) return;
+        welcomeModal.hidden = false;
+        document.body.classList.add('modal-open');
+        window.requestAnimationFrame(() => {
+          welcomeModalOk?.focus();
+        });
+      }
+
+      function dismissWelcomeModal() {
+        if (!welcomeModal) return;
+        welcomeModal.hidden = true;
+        document.body.classList.remove('modal-open');
+        try {
+          window.localStorage.setItem(WELCOME_MODAL_STORAGE_KEY, 'true');
+        } catch (error) {
+          // Ignore storage failures and still dismiss the modal for this visit.
+        }
+      }
+
+      function hasSeenWelcomeModal() {
+        try {
+          return window.localStorage.getItem(WELCOME_MODAL_STORAGE_KEY) === 'true';
+        } catch (error) {
+          return false;
+        }
       }
 
       function renderHome(options = {}) {
