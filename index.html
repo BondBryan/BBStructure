@@ -474,7 +474,7 @@
           <img src="BB_Logo_Full.png" alt="BB Structure logo" class="logo" id="logo-btn">
           <div class="heading">
             <p class="eyebrow">List of files</p>
-            <h1>Version 3.5</h1>
+            <h1>Version 3.6</h1>
           </div>
         </div>
         <button class="detail-back-btn hidden" id="detail-home-btn" type="button" aria-label="Back to home">←</button>
@@ -520,7 +520,7 @@
     </section>
 
     <footer class="page-footer">
-      <p>If you cannot find the file you are looking for, or if a file type is missing, please email us at <a href="mailto:a.pescher@bondbryan.co.uk">a.pescher@bondbryan.co.uk</a>.</p>
+      <p>If you cannot find the file you are looking for, or if a file type is missing, please email us at <a href="#" id="footer-support-link">a.pescher@bondbryan.co.uk</a>.</p>
     </footer>
   </main>
 
@@ -557,10 +557,18 @@
       const homeBtn = document.getElementById('home-btn');
       const logoBtn = document.getElementById('logo-btn');
       const detailHomeBtn = document.getElementById('detail-home-btn');
+      const footerSupportLink = document.getElementById('footer-support-link');
       const welcomeModal = document.getElementById('welcome-modal');
       const welcomeModalOk = document.getElementById('welcome-modal-ok');
       const WELCOME_MODAL_STORAGE_KEY = 'bbstructure.instructionsSeen.session';
       const SUPPORT_EMAIL = 'a.pescher@bondbryan.co.uk';
+      const SUPPORT_SUBJECT = 'Missing File Type';
+      const SUPPORT_BODY = [
+        'Hey Arthur,',
+        "I'm trying to work out where to place this file on the server, but I can't find the right location. Can you help?",
+        'File: '
+      ].join('\n');
+      const SUPPORT_MAILTO = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(SUPPORT_SUBJECT)}&body=${encodeURIComponent(SUPPORT_BODY)}`;
 
       const CATEGORY_COLORS = {
         'Images and Photo': '#00ccde',
@@ -600,6 +608,7 @@
 
       maybeShowWelcomeModal();
       init();
+      if (footerSupportLink) footerSupportLink.href = SUPPORT_MAILTO;
 
       async function init() {
         try {
@@ -742,7 +751,7 @@
           if (hasData && hasKeyword) {
             msg.append('If you cannot find the file you are looking for, or if a file type is missing, please email us at ');
             const link = document.createElement('a');
-            link.href = `mailto:${SUPPORT_EMAIL}`;
+            link.href = SUPPORT_MAILTO;
             link.textContent = SUPPORT_EMAIL;
             msg.appendChild(link);
             msg.append('.');
