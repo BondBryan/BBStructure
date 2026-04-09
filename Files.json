@@ -459,6 +459,26 @@
         "Path": "L-LandscapeArchitecture",
         "Description": "Landscape architecture documents produced by the Bond Bryan landscape architect (separately appointed)."
     },
+    "Door and gates schedule (Landscape)": {
+        "Category": "Schedules and Lists",
+        "Path": "L-LandscapeArchitecture/L-List/0000-Schedules/Shared/0100-DoorsAndGates",
+        "Description": "Landscape schedule of doors and gates, including specifications and details. Internal landscape schedule; coordinate with architectural door schedules for consistency where relevant."
+    },
+    "Planting schedule (Landscape)": {
+        "Category": "Schedules and Lists",
+        "Path": "L-LandscapeArchitecture/L-List/0000-Schedules/Shared/0200-Planting",
+        "Description": "Landscape schedule of planting, including specifications and details."
+    },
+    "Urban Greening Factor UGF (Landscape)": {
+        "Category": "Schedules and Lists",
+        "Path": "L-LandscapeArchitecture/L-List/0000-Schedules/Shared/0400-UrbanGreeningFactor",
+        "Description": "Landscape schedule of UGF, including requirements and proposed values."
+    },
+    "Furniture schedule (Landscape)": {
+        "Category": "Schedules and Lists",
+        "Path": "L-LandscapeArchitecture/L-List/0000-Schedules/Shared/0300-Furniture",
+        "Description": "Landscape schedule of furniture, including specifications and details. Internal landscape schedule; coordinate with interior design furniture schedules for consistency where relevant."
+    },
     "Letter of compliance": {
         "Category": "Contracts and legal",
         "Path": "A-Architecture/T-Textual/1000-Correspondence",
@@ -938,6 +958,31 @@
         "Category": "Images and Photo",
         "Path": "A-Architecture/I-Image/3000-Visualisations",
         "Description": "Rendered image outputs produced from the project's visualisation process. Final still images for presentations; organize these for easy access during meetings or submissions."
+    },
+    "Existing Building Fabric analysis (Interior)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Shared/1000-AnalysisDrawings",
+        "Description": "Description and analysis drawings and report of existing fabric of a building for refurbishments and retrofit projects."
+    },
+    "Historic analysis (Interior)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Shared/1000-AnalysisDrawings",
+        "Description": "Description and analysis drawings and report of historic building for refurbishments and retrofit projects."
+    },
+    "Survey request markup (Interior)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Shared/1000-AnalysisDrawings",
+        "Description": "Mark up plans and documents for request of survey information for refurbishments and retrofit projects."
+    },
+    "Historic analysis (PDBR)": {
+        "Category": "Drawings",
+        "Path": "O-PrincipalDesigner/BR/D-Drawings/Shared/1000-AnalysisDrawings",
+        "Description": "Description and analysis drawings and report of historic building for refurbishments and retrofit projects."
+    },
+    "Survey request markup (PDBR)": {
+        "Category": "Drawings",
+        "Path": "O-PrincipalDesigner/BR/D-Drawings/Shared/1000-AnalysisDrawings",
+        "Description": "Mark up plans and documents for request of survey information for refurbishments and retrofit projects."
     },
     "Visualisations Output Video": {
         "Category": "Other",
