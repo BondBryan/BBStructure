@@ -368,6 +368,27 @@
       background: #ffffff;
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
     }
+    .empty-message {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .empty-message a,
+    .page-footer a {
+      color: inherit;
+    }
+    .page-footer {
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    .page-footer p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
     body.modal-open {
       overflow: hidden;
     }
@@ -453,7 +474,7 @@
           <img src="BB_Logo_Full.png" alt="BB Structure logo" class="logo" id="logo-btn">
           <div class="heading">
             <p class="eyebrow">List of files</p>
-            <h1>Version 3.4</h1>
+            <h1>Version 3.5</h1>
           </div>
         </div>
         <button class="detail-back-btn hidden" id="detail-home-btn" type="button" aria-label="Back to home">←</button>
@@ -497,6 +518,10 @@
         </div>
       </div>
     </section>
+
+    <footer class="page-footer">
+      <p>If you cannot find the file you are looking for, or if a file type is missing, please email us at <a href="mailto:a.pescher@bondbryan.co.uk">a.pescher@bondbryan.co.uk</a>.</p>
+    </footer>
   </main>
 
   <div class="modal-overlay" id="welcome-modal" hidden>
@@ -535,6 +560,7 @@
       const welcomeModal = document.getElementById('welcome-modal');
       const welcomeModalOk = document.getElementById('welcome-modal-ok');
       const WELCOME_MODAL_STORAGE_KEY = 'bbstructure.instructionsSeen.session';
+      const SUPPORT_EMAIL = 'a.pescher@bondbryan.co.uk';
 
       const CATEGORY_COLORS = {
         'Images and Photo': '#00ccde',
@@ -709,12 +735,20 @@
         cardGrid.innerHTML = '';
         const filteredItems = state.items.filter((item) => matchesKeyword(item.name));
         if (!filteredItems.length) {
-          const msg = document.createElement('p');
           const hasData = state.items.length > 0;
           const hasKeyword = Boolean((state.keyword || '').trim());
-          msg.textContent = hasData && hasKeyword
-            ? `No items match "${state.keyword}".`
-            : 'No items found in Files.json';
+          const msg = document.createElement('p');
+          msg.className = 'empty-message';
+          if (hasData && hasKeyword) {
+            msg.append('If you cannot find the file you are looking for, or if a file type is missing, please email us at ');
+            const link = document.createElement('a');
+            link.href = `mailto:${SUPPORT_EMAIL}`;
+            link.textContent = SUPPORT_EMAIL;
+            msg.appendChild(link);
+            msg.append('.');
+          } else {
+            msg.textContent = 'No items found in Files.json';
+          }
           cardGrid.appendChild(msg);
           return;
         }
