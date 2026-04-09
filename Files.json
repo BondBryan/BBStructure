@@ -984,6 +984,89 @@
         "Path": "O-PrincipalDesigner/BR/D-Drawings/Shared/1000-AnalysisDrawings",
         "Description": "Mark up plans and documents for request of survey information for refurbishments and retrofit projects."
     },
+    "Site plan": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/1000-SitePlans",
+    "Description": "General site drawing showing the project in its wider context, including building footprint, boundaries, access, external works, orientation, and key surrounding features relevant to planning, coordination, and construction."
+},
+
+"GA plan": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/2000-FloorPlans",
+    "Description": "General arrangement floor plan showing the layout of spaces, walls, doors, circulation, and key building elements at each level for design development, coordination, technical review, and construction reference. Refer to Design GA and Technical GA based on level of detail required and drawing scale."
+},
+
+"Elevation drawing": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/3000-Elevations",
+    "Description": "Drawing showing the external faces of the building, indicating height, materials, openings, and overall appearance to support design coordination, planning submissions, and technical development."
+},
+
+"GA section": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/4000-Sections",
+    "Description": "General arrangement section cutting through the building to show spatial relationships, floor levels, structure, and major construction elements for design understanding, coordination, and technical communication."
+},
+
+"Detailed section": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/4000-Sections",
+    "Description": "Section drawing developed beyond GA level to illustrate specific construction interfaces, assemblies, or technical conditions in more detail for coordination, compliance review, and construction information."
+},
+
+"C-Sheet": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/5000-IndividualSpaces",
+    "Description": "Room-specific drawing sheet showing a single space in greater detail, typically including plan, dimensions, references, and coordination information to support design review, technical development, and output consistency."
+},
+
+"Room elevations": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/5000-IndividualSpaces",
+    "Description": "Internal elevations of an individual room showing wall faces, fixed elements, openings, and finishes to support detailed design, coordination with consultants, and construction or fit-out information."
+},
+
+"Fire strategy drawing": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/6000-DetailedPlans",
+    "Description": "Drawing illustrating fire compartmentation, escape routes, fire doors, stairs, and other fire-related design principles to support compliance, consultant coordination, approvals, and technical review.To be reviewed agaisnt external Fire Consultant information"
+},
+
+"Setting out plan": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/6000-DetailedPlans",
+    "Description": "Technical plan used to define accurate positions, dimensions, grids, and key building elements for construction setting out, contractor reference, and coordination with structure and other disciplines."
+},
+
+"Acoustic plan": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/6000-DetailedPlans",
+    "Description": "Plan drawing identifying acoustic requirements, treatments, and room performance criteria to support coordination with consultants, specification development, and compliance with project acoustic standards."
+},
+
+"Wall types drawings": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/6000-DetailedPlans",
+    "Description": "Drawings showing wall type locations, references, and construction requirements across the project to support coordination, specification alignment, technical clarity, and construction delivery."
+},
+
+"Details (1:20, 1:10, 1:5...)": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/7000-Details",
+    "Description": "Detailed drawings at larger scales used to explain specific construction assemblies, junctions, and build-ups for technical resolution, compliance checking, contractor understanding, and on-site delivery."
+},
+
+"Reflected Ceiling Plans (RCP)": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/8000-FinishesDrawings",
+    "Description": "Plan drawing representing the ceiling layout from below, showing soffits, ceiling finishes, lighting, access panels, and coordination items for interiors, services integration, and construction purposes."
+},
+
+"Finishes plans (floor, ceiling, walls)": {
+    "Category": "Drawings",
+    "Path": "A-Architecture/D-Drawing/Shared/8000-FinishesDrawings",
+    "Description": "Drawings identifying the location and extent of floor, wall, and ceiling finishes to support interior design intent, specification coordination, procurement, and construction installation."
+},
     "Visualisations Output Video": {
         "Category": "Other",
         "Path": "A-Architecture/V-VideoAudio/3000-Animations",
