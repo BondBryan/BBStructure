@@ -196,7 +196,7 @@
     },
     "Comments CDP / Subcontractors": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Textual/5000-Comments/5100-Subcontractor / CDP",
+        "Path": "A-Architecture/T-Textual/5000-Comments/5100-subcontractorCDP",
         "Description": "Review comments compiled by Bond Bryan on subcontractor (CDP) submissions. Ensure these comments are sent to the subcontractors with recorded dates and status."
     },
     "Comments Designers' pack": {

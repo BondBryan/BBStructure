@@ -708,6 +708,8 @@
       }
 
       function goHome() {
+        state.currentSelection = null;
+        renderLegend();
         renderHome();
       }
 
@@ -902,7 +904,6 @@
         itemsGrid.innerHTML = '';
         const items = [...(folder?.items || [])]
           .filter((entry) => !currentLeaf || entry !== currentLeaf)
-          .filter((entry) => matchesKeyword(entry))
           .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
         if (!items.length) {
@@ -1007,38 +1008,6 @@
         });
       }
 
-      function rerenderCurrentDetail() {
-        if (!state.currentSelection || detailView.classList.contains('hidden')) return;
-        if (state.currentSelection.type === 'item') {
-          const item = state.items.find((entry) => entry.name === state.currentSelection.name);
-          if (!item) return;
-          const folderPath = item.path || [];
-          const folder = getFolderAtPath(folderPath) || state.tree;
-          const breadcrumbPath = folderPath.slice();
-          const description = descriptionForName(item.name);
-          renderDetailView({
-            title: item.name,
-            colorName: item.name,
-            path: breadcrumbPath,
-            folder,
-            leafName: item.name,
-            description,
-            skipSwitch: true,
-          });
-        } else {
-          const folder = getFolderAtPath(state.currentSelection.path) || state.tree;
-          renderDetailView({
-            title: folder?.name || 'Folder',
-            colorName: 'Undefined',
-            path: folder?.path || [],
-            folder,
-            leafName: null,
-            description: '',
-            skipSwitch: true,
-          });
-        }
-      }
-
       function toggleLegend(entry) {
         const isSelected = entry.categories.every((cat) => state.selectedCategories.has(cat));
         entry.categories.forEach((cat) => {
@@ -1084,6 +1053,8 @@
         wrap.appendChild(legend);
         statusEl.appendChild(wrap);
 
+        if (state.currentSelection) return;
+
         const keywordWrap = document.createElement('div');
         keywordWrap.className = 'legend-wrap';
         const keywordLabel = document.createElement('div');
@@ -1097,7 +1068,6 @@
         keywordInput.addEventListener('input', (event) => {
           state.keyword = event.target.value || '';
           renderHome({ skipSwitch: true });
-          rerenderCurrentDetail();
         });
         keywordWrap.appendChild(keywordLabel);
         keywordWrap.appendChild(keywordInput);
