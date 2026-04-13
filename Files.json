@@ -146,7 +146,7 @@
     },
     "Building Control Submission": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectMilestones/Milestone-BuildingRegulationsSubmission",
+        "Path": "-ProjectMilestones/Gateway 2–Building Control Application",
         "Description": "Documents submitted for Building Control approval, demonstrating regulatory compliance. Major milestone submission; ensure all required drawings and reports are included."
     },
     "Building Control tracker (modified)": {
@@ -361,7 +361,7 @@
     },
     "HRB submission": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectMilestones/Milestone-BuildingRegulationsSubmission",
+        "Path": "-ProjectMilestones/Gateway 2–Building Control Application",
         "Description": "Submission documents for a Higher-Risk Building (HRB) in line with new building safety regulations. Regulatory submission; coordinate closely with the building safety regulator and include all required details."
     },
     "IFC Library": {
@@ -666,7 +666,7 @@
     },
     "Planning Submission and documents": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectMilestones/Milestone-PlanningApplicationSubmission",
+        "Path": "-ProjectMilestones/Gateway 1–Planning Application",
         "Description": "Documents compiled for the planning application submission (forms, drawings, reports). Submitted information, WIP drawings/documents to be saved elsewhere."
     },
     "PQQ Client Documentation": {
