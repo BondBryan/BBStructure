@@ -41,7 +41,7 @@
     },
     "Agenda (BB Produced)": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Textual/2000-Agenda",
+        "Path": "A-Architecture/T-Textual/2000-Agendas",
         "Description": "Meeting agenda document created by Bond Bryan for project meetings. Internal version of the agenda; compare with any incoming agendas from external parties."
     },
     "Agenda (Incoming)": {
@@ -459,7 +459,7 @@
         "Path": "L-LandscapeArchitecture",
         "Description": "Landscape architecture documents produced by the Bond Bryan landscape architect (separately appointed)."
     },
-    "Door and gates schedule (Landscape)": {
+    "Doors and gates schedule (Landscape)": {
         "Category": "Schedules and Lists",
         "Path": "L-LandscapeArchitecture/L-List/0000-Schedules/Shared/0100-DoorsAndGates",
         "Description": "Landscape schedule of doors and gates, including specifications and details. Internal landscape schedule; coordinate with architectural door schedules for consistency where relevant."
@@ -646,17 +646,17 @@
     },
     "Photograph Existing": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/2000-ProjectPhotography",
+        "Path": "A-Architecture/I-Image/2000-ProjectPhotographies",
         "Description": "Photographs of the existing site or structures taken before project work begins. Internal project photo record; use as a baseline to compare against construction progress and completion."
     },
     "Photograph Post Completion": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/2000-ProjectPhotography",
+        "Path": "A-Architecture/I-Image/2000-ProjectPhotographies",
         "Description": "Photographs taken after project completion, showing the finished building and site. Notify marketing team."
     },
     "Pictures Site visit": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/2000-ProjectPhotography",
+        "Path": "A-Architecture/I-Image/2000-ProjectPhotographies",
         "Description": "Photographs captured during site visits to document progress or issues. Internal site visit photos; use for progress reports and to record on-site conditions."
     },
     "Planning consultation boards": {
