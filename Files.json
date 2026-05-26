@@ -256,7 +256,7 @@
     },
     "Drawings DWG Archive/Superseded": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawing/Archive",
+        "Path": "A-Architecture/D-Drawing/Archive/DWG",
         "Description": "Archive of superseded drawing files in DWG format. Bond Bryan drawing archive; refer to these only for historical information, not current use."
     },
     "Drawings DWG Current Version": {
@@ -271,7 +271,7 @@
     },
     "Drawings PDF Archive/Superseded": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawing/Archive",
+        "Path": "A-Architecture/D-Drawing/Archive/PDF",
         "Description": "Archive of superseded drawing files in PDF format. Historical record of issued drawings; ensure only current PDFs are used for reference."
     },
     "Drawings PDF Current Version": {
