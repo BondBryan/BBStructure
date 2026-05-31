@@ -1,7 +1,7 @@
 {
     "2D Textures (HighRes)": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/5000-OtherImages",
+        "Path": "A-Architecture/I-Images/5000-OtherImages",
         "Description": "High-resolution 2D texture images to be reduced to max 800 x 800px for use in BIM model. Do not import high-res textures in BIM model."
     },
     "2D Textures (LowRes)": {
@@ -51,7 +51,7 @@
     },
     "AI Generated visualisations": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/3000-Visualisations",
+        "Path": "A-Architecture/I-Images/3000-Visualisations",
         "Description": "Project visualisation images generated using AI tools or software. Bond Bryan internal imagery; use for concept presentations or design inspiration."
     },
     "Audio Recording": {
@@ -91,7 +91,7 @@
     },
     "BIM Clash Rendition (BCF)": {
         "Category": "BIM and Models",
-        "Path": "A-Architecture/L-List/9000-Miscellaneous",
+        "Path": "A-Architecture/L-Lists/9000-Miscellaneous",
         "Description": "BIM clash issues file in BCF (BIM Collaboration Format) capturing model coordination problems. Use it to track and resolve clashes with other disciplines."
     },
     "BIM other contractual documents  (draft external)": {
@@ -151,22 +151,22 @@
     },
     "Building Control tracker (modified)": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/4000-Trackers",
+        "Path": "A-Architecture/L-Lists/4000-Trackers",
         "Description": "Modified version of the building control tracker updated by Bond Bryan to monitor compliance. Internal tracking document; use this to keep tabs on building control items and compare with the original (OtherDisciplines/T-BuildingControl)."
     },
     "Building Control tracker (original)": {
         "Category": "Schedules and Lists",
         "Path": "OtherDisciplines/T-BuildingControl",
-        "Description": "Original building control tracker document, likely provided by the building control authority or client. External baseline tracker; reference this for official requirements and updates (modify and save in A-Architecture/L-List/4000-Trackers)."
+        "Description": "Original building control tracker document, likely provided by the building control authority or client. External baseline tracker; reference this for official requirements and updates (modify and save in A-Architecture/L-Lists/4000-Trackers)."
     },
     "Calculations Parking": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/6000-Calculations",
+        "Path": "A-Architecture/L-Lists/6000-Calculations",
         "Description": "Calculation sheet determining parking space requirements or counts for the project. Internal calculation; ensure it meets local parking standards and incorporate into site planning."
     },
     "Calculations Toilets": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/6000-Calculations",
+        "Path": "A-Architecture/L-Lists/6000-Calculations",
         "Description": "Calculation sheet determining the required number of toilets (sanitary fixtures) for the project. Internal calculation; verify compliance with building regulations and occupancy needs."
     },
     "CDP drawings": {
@@ -181,7 +181,7 @@
     },
     "Change Control": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/3000-Change Control",
+        "Path": "A-Architecture/L-Lists/3000-Change Control",
         "Description": "Log or register documenting changes to the project scope or design and their approval status. Internal change tracker; update whenever a change is proposed or implemented."
     },
     "Clash detection report": {
@@ -221,13 +221,13 @@
     },
     "DEIR (modified)": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/1000-Programmes",
+        "Path": "A-Architecture/L-Lists/1000-Programmes",
         "Description": "Modified version of the Employer’s Information Requirements (EIR) document adapted by Bond Bryan. Internal working version of client requirements; ensure it reflects the original OtherDisciplines/X-Client document"
     },
     "DEIR (original)": {
         "Category": "Schedules and Lists",
         "Path": "OtherDisciplines/X-Client",
-        "Description": "Original Employer’s Information Requirements (EIR) document likely provided by the client. External project requirements document; use as baseline for BIM and information delivery expectations. If modified save the new version to A-Architecture/L-List/1000-Programmes"
+        "Description": "Original Employer’s Information Requirements (EIR) document likely provided by the client. External project requirements document; use as baseline for BIM and information delivery expectations. If modified save the new version to A-Architecture/L-Lists/1000-Programmes"
     },
     "Design and Access Statement": {
         "Category": "Texts and Presentations",
@@ -251,37 +251,37 @@
     },
     "Drawing Register": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/2000-Transmittals",
+        "Path": "A-Architecture/L-Lists/2000-Transmittals",
         "Description": "Register listing all project drawings with details like numbers, titles, and revisions. Bond Bryan internal list; keep updated to manage drawing issues and revisions."
     },
     "Drawings DWG Archive/Superseded": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawing/Archive/DWG",
+        "Path": "A-Architecture/D-Drawings/Archive",
         "Description": "Archive of superseded drawing files in DWG format. Bond Bryan drawing archive; refer to these only for historical information, not current use."
     },
     "Drawings DWG Current Version": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawing/Shared/DWG",
+        "Path": "A-Architecture/D-Drawings/Shared/DWG",
         "Description": "Current set of drawing files in DWG format, representing the latest design versions. Active drawing set; use these for coordination and issuing to the project team."
     },
     "Drawings DWG WIP/ToBeChecked": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawing/WIP",
+        "Path": "A-Architecture/D-Drawings/WIP",
         "Description": "Work-in-progress drawing files in DWG format awaiting checking or approval. Internal use only; finalize these to move them into the current issued set."
     },
     "Drawings PDF Archive/Superseded": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawing/Archive/PDF",
+        "Path": "A-Architecture/D-Drawings/Archive",
         "Description": "Archive of superseded drawing files in PDF format. Historical record of issued drawings; ensure only current PDFs are used for reference."
     },
     "Drawings PDF Current Version": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawing/Shared/PDF",
+        "Path": "A-Architecture/D-Drawings/Shared/PDF",
         "Description": "Current set of drawing files in PDF format for distribution and use. Latest issued drawings; rely on these for construction and coordination."
     },
     "Drawings PDF WIP/ToBeChecked": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawing/WIP",
+        "Path": "A-Architecture/D-Drawings/WIP",
         "Description": "Work-in-progress drawing files in PDF format that are yet to be checked or issued. Draft drawings for internal review; do not circulate until finalized."
     },
     "DTM Presentation": {
@@ -301,7 +301,7 @@
     },
     "Elements Schedules (windows, doors,…)": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/0000-Schedules/Shared",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Shared",
         "Description": "Schedules listing building elements (e.g., windows, doors, etc.) produced by BIM software."
     },
     "Email saved (for record)": {
@@ -331,7 +331,7 @@
     },
     "Finishes schedule": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/0000-Schedules/Shared/0600-Finishes",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Shared/0600-Finishes",
         "Description": "Schedule listing all finish materials (flooring, paint, etc.) and their specifications. Internal design schedule; coordinate with room data sheets and specifications."
     },
     "Fire Engineer report": {
@@ -461,22 +461,22 @@
     },
     "Door and gates schedule (Landscape)": {
         "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-List/0000-Schedules/Shared/0100-DoorsAndGates",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Shared/0100-DoorsAndGates",
         "Description": "Landscape schedule of doors and gates, including specifications and details. Internal landscape schedule; coordinate with architectural door schedules for consistency where relevant."
     },
     "Planting schedule (Landscape)": {
         "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-List/0000-Schedules/Shared/0200-Planting",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Shared/0200-Planting",
         "Description": "Landscape schedule of planting, including specifications and details."
     },
     "Urban Greening Factor UGF (Landscape)": {
         "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-List/0000-Schedules/Shared/0400-UrbanGreeningFactor",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Shared/0400-UrbanGreeningFactor",
         "Description": "Landscape schedule of UGF, including requirements and proposed values."
     },
     "Furniture schedule (Landscape)": {
         "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-List/0000-Schedules/Shared/0300-Furniture",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Shared/0300-Furniture",
         "Description": "Landscape schedule of furniture, including specifications and details. Internal landscape schedule; coordinate with interior design furniture schedules for consistency where relevant."
     },
     "Letter of compliance": {
@@ -541,7 +541,7 @@
     },
     "Other calculations": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/6000-Calculations",
+        "Path": "A-Architecture/L-Lists/6000-Calculations",
         "Description": "Miscellaneous calculation documents or spreadsheets not covered by specific categories. Internal calculations; update and verify these as the design evolves."
     },
     "Other comments": {
@@ -566,7 +566,7 @@
     },
     "Other Schedules": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/9000-Miscellaneous",
+        "Path": "A-Architecture/L-Lists/9000-Miscellaneous",
         "Description": "Miscellaneous schedules or lists that don't fit other specific categories."
     },
     "Outsourcing Briefing": {
@@ -581,7 +581,7 @@
     },
     "Outsourcing Tracker": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/7000-Outsourcing",
+        "Path": "A-Architecture/L-Lists/7000-Outsourcing",
         "Description": "Tracker for outsourced packages or tasks, monitoring their progress and status."
     },
     "PDBR Documents (appointed)": {
@@ -646,17 +646,17 @@
     },
     "Photograph Existing": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/2000-ProjectPhotography",
+        "Path": "A-Architecture/I-Images/2000-ProjectPhotography",
         "Description": "Photographs of the existing site or structures taken before project work begins. Internal project photo record; use as a baseline to compare against construction progress and completion."
     },
     "Photograph Post Completion": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/2000-ProjectPhotography",
+        "Path": "A-Architecture/I-Images/2000-ProjectPhotography",
         "Description": "Photographs taken after project completion, showing the finished building and site. Notify marketing team."
     },
     "Pictures Site visit": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/2000-ProjectPhotography",
+        "Path": "A-Architecture/I-Images/2000-ProjectPhotography",
         "Description": "Photographs captured during site visits to document progress or issues. Internal site visit photos; use for progress reports and to record on-site conditions."
     },
     "Planning consultation boards": {
@@ -716,7 +716,7 @@
     },
     "Programme (BB produced)": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/1000-Programmes",
+        "Path": "A-Architecture/L-Lists/1000-Programmes",
         "Description": "Project programme (schedule) developed by Bond Bryan outlining tasks and timelines. Internal project schedule; align it with any master programme provided by the client or PM."
     },
     "Programme (incoming)": {
@@ -739,14 +739,19 @@
         "Path": "A-Architecture/T-Textual/4000-Reports",
         "Description": "Outlines the quality assurance and control procedures for the project. Use as a reference for QA process expectations at all phases."
     },
-    "Request for Information (RFI)": {
+    "Request for Information (RFI) Incoming": {
         "Category": "Schedules and Lists",
         "Path": "OtherDisciplines/X-Subcontractors/Relevant issuing company",
         "Description": "Log of RFIs raised by contractors and the corresponding clarifications provided by the design team. Helps track unresolved or pending technical clarifications."
     },
+    "Request for Information (RFI) Outgoing": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/T-Textual/5900-RequestsForInformation",
+        "Description": "Log of RFIs raised by BB and the corresponding clarifications provided by the design team. Helps track unresolved or pending technical clarifications."
+    },
     "Re-use schedule of elements": {
         "Category": "Schedules and Lists",
-        "Path": "I-InteriorDesign/L-List/0000-Schedules/Shared/0800-ReUseSchedules",
+        "Path": "I-InteriorDesign/L-Lists/0000-Schedules/Shared/0800-ReUseSchedules",
         "Description": "Elements carefully set aside and reused in the design."
     },
     "RIBA Stage Completion": {
@@ -756,7 +761,7 @@
     },
     "Room Data Sheets (RDS)": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/5000-RoomDataSheets",
+        "Path": "A-Architecture/L-Lists/5000-RoomDataSheets",
         "Description": "Room Data Sheets (RDS) detailing requirements and specifications for each room/space. Internal project documents; update these as design details are finalized and verify with client requirements."
     },
     "RVT Families": {
@@ -766,12 +771,12 @@
     },
     "Sanitaryware schedule": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/0000-Schedules/Shared/0700-OtherSchedules",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Shared/0700-OtherSchedules",
         "Description": "Schedule listing sanitary fixtures (sinks, toilets, etc.) and their specifications for the project. Internal schedule; coordinate with plumbing layouts and ensure items match the design. Bond Bryan produced document supplier information to be included in ExternalDiscipline/X-Subcontractors."
     },
     "Schedule of accommodation": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/0000-Schedules/Shared/0000-Areas",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Shared/0000-Areas",
         "Description": "Schedule of accommodation outlining all spaces/rooms and their areas against requirements."
     },
     "Site visit report": {
@@ -781,12 +786,12 @@
     },
     "Sketch ideas": {
         "Category": "Drawings",
-        "Path": "A-Architecture/I-Image/4000-Sketches",
+        "Path": "A-Architecture/I-Images/4000-Sketches",
         "Description": "Collection of sketch drawings and conceptual ideas for the project. Internal creative drawings; use these for brainstorming and early client discussions."
     },
     "Snagging Lists": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/9000-Miscellaneous",
+        "Path": "A-Architecture/L-Lists/9000-Miscellaneous",
         "Description": "List of issues or incomplete works to be addressed before project handover. Coordinate with final inspections and closeout documentation."
     },
     "Specifications BB produced document": {
@@ -816,12 +821,12 @@
     },
     "Strategic Headcount List": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/8000-StrategicLists",
+        "Path": "A-Architecture/L-Lists/8000-StrategicLists",
         "Description": "List detailing the anticipated headcount or occupancy numbers for strategic planning."
     },
     "Strategic Investment appraisals and cost": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/L-List/8000-StrategicLists",
+        "Path": "A-Architecture/L-Lists/8000-StrategicLists",
         "Description": "Documents evaluating strategic investment options and their costs for the project."
     },
     "Strategic Options Development": {
@@ -831,7 +836,7 @@
     },
     "Strategic Space Need analysis": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/8000-StrategicLists",
+        "Path": "A-Architecture/L-Lists/8000-StrategicLists",
         "Description": "Analysis of high-level space requirements and needs for the project."
     },
     "Structural engineer's Documents": {
@@ -856,12 +861,12 @@
     },
     "Supporting images for reports / presentation (Affinity)": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/1000-PresentationImages",
+        "Path": "A-Architecture/I-Images/1000-PresentationImages",
         "Description": "Supporting images for reports or presentations in Affinity format (original editable images). Source graphics files; use when editing or creating high-quality visuals, and export as needed."
     },
     "Supporting images for reports / presentation (jpg/png)": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/1000-PresentationImages",
+        "Path": "A-Architecture/I-Images/1000-PresentationImages",
         "Description": "Supporting images for reports or presentations in common image formats (JPEG/PNG). Ready-to-use images; insert into documents or slides as needed, original editing done in source files."
     },
     "Survey Cetopo file (2D/3D)": {
@@ -926,12 +931,12 @@
     },
     "TIDP": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/1000-Programmes",
+        "Path": "A-Architecture/L-Lists/1000-Programmes",
         "Description": "Task Information Delivery Plan detailing specific information deliverables and who provides them. Bond Bryan's plan; aligns with the Master Information Delivery Plan (MIDP) to schedule information outputs."
     },
     "Transmittal Sheet": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-List/2000-Transmittals",
+        "Path": "A-Architecture/L-Lists/2000-Transmittals",
         "Description": "Transmittal sheet form recording details of documents issued to other parties. Internal record to accompany document issues; use to track distributions and acknowledgments."
     },
     "Twinmotion file": {
@@ -956,7 +961,7 @@
     },
     "Visualisation Output Images": {
         "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Image/3000-Visualisations",
+        "Path": "A-Architecture/I-Images/3000-Visualisations",
         "Description": "Rendered image outputs produced from the project's visualisation process. Final still images for presentations; organize these for easy access during meetings or submissions."
     },
     "Existing Building Fabric analysis (Interior)": {
