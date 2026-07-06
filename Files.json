@@ -864,6 +864,11 @@
         "Path": "OtherDisciplines/S-StructuralEngineering",
         "Description": "Digital models (IFC format only) provided by the structural engineering consultant. Link or merge into the federated model for coordination."
     },
+    "Subconsultant Invoices": {
+        "Category": "Contracts and Legal",
+        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Description": "Invoices issued by a sub-consultant to Bond Bryan where BB acts as the appointing party for that consultant. Covers fee invoices for the sub-consultant's services rendered under BB's appointment; check against the agreed sub-consultant appointment and fee schedule, approve for payment, and retain for records and onward recovery from the client where applicable."
+    },
     "Subcontractor information": {
         "Category": "Drawings",
         "Path": "OtherDisciplines/X-Subcontractors/Relevant issuing company",
