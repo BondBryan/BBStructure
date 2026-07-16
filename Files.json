@@ -6,12 +6,12 @@
     },
     "2D Textures (LowRes)": {
         "Category": "BIM and Models",
-        "Path": "-ProjectLibrary/00000 BIMLibrary/Textures",
+        "Path": "0-ProjectLibrary/BIMLibrary/Textures",
         "Description": "Low-resolution (max 800 x 800px) 2D texture images for BIM models to avoid large library files. Stored in the project BIM library; use for quick visualisations or placeholders."
     },
     "3D Models Objects": {
         "Category": "BIM and Models",
-        "Path": "-ProjectLibrary/00000 BIMLibrary/Objects",
+        "Path": "0-ProjectLibrary/BIMLibrary/Objects",
         "Description": "Library of 3D model object files/components for use in project BIM models. Located in the BIM library; includes standard model components for consistency."
     },
     "3D Visualisation Objects": {
@@ -26,17 +26,17 @@
     },
     "Additional Fees approved": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/Fees",
+        "Path": "0-ProjectGovernance/Fees",
         "Description": "Documents evidencing approval of additional service fees beyond the original contract. Refer to Additional Fees letter and change control."
     },
     "Additional Fees calculations": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/Fees",
+        "Path": "0-ProjectGovernance/Fees",
         "Description": "Spreadsheets or documents calculating additional fees for extra services or scope changes. Refer to Additional Fees letter and change control."
     },
     "Additional Fees letter": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/Fees",
+        "Path": "0-ProjectGovernance/Fees",
         "Description": "Letter correspondence regarding the agreement or proposal of additional fees."
     },
     "Agenda (BB Produced)": {
@@ -61,7 +61,7 @@
     },
     "Backup models (rvt/pln)": {
         "Category": "BIM and Models",
-        "Path": "-ProjectMilestones/Backup-ArchivedBIMModels",
+        "Path": "0-ProjectMilestones/Backup-ArchivedBIMModels",
         "Description": "Backup archive of BIM model files (e.g., Revit or ArchiCAD models) saved at key milestones. Stored with project milestones; use for restoring or reviewing earlier design versions."
     },
     "Balconies information": {
@@ -71,22 +71,22 @@
     },
     "Bespoke rulesets (solibri)": {
         "Category": "BIM and Models",
-        "Path": "-ProjectLibrary/00000 BIMLibrary/Translators",
+        "Path": "0-ProjectLibrary/BIMLibrary/Translators",
         "Description": "Custom Solibri model-checking rulesets tailored for this project."
     },
     "BIM BEP (draft BB produced)": {
         "Category": "Contracts and Legal",
         "Path": "A-Architecture/T-Texts/9000-Miscellaneous",
-        "Description": "Draft Building Information Modelling (BIM) Execution Plan produced by Bond Bryan. Internal draft version; review alongside the external draft and update for the final issue. Final version (agreed) in -ProjectGovernance/ContractualAndLegal."
+        "Description": "Draft Building Information Modelling (BIM) Execution Plan produced by Bond Bryan. Internal draft version; review alongside the external draft and update for the final issue. Final version (agreed) in 0-ProjectGovernance/ContractualAndLegal."
     },
     "BIM BEP (draft external)": {
         "Category": "Contracts and Legal",
         "Path": "OtherDisciplines/Relevant issuing discipline",
-        "Description": "Draft BIM Execution Plan document provided by an external consultant or party. External draft; coordinate with Bond Bryan's draft to prepare the final agreed BEP. Final version (agreed) in -ProjectGovernance/ContractualAndLegal."
+        "Description": "Draft BIM Execution Plan document provided by an external consultant or party. External draft; coordinate with Bond Bryan's draft to prepare the final agreed BEP. Final version (agreed) in 0-ProjectGovernance/ContractualAndLegal."
     },
     "BIM BEP (final)": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Final Building Information Modelling (BIM) Execution Plan for the project. Official agreed version; supersedes all prior drafts and guides the project's BIM processes."
     },
     "BIM Clash Rendition (BCF)": {
@@ -97,41 +97,41 @@
     "BIM other contractual documents (draft external)": {
         "Category": "Contracts and Legal",
         "Path": "OtherDisciplines/Relevant issuing discipline",
-        "Description": "Draft version of other BIM-related contractual documents provided by an external party. Final version (agreed) in -ProjectGovernance/ContractualAndLegal."
+        "Description": "Draft version of other BIM-related contractual documents provided by an external party. Final version (agreed) in 0-ProjectGovernance/ContractualAndLegal."
     },
     "BIM other contractual documents (draft BB produced)": {
         "Category": "Contracts and Legal",
         "Path": "A-Architecture/T-Texts/9000-Miscellaneous",
-        "Description": "Draft version of other BIM-related contractual documents prepared by Bond Bryan. Final version (agreed) in -ProjectGovernance/ContractualAndLegal."
+        "Description": "Draft version of other BIM-related contractual documents prepared by Bond Bryan. Final version (agreed) in 0-ProjectGovernance/ContractualAndLegal."
     },
     "BIM other contractual documents (final)": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Finalised BIM-related contractual documents for the project. Official versions; they supersede earlier drafts and form part of the contract."
     },
     "BIM Project Protocol Standard (draft BB produced)": {
         "Category": "Contracts and Legal",
         "Path": "A-Architecture/T-Texts/9000-Miscellaneous",
-        "Description": "Draft project BIM protocol standard document prepared by Bond Bryan. Final version (agreed) in -ProjectGovernance/ContractualAndLegal."
+        "Description": "Draft project BIM protocol standard document prepared by Bond Bryan. Final version (agreed) in 0-ProjectGovernance/ContractualAndLegal."
     },
     "BIM Project Protocol Standard (draft external)": {
         "Category": "Contracts and Legal",
         "Path": "OtherDisciplines/Relevant issuing discipline",
-        "Description": "Draft project BIM protocol standard document provided by an external party. Final version (agreed) in -ProjectGovernance/ContractualAndLegal."
+        "Description": "Draft project BIM protocol standard document provided by an external party. Final version (agreed) in 0-ProjectGovernance/ContractualAndLegal."
     },
     "BIM Project Protocol Standard (final)": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Final project BIM protocol standard outlining agreed BIM procedures and standards. Official approved protocol; all team members should adhere to this final version."
     },
     "BIM Review": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8300-BIMReviews",
+        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8400-BIMReviews",
         "Description": "Review document focusing on the project's BIM implementation or model quality. Internal BIM process review; use findings to improve model coordination and standards adherence. Ask BIMsupport for guidance if needed."
     },
     "BIM Translators": {
         "Category": "BIM and Models",
-        "Path": "-ProjectLibrary/00000 BIMLibrary/Translators",
+        "Path": "0-ProjectLibrary/BIMLibrary/Translators",
         "Description": "Configuration files or translator settings for BIM software (e.g., for IFC export/import). Stored in the project BIM library; use for consistent data exchange between software platforms."
     },
     "BREEAM / LEED submission": {
@@ -140,13 +140,13 @@
         "Description": "Submission documents for BREEAM or LEED certification, detailing sustainability compliance. Usually prepared by the sustainability consultant (external); include required reports and forms."
     },
     "British Standard (project related)": {
-        "Category": "Undefined",
-        "Path": "-ProjectLibrary/StandardsAndGuidance",
+        "Category": "Contracts and Legal",
+        "Path": "0-ProjectLibrary/StandardsAndGuidance",
         "Description": "British Standard publication relevant to the project (e.g., building code or guidance document). Over and above Building Regulations and Clients' issued contractual documents (ExternalDiscipline/X-Client)."
     },
     "Building Control Submission": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectMilestones/Gateway2-BuildingControlApplication",
+        "Path": "0-ProjectMilestones/Gateway2-BuildingControlApplication",
         "Description": "Documents submitted for Building Control approval, demonstrating regulatory compliance. Major milestone submission; ensure all required drawings and reports are included."
     },
     "Building Control tracker (modified)": {
@@ -206,12 +206,12 @@
     },
     "Compliance Review": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8400-ComplianceReviews",
+        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8500-ComplianceReviews",
         "Description": "Review document checking project compliance with specific standards or requirements. Internal compliance check; identify any issues to resolve for regulatory or client requirements."
     },
     "Construction Record Drawings": {
         "Category": "Drawings",
-        "Path": "-ProjectMilestones/RIBA Stage 5-ManufacturingAndConstruction",
+        "Path": "0-ProjectMilestones/RIBAStage5-ManufacturingAndConstruction",
         "Description": "Final set of drawings showing the project as actually constructed. Do not issue 'As-built' but 'Construction Record'."
     },
     "Correspondence Record": {
@@ -232,21 +232,21 @@
     "Design and Access Statement": {
         "Category": "Texts and Presentations",
         "Path": "A-Architecture/T-Texts/4000-Reports",
-        "Description": "Design and Access Statement explaining the design concept and site access, typically for planning. Prepared by Bond Bryan; required for planning submission to justify design decisions. Final version (when submitted) saved in -ProjectMilestones/Gateway1-PlanningApplication."
+        "Description": "Design and Access Statement explaining the design concept and site access, typically for planning. Prepared by Bond Bryan; required for planning submission to justify design decisions. Final version (when submitted) saved in 0-ProjectMilestones/Gateway1-PlanningApplication."
     },
     "Design Guidelines (project related)": {
-        "Category": "Undefined",
-        "Path": "-ProjectLibrary/StandardsAndGuidance",
+        "Category": "Contracts and Legal",
+        "Path": "0-ProjectLibrary/StandardsAndGuidance",
         "Description": "Project-specific design guidelines or standards document. Over and above Building Regulations and Clients' issued contractual documents (ExternalDiscipline/X-Client)."
     },
     "Design Responsibility Matrix": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Matrix defining the responsibility of each party for various design elements and deliverables. Contractual document; ensures clarity on roles and responsibilities across the design team."
     },
     "Design Review": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8000-DesignReviews",
+        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8100-DesignReviews",
         "Description": "Document summarising discussions and outcomes of a design review meeting. Internal review record; use to implement agreed changes and track decisions."
     },
     "Drawing Register": {
@@ -256,38 +256,38 @@
     },
     "Drawings DWG Archive/Superseded": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/Archive",
-        "Description": "Archive of superseded drawing files in DWG format. Bond Bryan drawing archive; refer to these only for historical information, not current use."
+        "Path": "A-Architecture/D-Drawings/Archive/DWG",
+        "Description": "Archive of superseded drawing files in DWG format. Bond Bryan drawing archive; refer to these only for historical record, not current use. File within the relevant drawing series subfolder (e.g. 2000-FloorPlans)."
     },
     "Drawings DWG Current Version": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/Shared/DWG",
-        "Description": "Current set of drawing files in DWG format, representing the latest design versions. Active drawing set; use these for coordination and issuing to the project team."
+        "Path": "A-Architecture/D-Drawings/Current/DWG",
+        "Description": "Current set of drawing files in DWG format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder (e.g. 2000-FloorPlans)."
     },
     "Drawings DWG WIP/ToBeChecked": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/TransmittalSet",
-        "Description": "Work-in-progress drawing with '_WIP' suffix files in DWG format awaiting checking or approval. Internal use only; finalise these to move them into the current issued set."
+        "Description": "Drawing files in DWG format issued from ArchiCAD into a numbered TransmittalSet folder (XX-Description, e.g. 01-InternalDesignReview) while the transmittal register is still open. Files carry the '_WIP' suffix to show the issue is internal and uncontrolled. Once reviewed and approved, the register is closed, the suffix is dropped and the drawings are issued automatically as the next numbered set (e.g. 02-IssueToClient). Issue sets are point-in-time records; never edit or add files after creation."
     },
     "Drawings PDF Archive/Superseded": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/Archive",
-        "Description": "Archive of superseded drawing files in PDF format. Historical record of issued drawings; ensure only current PDFs are used for reference."
+        "Path": "A-Architecture/D-Drawings/Archive/PDF",
+        "Description": "Archive of superseded drawing files in PDF format. Historical record of issued drawings; ensure only the Current folder is used for reference. File within the relevant drawing series subfolder (e.g. 2000-FloorPlans)."
     },
     "Drawings PDF Current Version": {
         "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/Shared/PDF",
-        "Description": "Current set of drawing files in PDF format for distribution and use. Latest issued drawings; rely on these for construction and coordination."
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder (e.g. 2000-FloorPlans)."
     },
     "Drawings PDF WIP/ToBeChecked": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/TransmittalSet",
-        "Description": "Work-in-progress drawing with '_WIP' suffix files in PDF format that are yet to be checked or issued. Draft drawings for internal review; do not circulate until finalised."
+        "Description": "Drawing files in PDF format issued from ArchiCAD into a numbered TransmittalSet folder (XX-Description, e.g. 01-InternalDesignReview) while the transmittal register is still open. Files carry the '_WIP' suffix to show the issue is internal and uncontrolled. Once reviewed and approved, the register is closed, the suffix is dropped and the drawings are issued automatically as the next numbered set (e.g. 02-IssueToClient). Issue sets are point-in-time records; never edit or add files after creation."
     },
     "Drawings PDF Issue Set": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/TransmittalSet",
-        "Description": "Set of drawings organised by issue number and description ready for distribution."
+        "Description": "Formal issue set of PDF drawings in a numbered TransmittalSet folder (XX-Description, e.g. 02-IssueToClient), created automatically from ArchiCAD when the transmittal register is closed. Files carry no '_WIP' suffix. Each set is a point-in-time record of exactly what was issued; never edit or add files after creation."
     },
     "DTM Presentation": {
         "Category": "Texts and Presentations",
@@ -297,17 +297,17 @@
     "Duty of Care (draft)": {
         "Category": "Contracts and Legal",
         "Path": "OtherDisciplines/X-Client",
-        "Description": "Draft duty of care letter or document prepared before formal agreement. External draft (likely client-provided); final signed version in -ProjectGovernance/ContractualAndLegal."
+        "Description": "Draft duty of care letter or document prepared before formal agreement. External draft (likely client-provided); final signed version in 0-ProjectGovernance/ContractualAndLegal."
     },
     "Duty of Care (signed)": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Signed duty of care letter or agreement for the project. Official executed document; keep on record for compliance and reference."
     },
     "Elements Schedules (windows, doors,…)": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-Lists/0000-Schedules/Shared",
-        "Description": "Schedules listing building elements (e.g., windows, doors, etc.) produced by BIM software."
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current",
+        "Description": "Schedules listing building elements (e.g., windows, doors, etc.) produced by BIM software. File within the relevant schedule subfolder (e.g. 0100-Doors, 0200-WindowsAndLouvres)."
     },
     "Email saved (for record)": {
         "Category": "Contracts and Legal",
@@ -316,17 +316,17 @@
     },
     "Fees approved": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/Fees",
+        "Path": "0-ProjectGovernance/Fees",
         "Description": "Documents confirming the approval of the agreed project fees. Formal record of fee agreements; filed under project administration for reference."
     },
     "Fees calculations": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/Fees",
+        "Path": "0-ProjectGovernance/Fees",
         "Description": "Calculations or breakdown documents for the project fee structure. Internal breakdown of fees; use to calculate fees in line with Rapport3 workflows."
     },
     "Fees letter": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/Fees",
+        "Path": "0-ProjectGovernance/Fees",
         "Description": "Letter regarding project fees, such as a fee proposal or agreement letter. Official fee correspondence; maintain as part of the contract records."
     },
     "File Note": {
@@ -336,7 +336,7 @@
     },
     "Finishes schedule": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-Lists/0000-Schedules/Shared/0600-Finishes",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0600-Finishes",
         "Description": "Schedule listing all finish materials (flooring, paint, etc.) and their specifications. Internal design schedule; coordinate with room data sheets and specifications."
     },
     "Fire Engineer report": {
@@ -354,6 +354,11 @@
         "Path": "O-PrincipalDesigner/CDM/T-Texts/0750-Reports",
         "Description": "Risk assessment focusing on design-stage health and safety considerations (CDM regulations). Internal CDM risk assessment; update as design evolves to address and mitigate risks."
     },
+    "Health and Safety File": {
+        "Category": "Texts and Presentations",
+        "Path": "O-PrincipalDesigner/CDM/T-Texts/0750-Reports",
+        "Description": "Health and Safety File compiled under CDM 2015 when Bond Bryan is appointed Principal Designer (CDM), and handed to the client at project completion. Keep the issued version with the handover milestone records (0-ProjectMilestones/RIBAStage6-Handover and Gateway3-Completion). If an external Principal Designer holds the appointment, file their version in OtherDisciplines/O-PrincipalDesigner/CDM."
+    },
     "Heat Loss Calculation Report": {
         "Category": "Texts and Presentations",
         "Path": "A-Architecture/T-Texts/4000-Reports",
@@ -361,22 +366,22 @@
     },
     "Historic building fabric analysis (retrofit)": {
         "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Shared/PDF/1000-AnalysisDrawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
         "Description": "Historic analysis drawings or documents to request specific surveys in retrofit projects."
     },
     "HRB submission": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectMilestones/Gateway2-BuildingControlApplication",
+        "Path": "0-ProjectMilestones/Gateway2-BuildingControlApplication",
         "Description": "Submission documents for a Higher-Risk Building (HRB) in line with new building safety regulations. Regulatory submission; coordinate closely with the building safety regulator and include all required details."
     },
     "IFC Library": {
         "Category": "BIM and Models",
-        "Path": "-ProjectLibrary/00000 BIMLibrary/IFC-Libraries",
+        "Path": "0-ProjectLibrary/BIMLibrary/IFC-Libraries",
         "Description": "Library of IFC (Industry Foundation Classes) files imported in BIM software. Delete old library files when not in use (only latest versions to be kept)."
     },
     "Images Precedent": {
         "Category": "Images and Photo",
-        "Path": "-ProjectLibrary/Precedents",
+        "Path": "0-ProjectLibrary/Precedents",
         "Description": "Collection of precedent images (reference photos or case studies) relevant to the project. Stored in the project library; use for design inspiration or to communicate ideas to the client."
     },
     "Incoming Documents": {
@@ -406,42 +411,42 @@
     },
     "ITT Client Documentation": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/PreCommission/ITT-InvitationToTender/ClientDocumentation",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/ClientDocumentation",
         "Description": "Invitation to Tender documents provided by the client during pre-commission. External tender info from the client; includes project brief, requirements, etc., to guide Bond Bryan's bid."
     },
     "ITT Drawings": {
         "Category": "Drawings",
-        "Path": "-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals",
         "Description": "Drawings prepared by Bond Bryan for the Invitation to Tender package. Internal drawings for tender submission; ensure they meet client tender requirements."
     },
     "ITT External Originals": {
         "Category": "Drawings",
-        "Path": "-ProjectGovernance/PreCommission/ITT-InvitationToTender/ExternalOriginals",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/ExternalOriginals",
         "Description": "Original drawings or documents from external sources included in the tender package. External reference materials for tender; maintain these for completeness and clarification."
     },
     "ITT Feedback and results": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectGovernance/PreCommission/ITT-InvitationToTender/Submission",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/Submission",
         "Description": "Documents containing feedback and results from the tender process. Outcome of the tender stage; review to inform adjustments or negotiations."
     },
     "ITT Report": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals",
         "Description": "Report summarising the Invitation to Tender process or submissions. Bond Bryan internal analysis; documents tender responses and recommendations."
     },
     "ITT-Submission": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectGovernance/PreCommission/ITT-InvitationToTender/Submission",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/Submission",
         "Description": "Submitted tender package documents for the Invitation to Tender. Final tender submission; archive this as the official bid sent to the client."
     },
     "JCT Contract (draft)": {
         "Category": "Contracts and Legal",
         "Path": "OtherDisciplines/X-Client",
-        "Description": "Draft JCT (Joint Contracts Tribunal) construction contract prepared for review. Preliminary contract version; finalise terms and obtain signatures for the final contract. Final version (signed) in -ProjectGovernance/ContractualAndLegal."
+        "Description": "Draft JCT (Joint Contracts Tribunal) construction contract prepared for review. Preliminary contract version; finalise terms and obtain signatures for the final contract. Final version (signed) in 0-ProjectGovernance/ContractualAndLegal."
     },
     "JCT Contract (final)": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Final JCT (Joint Contracts Tribunal) contract document for the project. Signed construction contract; the binding agreement governing project delivery."
     },
     "K10 Partitions": {
@@ -466,22 +471,22 @@
     },
     "Door and gates schedule (Landscape)": {
         "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Shared/0100-DoorsAndGates",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0100-DoorsAndGates",
         "Description": "Landscape schedule of doors and gates, including specifications and details. Internal landscape schedule; coordinate with architectural door schedules for consistency where relevant."
     },
     "Planting schedule (Landscape)": {
         "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Shared/0200-Planting",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0200-Planting",
         "Description": "Landscape schedule of planting, including specifications and details."
     },
     "Urban Greening Factor UGF (Landscape)": {
         "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Shared/0400-UrbanGreeningFactor",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0400-UrbanGreeningFactor",
         "Description": "Landscape schedule of UGF, including requirements and proposed values."
     },
     "Furniture schedule (Landscape)": {
         "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Shared/0300-Furniture",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0300-Furniture",
         "Description": "Landscape schedule of furniture, including specifications and details. Internal landscape schedule; coordinate with interior design furniture schedules for consistency where relevant."
     },
     "Letter of compliance": {
@@ -496,7 +501,7 @@
     },
     "Logos": {
         "Category": "Images and Photo",
-        "Path": "-ProjectLibrary/Logos",
+        "Path": "0-ProjectLibrary/Logos",
         "Description": "Collection of project-related logos (client, consultants, etc.) in image format. For use in presentations and BIM model; ensure only current official logos are used."
     },
     "Method Statement": {
@@ -511,7 +516,7 @@
     },
     "Milestone Records (Drawings, reports, contracts…)": {
         "Category": "Other",
-        "Path": "-ProjectMilestones",
+        "Path": "0-ProjectMilestones",
         "Description": "Archive of documents (drawings, reports, contracts, etc.) compiled at each project milestone. Central milestone archive; review to track what was delivered at each stage."
     },
     "Minutes (BB produced)": {
@@ -561,12 +566,12 @@
     },
     "Other Contract documents (final)": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Finalised miscellaneous contract documents for the project. Official documents on file; reference these for any contract clarifications."
     },
     "Other Reviews": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8500-OtherReviews",
+        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8600-OtherReviews",
         "Description": "Miscellaneous project review documents not covered by specific review categories."
     },
     "Other Schedules": {
@@ -671,32 +676,32 @@
     },
     "Planning Submission and documents": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectMilestones/Gateway1-PlanningApplication",
+        "Path": "0-ProjectMilestones/Gateway1-PlanningApplication",
         "Description": "Documents compiled for the planning application submission (forms, drawings, reports). Submitted information, WIP drawings/documents to be saved elsewhere."
     },
     "PQQ Client Documentation": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/ClientDocumentation",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/ClientDocumentation",
         "Description": "Pre-Qualification Questionnaire documents provided by the client during the pre-commission phase. External pre-commission info; outlines project basics and client requirements for initial bids."
     },
     "PQQ Drawings": {
         "Category": "Drawings",
-        "Path": "-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals",
         "Description": "Drawings prepared by Bond Bryan for the Pre-Qualification Questionnaire submission. Internal drawings for PQQ; ensure they address client requirements at this early stage."
     },
     "PQQ External Originals": {
         "Category": "Drawings",
-        "Path": "-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/ExternalOriginals",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/ExternalOriginals",
         "Description": "Original drawings or documents from external sources used in the PQQ stage. External references in the PQQ; keep for completeness and as context for Bond Bryan's submission."
     },
     "PQQ Feedback and results": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/Submission",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/Submission",
         "Description": "Documents containing feedback or results from the PQQ process (e.g., shortlist outcomes). Outcome of pre-qualification; use insights to improve for the tender stage."
     },
     "PQQ-Submission": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/Submission",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/Submission",
         "Description": "Submitted Pre-Qualification Questionnaire documents (complete PQQ response package). Final PQQ submission; record of Bond Bryan's initial bid information."
     },
     "Presentation Main file (Affinity)": {
@@ -736,7 +741,7 @@
     },
     "Project Directory": {
         "Category": "Schedules and Lists",
-        "Path": "-ProjectGovernance/ProjectDirectory",
+        "Path": "0-ProjectGovernance/ProjectDirectory",
         "Description": "Directory of project contacts, listing key team members and their contact information. Keep this updated as personnel change - also on Rapport3 / external team."
     },
     "Project Quality Management Plan": {
@@ -756,12 +761,12 @@
     },
     "Re-use schedule of elements": {
         "Category": "Schedules and Lists",
-        "Path": "I-InteriorDesign/L-Lists/0000-Schedules/Shared/0800-ReUseSchedules",
+        "Path": "I-InteriorDesign/L-Lists/0000-Schedules/Current/0800-ReUseSchedules",
         "Description": "Elements carefully set aside and reused in the design."
     },
     "RIBA Stage Completion": {
         "Category": "Drawings",
-        "Path": "-ProjectMilestones/Relevant RIBA stage",
+        "Path": "0-ProjectMilestones/Relevant RIBAStage",
         "Description": "Documents marking the completion of a RIBA work stage (deliverables compiled at stage end). Milestone records for each RIBA stage; archive these for reference and auditing."
     },
     "Room Data Sheets (RDS)": {
@@ -771,17 +776,17 @@
     },
     "RVT Families": {
         "Category": "BIM and Models",
-        "Path": "-ProjectLibrary/00000 BIMLibrary/Families",
+        "Path": "0-ProjectLibrary/BIMLibrary/Families",
         "Description": "Library of Revit family components (doors, windows, etc.) used in the project model. Stored in BIM library; ensure all team members use the approved families for consistency."
     },
     "Sanitaryware schedule": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-Lists/0000-Schedules/Shared/0700-OtherSchedules",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0700-OtherSchedules",
         "Description": "Schedule listing sanitary fixtures (sinks, toilets, etc.) and their specifications for the project. Internal schedule; coordinate with plumbing layouts and ensure items match the design. Bond Bryan produced document supplier information to be included in ExternalDiscipline/X-Subcontractors."
     },
     "Schedule of accommodation": {
         "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-Lists/0000-Schedules/Shared/0000-Areas",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0000-Areas",
         "Description": "Schedule of accommodation outlining all spaces/rooms and their areas against requirements."
     },
     "Site visit report": {
@@ -821,7 +826,7 @@
     },
     "Standards and guidance (outside of contract)": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectLibrary/StandardsAndGuidance",
+        "Path": "0-ProjectLibrary/StandardsAndGuidance",
         "Description": "Standards and guidance documents relevant to the project but not part of the contract requirements."
     },
     "Strategic Brief Development": {
@@ -866,7 +871,7 @@
     },
     "Subconsultant Invoices": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Invoices issued by a sub-consultant to Bond Bryan where BB acts as the appointing party for that consultant. Covers fee invoices for the sub-consultant's services rendered under BB's appointment; check against the agreed sub-consultant appointment and fee schedule, approve for payment, and retain for records and onward recovery from the client where applicable."
     },
     "Subcontractor information": {
@@ -906,7 +911,7 @@
     },
     "Sustainability Carbon Assessments": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8200-SustainabilityReviews",
+        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8300-SustainabilityReviews",
         "Description": "Documents assessing the project's carbon footprint or sustainable design performance. Bond Bryan internal sustainability documentation; coordinate findings with sustainability consultants."
     },
     "Sustainability Project Briefing Document": {
@@ -916,12 +921,12 @@
     },
     "Sustainability Review": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8200-SustainabilityReviews",
+        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8300-SustainabilityReviews",
         "Description": "Review document evaluating the project against sustainability targets or criteria."
     },
     "Technical Review": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8100-TechnicalReviews",
+        "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8200-TechnicalReviews",
         "Description": "Technical review report examining the design for technical quality and compliance. Internal design QA/QC document; address any issues identified to maintain technical excellence."
     },
     "Tender Queries and Responses": {
@@ -932,11 +937,11 @@
     "Terms of Engagement (draft)": {
         "Category": "Contracts and Legal",
         "Path": "OtherDisciplines/X-Client",
-        "Description": "Draft version of the project's terms of engagement (contractual agreement) before signing. External draft (likely client-supplied); review and negotiate changes prior to signing the final version (-ProjectGovernance/ContractualAndLegal)"
+        "Description": "Draft version of the project's terms of engagement (contractual agreement) before signing. External draft (likely client-supplied); review and negotiate changes prior to signing the final version (0-ProjectGovernance/ContractualAndLegal)"
     },
     "Terms of Engagement (signed)": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Signed final terms of engagement document for the project. Official agreement on project services; refer to this for scope and conditions of appointment."
     },
     "Thermal Bridging": {
@@ -981,27 +986,27 @@
     },
     "Existing Building Fabric analysis (Interior)": {
         "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Shared/PDF/1000-AnalysisDrawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
         "Description": "Description and analysis drawings and report of existing fabric of a building for refurbishments and retrofit projects."
     },
     "Historic analysis (Interior)": {
         "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Shared/PDF/1000-AnalysisDrawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
         "Description": "Description and analysis drawings and report of historic building for refurbishments and retrofit projects."
     },
     "Survey request markup (Interior)": {
         "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Shared/PDF/1000-AnalysisDrawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
         "Description": "Mark up plans and documents for request of survey information for refurbishments and retrofit projects."
     },
     "Historic analysis (PDBR)": {
         "Category": "Drawings",
-        "Path": "O-PrincipalDesigner/BR/D-Drawings/Shared/PDF/0050-AnalysisDrawings",
+        "Path": "O-PrincipalDesigner/BR/D-Drawings/Current/PDF/0050-AnalysisDrawings",
         "Description": "Description and analysis drawings and report of historic building for refurbishments and retrofit projects."
     },
     "Survey request markup (PDBR)": {
         "Category": "Drawings",
-        "Path": "O-PrincipalDesigner/BR/D-Drawings/Shared/PDF/0050-AnalysisDrawings",
+        "Path": "O-PrincipalDesigner/BR/D-Drawings/Current/PDF/0050-AnalysisDrawings",
         "Description": "Mark up plans and documents for request of survey information for refurbishments and retrofit projects."
     },
     "Visualisations Output Video": {
@@ -1012,31 +1017,31 @@
     "Collateral Warranty (draft)": {
         "Category": "Contracts and Legal",
         "Path": "OtherDisciplines/X-Client",
-        "Description": "Draft collateral warranty received for review prior to execution. Review terms and check with PI insurers before signing. Final version (signed) in -ProjectGovernance/ContractualAndLegal."
+        "Description": "Draft collateral warranty received for review prior to execution. Review terms and check with PI insurers before signing. Final version (signed) in 0-ProjectGovernance/ContractualAndLegal."
     },
     "Collateral Warranty (signed)": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Executed collateral warranty granting rights to a third party (e.g., funder, purchaser, or tenant). Official contractual record; retain with other executed agreements."
     },
     "Novation Agreement": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Agreement novating Bond Bryan's appointment, typically from client to contractor on design and build projects. Official executed document; note the change of client for correspondence and instructions."
     },
     "Sub-consultant Appointment": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Appointment agreement for sub-consultants engaged directly by Bond Bryan. Executed agreement; ensure scope and liability align with the main appointment."
     },
     "PI Insurance Certificate": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Professional indemnity insurance certificate or evidence of cover for the project. Retain to satisfy appointment obligations; replace on annual renewal."
     },
     "NDA / Confidentiality Agreement": {
         "Category": "Contracts and Legal",
-        "Path": "-ProjectGovernance/ContractualAndLegal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal",
         "Description": "Non-disclosure or confidentiality agreement relating to the project. Official executed document; check obligations before sharing project information externally."
     },
     "Planning Decision Notice": {
@@ -1091,12 +1096,12 @@
     },
     "Gateway 2 Submission": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectMilestones/Gateway2-BuildingControlApplication",
+        "Path": "0-ProjectMilestones/Gateway2-BuildingControlApplication",
         "Description": "Documents submitted at Gateway 2 (Building Control application). Milestone record; keep the complete submitted package for audit."
     },
     "Gateway 3 Submission": {
         "Category": "Texts and Presentations",
-        "Path": "-ProjectMilestones/Gateway3-Completion",
+        "Path": "0-ProjectMilestones/Gateway3-Completion",
         "Description": "Documents compiled at Gateway 3 (completion), including completion certificates and handover records. Milestone record; archive the complete package."
     }
 }
