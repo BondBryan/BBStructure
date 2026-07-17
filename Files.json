@@ -6,12 +6,12 @@
     },
     "2D Textures (LowRes)": {
         "Category": "BIM and Models",
-        "Path": "0-ProjectLibrary/BIMLibrary/Textures",
+        "Path": "0-ProjectLibrary/00000-BIMlibrary/Textures",
         "Description": "Low-resolution (max 800 x 800px) 2D texture images for BIM models to avoid large library files. Stored in the project BIM library; use for quick visualisations or placeholders."
     },
     "3D Models Objects": {
         "Category": "BIM and Models",
-        "Path": "0-ProjectLibrary/BIMLibrary/Objects",
+        "Path": "0-ProjectLibrary/00000-BIMlibrary/Objects",
         "Description": "Library of 3D model object files/components for use in project BIM models. Located in the BIM library; includes standard model components for consistency."
     },
     "3D Visualisation Objects": {
@@ -71,7 +71,7 @@
     },
     "Bespoke rulesets (solibri)": {
         "Category": "BIM and Models",
-        "Path": "0-ProjectLibrary/BIMLibrary/Translators",
+        "Path": "0-ProjectLibrary/00000-BIMlibrary/Translators",
         "Description": "Custom Solibri model-checking rulesets tailored for this project."
     },
     "BIM BEP (draft BB produced)": {
@@ -131,7 +131,7 @@
     },
     "BIM Translators": {
         "Category": "BIM and Models",
-        "Path": "0-ProjectLibrary/BIMLibrary/Translators",
+        "Path": "0-ProjectLibrary/00000-BIMlibrary/Translators",
         "Description": "Configuration files or translator settings for BIM software (e.g., for IFC export/import). Stored in the project BIM library; use for consistent data exchange between software platforms."
     },
     "BREEAM / LEED submission": {
@@ -376,7 +376,7 @@
     },
     "IFC Library": {
         "Category": "BIM and Models",
-        "Path": "0-ProjectLibrary/BIMLibrary/IFC-Libraries",
+        "Path": "0-ProjectLibrary/00000-BIMlibrary/IFC-Libraries",
         "Description": "Library of IFC (Industry Foundation Classes) files imported in BIM software. Delete old library files when not in use (only latest versions to be kept)."
     },
     "Images Precedent": {
@@ -776,7 +776,7 @@
     },
     "RVT Families": {
         "Category": "BIM and Models",
-        "Path": "0-ProjectLibrary/BIMLibrary/Families",
+        "Path": "0-ProjectLibrary/00000-BIMlibrary/Families",
         "Description": "Library of Revit family components (doors, windows, etc.) used in the project model. Stored in BIM library; ensure all team members use the approved families for consistency."
     },
     "Sanitaryware schedule": {
