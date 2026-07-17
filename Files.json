@@ -264,7 +264,7 @@
         "Path": "A-Architecture/D-Drawings/Current/DWG",
         "Description": "Current set of drawing files in DWG format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder (e.g. 2000-FloorPlans)."
     },
-    "Drawings DWG WIP/ToBeChecked": {
+    "Drawings DWG WIP": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/TransmittalSet",
         "Description": "Drawing files in DWG format issued from ArchiCAD into a numbered TransmittalSet folder (XX-Description, e.g. 01-InternalDesignReview) while the transmittal register is still open. Files carry the '_WIP' suffix to show the issue is internal and uncontrolled. Once reviewed and approved, the register is closed, the suffix is dropped and the drawings are issued automatically as the next numbered set (e.g. 02-IssueToClient). Issue sets are point-in-time records; never edit or add files after creation."
@@ -279,7 +279,7 @@
         "Path": "A-Architecture/D-Drawings/Current/PDF",
         "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder (e.g. 2000-FloorPlans)."
     },
-    "Drawings PDF WIP/ToBeChecked": {
+    "Drawings PDF WIP": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/TransmittalSet",
         "Description": "Drawing files in PDF format issued from ArchiCAD into a numbered TransmittalSet folder (XX-Description, e.g. 01-InternalDesignReview) while the transmittal register is still open. Files carry the '_WIP' suffix to show the issue is internal and uncontrolled. Once reviewed and approved, the register is closed, the suffix is dropped and the drawings are issued automatically as the next numbered set (e.g. 02-IssueToClient). Issue sets are point-in-time records; never edit or add files after creation."
@@ -1103,5 +1103,71 @@
         "Category": "Texts and Presentations",
         "Path": "0-ProjectMilestones/Gateway3-Completion",
         "Description": "Documents compiled at Gateway 3 (completion), including completion certificates and handover records. Milestone record; archive the complete package."
+    },
+    "Site Plans (Architecture)": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "GA floor Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },"Elevations (Architecture)": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },"Sections": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },"Room Elevations (Architecture)": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },"Detailed Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },"Fire Strategy drawings": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },"Maintenance strategy drawings": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Site Plans (Landscape)": {
+        "Category": "Drawings",
+        "Path": "L-LandscapeArchitecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Elevations (Landscape)": {
+        "Category": "Drawings",
+        "Path": "L-LandscapeArchitecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Sections (Landscape)": {
+        "Category": "Drawings",
+        "Path": "L-LandscapeArchitecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "GA floor Plans (Interiors)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },"Elevations (Interiors)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },"Sections (Interiors)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },"Room Elevations (Interiors)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
     }
 }
