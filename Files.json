@@ -26,18 +26,18 @@
     },
     "Additional Fees approved": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/Fees",
-        "Description": "Documents evidencing approval of additional service fees beyond the original contract. Refer to Additional Fees letter and change control."
+        "Path": "0-ProjectGovernance/Fees/Final",
+        "Description": "Documents evidencing approval of additional service fees beyond the original contract. Refer to Additional Fees letter and change control. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Additional Fees approved'."
     },
     "Additional Fees calculations": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/Fees",
-        "Description": "Spreadsheets or documents calculating additional fees for extra services or scope changes. Refer to Additional Fees letter and change control."
+        "Path": "0-ProjectGovernance/Fees/DraftsAndWIP",
+        "Description": "Spreadsheets or documents calculating additional fees for extra services or scope changes. Refer to Additional Fees letter and change control. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-900x 'Additional Fees calculations'."
     },
     "Additional Fees letter": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/Fees",
-        "Description": "Letter correspondence regarding the agreement or proposal of additional fees."
+        "Path": "0-ProjectGovernance/Fees/Final",
+        "Description": "Letter correspondence regarding the agreement or proposal of additional fees. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Additional Fees letter'."
     },
     "Agenda (BB Produced)": {
         "Category": "Texts and Presentations",
@@ -86,8 +86,8 @@
     },
     "BIM BEP (final)": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Final Building Information Modelling (BIM) Execution Plan for the project. Official agreed version; supersedes all prior drafts and guides the project's BIM processes."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Final Building Information Modelling (BIM) Execution Plan for the project. Official agreed version; supersedes all prior drafts and guides the project's BIM processes. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'BIM BEP (final)'."
     },
     "BIM Clash Rendition (BCF)": {
         "Category": "BIM and Models",
@@ -106,8 +106,8 @@
     },
     "BIM other contractual documents (final)": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Finalised BIM-related contractual documents for the project. Official versions; they supersede earlier drafts and form part of the contract."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Finalised BIM-related contractual documents for the project. Official versions; they supersede earlier drafts and form part of the contract. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'BIM other contractual documents (final)'."
     },
     "BIM Project Protocol Standard (draft BB produced)": {
         "Category": "Contracts and Legal",
@@ -121,8 +121,8 @@
     },
     "BIM Project Protocol Standard (final)": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Final project BIM protocol standard outlining agreed BIM procedures and standards. Official approved protocol; all team members should adhere to this final version."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Final project BIM protocol standard outlining agreed BIM procedures and standards. Official approved protocol; all team members should adhere to this final version. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'BIM Project Protocol Standard (final)'."
     },
     "BIM Review": {
         "Category": "Texts and Presentations",
@@ -241,8 +241,8 @@
     },
     "Design Responsibility Matrix": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Matrix defining the responsibility of each party for various design elements and deliverables. Contractual document; ensures clarity on roles and responsibilities across the design team."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Matrix defining the responsibility of each party for various design elements and deliverables. Contractual document; ensures clarity on roles and responsibilities across the design team. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-900x 'Design Responsibility Matrix'."
     },
     "Design Review": {
         "Category": "Texts and Presentations",
@@ -301,8 +301,8 @@
     },
     "Duty of Care (signed)": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Signed duty of care letter or agreement for the project. Official executed document; keep on record for compliance and reference."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Signed duty of care letter or agreement for the project. Official executed document; keep on record for compliance and reference. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Duty of Care (signed)'."
     },
     "Elements Schedules (windows, doors,…)": {
         "Category": "Schedules and Lists",
@@ -316,18 +316,18 @@
     },
     "Fees approved": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/Fees",
-        "Description": "Documents confirming the approval of the agreed project fees. Formal record of fee agreements; filed under project administration for reference."
+        "Path": "0-ProjectGovernance/Fees/Final",
+        "Description": "Documents confirming the approval of the agreed project fees. Formal record of fee agreements; filed under project administration for reference. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Fees approved'."
     },
     "Fees calculations": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/Fees",
-        "Description": "Calculations or breakdown documents for the project fee structure. Internal breakdown of fees; use to calculate fees in line with Rapport3 workflows."
+        "Path": "0-ProjectGovernance/Fees/DraftsAndWIP",
+        "Description": "Calculations or breakdown documents for the project fee structure. Internal breakdown of fees; use to calculate fees in line with Rapport3 workflows. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-900x 'Fees calculations'."
     },
     "Fees letter": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/Fees",
-        "Description": "Letter regarding project fees, such as a fee proposal or agreement letter. Official fee correspondence; maintain as part of the contract records."
+        "Path": "0-ProjectGovernance/Fees/Final",
+        "Description": "Letter regarding project fees, such as a fee proposal or agreement letter. Official fee correspondence; maintain as part of the contract records. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Fees letter'."
     },
     "File Note": {
         "Category": "Texts and Presentations",
@@ -412,32 +412,32 @@
     "ITT Client Documentation": {
         "Category": "Contracts and Legal",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/ClientDocumentation",
-        "Description": "Invitation to Tender documents provided by the client during pre-commission. External tender info from the client; includes project brief, requirements, etc., to guide Bond Bryan's bid."
+        "Description": "Invitation to Tender documents provided by the client during pre-commission. External tender info from the client; includes project brief, requirements, etc., to guide Bond Bryan's bid. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'ITT Client Documentation'."
     },
     "ITT Drawings": {
         "Category": "Drawings",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals",
-        "Description": "Drawings prepared by Bond Bryan for the Invitation to Tender package. Internal drawings for tender submission; ensure they meet client tender requirements."
+        "Description": "Drawings prepared by Bond Bryan for the Invitation to Tender package. Internal drawings for tender submission; ensure they meet client tender requirements. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'ITT Drawings'."
     },
     "ITT External Originals": {
         "Category": "Drawings",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/ExternalOriginals",
-        "Description": "Original drawings or documents from external sources included in the tender package. External reference materials for tender; maintain these for completeness and clarification."
+        "Description": "Original drawings or documents from external sources included in the tender package. External reference materials for tender; maintain these for completeness and clarification. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'ITT External Originals'."
     },
     "ITT Feedback and results": {
         "Category": "Texts and Presentations",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/Submission",
-        "Description": "Documents containing feedback and results from the tender process. Outcome of the tender stage; review to inform adjustments or negotiations."
+        "Description": "Documents containing feedback and results from the tender process. Outcome of the tender stage; review to inform adjustments or negotiations. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'ITT Feedback and results'."
     },
     "ITT Report": {
         "Category": "Texts and Presentations",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals",
-        "Description": "Report summarising the Invitation to Tender process or submissions. Bond Bryan internal analysis; documents tender responses and recommendations."
+        "Description": "Report summarising the Invitation to Tender process or submissions. Bond Bryan internal analysis; documents tender responses and recommendations. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'ITT Report'."
     },
     "ITT-Submission": {
         "Category": "Texts and Presentations",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/Submission",
-        "Description": "Submitted tender package documents for the Invitation to Tender. Final tender submission; archive this as the official bid sent to the client."
+        "Description": "Submitted tender package documents for the Invitation to Tender. Final tender submission; archive this as the official bid sent to the client. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'ITT-Submission'."
     },
     "JCT Contract (draft)": {
         "Category": "Contracts and Legal",
@@ -446,8 +446,8 @@
     },
     "JCT Contract (final)": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Final JCT (Joint Contracts Tribunal) contract document for the project. Signed construction contract; the binding agreement governing project delivery."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Final JCT (Joint Contracts Tribunal) contract document for the project. Signed construction contract; the binding agreement governing project delivery. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'JCT Contract (final)'."
     },
     "K10 Partitions": {
         "Category": "Texts and Presentations",
@@ -566,8 +566,8 @@
     },
     "Other Contract documents (final)": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Finalised miscellaneous contract documents for the project. Official documents on file; reference these for any contract clarifications."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Finalised miscellaneous contract documents for the project. Official documents on file; reference these for any contract clarifications. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Other Contract documents (final)'."
     },
     "Other Reviews": {
         "Category": "Texts and Presentations",
@@ -682,27 +682,27 @@
     "PQQ Client Documentation": {
         "Category": "Contracts and Legal",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/ClientDocumentation",
-        "Description": "Pre-Qualification Questionnaire documents provided by the client during the pre-commission phase. External pre-commission info; outlines project basics and client requirements for initial bids."
+        "Description": "Pre-Qualification Questionnaire documents provided by the client during the pre-commission phase. External pre-commission info; outlines project basics and client requirements for initial bids. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'PQQ Client Documentation'."
     },
     "PQQ Drawings": {
         "Category": "Drawings",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals",
-        "Description": "Drawings prepared by Bond Bryan for the Pre-Qualification Questionnaire submission. Internal drawings for PQQ; ensure they address client requirements at this early stage."
+        "Description": "Drawings prepared by Bond Bryan for the Pre-Qualification Questionnaire submission. Internal drawings for PQQ; ensure they address client requirements at this early stage. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'PQQ Drawings'."
     },
     "PQQ External Originals": {
         "Category": "Drawings",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/ExternalOriginals",
-        "Description": "Original drawings or documents from external sources used in the PQQ stage. External references in the PQQ; keep for completeness and as context for Bond Bryan's submission."
+        "Description": "Original drawings or documents from external sources used in the PQQ stage. External references in the PQQ; keep for completeness and as context for Bond Bryan's submission. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'PQQ External Originals'."
     },
     "PQQ Feedback and results": {
         "Category": "Texts and Presentations",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/Submission",
-        "Description": "Documents containing feedback or results from the PQQ process (e.g., shortlist outcomes). Outcome of pre-qualification; use insights to improve for the tender stage."
+        "Description": "Documents containing feedback or results from the PQQ process (e.g., shortlist outcomes). Outcome of pre-qualification; use insights to improve for the tender stage. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'PQQ Feedback and results'."
     },
     "PQQ-Submission": {
         "Category": "Texts and Presentations",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/Submission",
-        "Description": "Submitted Pre-Qualification Questionnaire documents (complete PQQ response package). Final PQQ submission; record of Bond Bryan's initial bid information."
+        "Description": "Submitted Pre-Qualification Questionnaire documents (complete PQQ response package). Final PQQ submission; record of Bond Bryan's initial bid information. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'PQQ-Submission'."
     },
     "Presentation Main file (Affinity)": {
         "Category": "Texts and Presentations",
@@ -742,7 +742,7 @@
     "Project Directory": {
         "Category": "Schedules and Lists",
         "Path": "0-ProjectGovernance/ProjectDirectory",
-        "Description": "Directory of project contacts, listing key team members and their contact information. Keep this updated as personnel change - also on Rapport3 / external team."
+        "Description": "Directory of project contacts, listing key team members and their contact information. Keep this updated as personnel change - also on Rapport3 / external team. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-900x 'Project Directory'."
     },
     "Project Quality Management Plan": {
         "Category": "Texts and Presentations",
@@ -871,8 +871,8 @@
     },
     "Subconsultant Invoices": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Invoices issued by a sub-consultant to Bond Bryan where BB acts as the appointing party for that consultant. Covers fee invoices for the sub-consultant's services rendered under BB's appointment; check against the agreed sub-consultant appointment and fee schedule, approve for payment, and retain for records and onward recovery from the client where applicable."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Invoices issued by a sub-consultant to Bond Bryan where BB acts as the appointing party for that consultant. Covers fee invoices for the sub-consultant's services rendered under BB's appointment; check against the agreed sub-consultant appointment and fee schedule, approve for payment, and retain for records and onward recovery from the client where applicable. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Subconsultant Invoices'."
     },
     "Subcontractor information": {
         "Category": "Drawings",
@@ -941,8 +941,8 @@
     },
     "Terms of Engagement (signed)": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Signed final terms of engagement document for the project. Official agreement on project services; refer to this for scope and conditions of appointment."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Signed final terms of engagement document for the project. Official agreement on project services; refer to this for scope and conditions of appointment. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Terms of Engagement (signed)'."
     },
     "Thermal Bridging": {
         "Category": "Texts and Presentations",
@@ -1021,28 +1021,28 @@
     },
     "Collateral Warranty (signed)": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Executed collateral warranty granting rights to a third party (e.g., funder, purchaser, or tenant). Official contractual record; retain with other executed agreements."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Executed collateral warranty granting rights to a third party (e.g., funder, purchaser, or tenant). Official contractual record; retain with other executed agreements. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Collateral Warranty (signed)'."
     },
     "Novation Agreement": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Agreement novating Bond Bryan's appointment, typically from client to contractor on design and build projects. Official executed document; note the change of client for correspondence and instructions."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Agreement novating Bond Bryan's appointment, typically from client to contractor on design and build projects. Official executed document; note the change of client for correspondence and instructions. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Novation Agreement'."
     },
     "Sub-consultant Appointment": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Appointment agreement for sub-consultants engaged directly by Bond Bryan. Executed agreement; ensure scope and liability align with the main appointment."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Appointment agreement for sub-consultants engaged directly by Bond Bryan. Executed agreement; ensure scope and liability align with the main appointment. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Sub-consultant Appointment'."
     },
     "PI Insurance Certificate": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Professional indemnity insurance certificate or evidence of cover for the project. Retain to satisfy appointment obligations; replace on annual renewal."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Professional indemnity insurance certificate or evidence of cover for the project. Retain to satisfy appointment obligations; replace on annual renewal. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'PI Insurance Certificate'."
     },
     "NDA / Confidentiality Agreement": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal",
-        "Description": "Non-disclosure or confidentiality agreement relating to the project. Official executed document; check obligations before sharing project information externally."
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Non-disclosure or confidentiality agreement relating to the project. Official executed document; check obligations before sharing project information externally. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'NDA / Confidentiality Agreement'."
     },
     "Planning Decision Notice": {
         "Category": "Texts and Presentations",
