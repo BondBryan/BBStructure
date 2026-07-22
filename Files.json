@@ -36,8 +36,8 @@
     },
     "Additional Fees letter": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/Fees/Final",
-        "Description": "Letter correspondence regarding the agreement or proposal of additional fees. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Additional Fees letter'."
+        "Path": "0-ProjectGovernance/Fees/DraftsAndWIP",
+        "Description": "Letter correspondence regarding the proposal of additional fees. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Additional Fees letter'."
     },
     "Agenda (BB Produced)": {
         "Category": "Texts and Presentations",
