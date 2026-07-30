@@ -36,8 +36,8 @@
     },
     "Additional Fees letter": {
         "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/Fees/DraftsAndWIP",
-        "Description": "Letter correspondence regarding the proposal of additional fees. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Additional Fees letter'."
+        "Path": "0-ProjectGovernance/Fees/Final",
+        "Description": "Letter correspondence regarding the agreement or proposal of additional fees. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Additional Fees letter'."
     },
     "Agenda (BB Produced)": {
         "Category": "Texts and Presentations",
@@ -409,15 +409,115 @@
         "Path": "I-InteriorDesign",
         "Description": "Interior design documents produced by Bond Bryan interior design team (separately appointed)."
     },
+    "ITT Answer Plan": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9600-AnswerPlans",
+        "Description": "Plan for a single scored ITT question setting out the win themes, evidence to be used, page/word count, author and reviewer before any drafting starts. One answer plan per question; agree with the bid lead, then draft in 9700-DraftAnswers. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9601-Answer Plan Q01-P01."
+    },
+    "ITT Answer Storyboard": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9600-AnswerPlans",
+        "Description": "Page-by-page storyboard showing how an answer will be laid out within the permitted page count, including where images and diagrams sit. Bid-stage layout planning only; the formatted submission artwork sits in 9800-DraftSubmission. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9602-Answer Storyboard-P01."
+    },
+    "ITT Bid Diagram": {
+        "Category": "Images and Photo",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-images",
+        "Description": "Diagram or graphic produced for the tender answers (early-stage concept sketches, site and massing diagrams, process, programme and organisation graphics). Bid-stage illustrative material only, not coordinated design information; do not reuse as project drawings. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9902-Bid Diagram-P01."
+    },
+    "ITT Bid Go-NoGo and Compliance Checklist": {
+        "Category": "Schedules and Lists",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9500-BidPlanAndTracker",
+        "Description": "Record of the go/no-go decision to bid, plus the compliance checklist confirming every mandatory ITT requirement, form and certificate is covered. Complete the go/no-go before committing resource; re-check compliance immediately before upload. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-9504-Go NoGo and Compliance Checklist-P01."
+    },
+    "ITT Bid Image": {
+        "Category": "Images and Photo",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-images",
+        "Description": "Image selected and prepared for use in the tender submission (early-stage concept views, precedent imagery, completed project photography). Bid-stage imagery only; check photographer credits and image rights, and that the client may be named, before use. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9901-Bid Image-P01."
+    },
+    "ITT Bid Plan": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9500-BidPlanAndTracker",
+        "Description": "Overall plan for the tender response: bid team and roles, win strategy and themes, deliverables, key dates and submission route. Baseline document for the bid; issue at bid kick-off and update as the ITT develops. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9501-Bid Plan-P01."
+    },
+    "ITT Bid Programme": {
+        "Category": "Schedules and Lists",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9500-BidPlanAndTracker",
+        "Description": "Programme of bid activities and internal deadlines worked back from the client's submission deadline (discipline inputs, drafting, red team review, sign-off, portal upload). Allow time for internal review and upload ahead of the client deadline. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-9502-Bid Programme-P01."
+    },
+    "ITT Bid Tracker": {
+        "Category": "Schedules and Lists",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9500-BidPlanAndTracker",
+        "Description": "Live tracker of every ITT question and requirement showing author, reviewer, status, word/page count and any clarifications raised with the client. Single source of truth for bid progress; update at every bid review. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-9503-Bid Tracker-P01."
+    },
     "ITT Client Documentation": {
         "Category": "Contracts and Legal",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/ClientDocumentation",
         "Description": "Invitation to Tender documents provided by the client during pre-commission. External tender info from the client; includes project brief, requirements, etc., to guide Bond Bryan's bid. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'ITT Client Documentation'."
     },
+    "ITT Discipline Input Images": {
+        "Category": "Images and Photo",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9400-DisciplineInputs",
+        "Description": "Images, sketches and diagrams supplied by a discipline to support the bid (early-stage concept work, precedent projects, discipline-specific graphics). File in the relevant discipline folder and dated 'YYYY-MM_DD Description' subfolder; raw supplied material only, selected and resized images for the submission go to 9900-images. Check image rights before use. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-[A/I/L/O]-9404-Discipline Input Image-P01."
+    },
+    "ITT Discipline Input Statement": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9400-DisciplineInputs",
+        "Description": "Written input from an individual discipline (architecture, interior design, landscape architecture or principal designer) supplying approach, method and technical content for the bid answers. File in the relevant discipline folder and dated 'YYYY-MM_DD Description' subfolder; raw input only, the edited text belongs in 9700-DraftAnswers. Role code matches the discipline folder. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-[A/I/L/O]-9401-Discipline Input Statement-P01."
+    },
+    "ITT Discipline Project Experience Sheet": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9400-DisciplineInputs",
+        "Description": "Comparable project sheet supplied by a discipline as evidence of relevant experience (project data, value, scope, role and outcomes). File in the relevant discipline folder and dated 'YYYY-MM_DD Description' subfolder; confirm the project may be referenced publicly and the client is content to be named. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-[A/I/L/O]-9402-Project Experience Sheet-P01."
+    },
+    "ITT Discipline Team CV": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9400-DisciplineInputs",
+        "Description": "CV or role profile for a proposed team member supplied by their discipline for use in the bid. File in the relevant discipline folder and dated 'YYYY-MM_DD Description' subfolder; use the current practice CV template. The bid-edited version is saved in 9700-DraftAnswers. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-[A/I/L/O]-9403-Team CV Surname-P01."
+    },
+    "ITT Draft Answer": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9700-DraftAnswers",
+        "Description": "Working draft of the response to a single ITT question, written against its answer plan in 9600-AnswerPlans. One file per question; keep drafting here until signed off, then collate into 9800-DraftSubmission. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9701-Draft Answer Q01-P01."
+    },
+    "ITT Draft Answer Review Comments": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9700-DraftAnswers",
+        "Description": "Reviewer comments and mark-ups on draft answers (red team review), recorded against the question they relate to. Close out every comment and record the change in the bid tracker. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9704-Draft Answer Review Comments-P01."
+    },
+    "ITT Draft Case Study": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9700-DraftAnswers",
+        "Description": "Draft project case study written for the tender, developed from the experience sheets supplied in 9400-DisciplineInputs. Confirm figures, dates, images and client references are accurate and cleared before submission. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9703-Draft Case Study-P01."
+    },
+    "ITT Draft CV": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9700-DraftAnswers",
+        "Description": "Bid-edited CV for a named team member, tailored to the ITT questions, role and word count. Edited from the discipline CV supplied in 9400-DisciplineInputs; keep the named role consistent with the organisation chart. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9702-Draft CV Surname-P01."
+    },
+    "ITT Draft Fee Proposal": {
+        "Category": "Schedules and Lists",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9800-DraftSubmission",
+        "Description": "Draft fee and resource build-up for the tender, including stage fee breakdown and any pricing schedule required by the client. Commercially sensitive; must be approved by the bid director before submission. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-9803-Draft Fee Proposal-P01."
+    },
+    "ITT Draft Submission Document": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9800-DraftSubmission",
+        "Description": "Collated draft of the full tender document with all signed-off answers, imagery and formatting applied, ready for final review. Working version only; the issued package is saved in the ITT Submission folder. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9801-Draft Submission-P01."
+    },
+    "ITT Draft Submission Forms": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9800-DraftSubmission",
+        "Description": "Completed client-issued forms, certificates and declarations required with the tender (form of tender, insurances, policies, standard questionnaires). Check every mandatory form is completed and signed before upload; cross-check against the compliance checklist. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9802-Draft Submission Forms-P01."
+    },
+    "ITT Draft Submission Review Comments": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9800-DraftSubmission",
+        "Description": "Final review comments and mark-ups on the collated draft submission ahead of sign-off. Record the sign-off decision; the approved file becomes the package saved in the ITT Submission folder. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9804-Draft Submission Review Comments-P01."
+    },
     "ITT Drawings": {
         "Category": "Drawings",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals",
-        "Description": "Drawings prepared by Bond Bryan for the Invitation to Tender package. Internal drawings for tender submission; ensure they meet client tender requirements. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'ITT Drawings'."
+        "Description": "Drawings prepared by Bond Bryan for the Invitation to Tender package. Internal drawings for tender submission; ensure they meet client tender requirements. Bid-stage drawings and sketch proposals used inside answers are saved with the other bid graphics in 9900-images. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'ITT Drawings'."
     },
     "ITT External Originals": {
         "Category": "Drawings",
@@ -429,10 +529,25 @@
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/Submission",
         "Description": "Documents containing feedback and results from the tender process. Outcome of the tender stage; review to inform adjustments or negotiations. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'ITT Feedback and results'."
     },
+    "ITT Organisation Chart": {
+        "Category": "Images and Photo",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-images",
+        "Description": "Project team organisation chart prepared for the tender showing named roles, reporting lines and the wider consultant team. Keep aligned with the draft CVs and the resourcing described in the answers. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9903-Organisation Chart-P01."
+    },
+    "ITT Question Requirements Matrix": {
+        "Category": "Schedules and Lists",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9600-AnswerPlans",
+        "Description": "Matrix mapping every ITT question to the client's stated requirements, evaluation criteria and weightings, with the responsible author against each. Use to confirm nothing in the ITT is unanswered and effort is weighted to the highest-scoring questions. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-9603-Question Requirements Matrix-P01."
+    },
     "ITT Report": {
         "Category": "Texts and Presentations",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals",
-        "Description": "Report summarising the Invitation to Tender process or submissions. Bond Bryan internal analysis; documents tender responses and recommendations. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'ITT Report'."
+        "Description": "Report summarising the Invitation to Tender process or submissions. Bond Bryan internal analysis; documents tender responses and recommendations. File within the relevant BBAOriginals subfolder where it relates to a specific bid stage. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'ITT Report'."
+    },
+    "ITT Team Photograph": {
+        "Category": "Images and Photo",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-images",
+        "Description": "Portrait photographs of the proposed team for use alongside the CVs in the submission. Use current practice portraits at a consistent crop and size across the whole team. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9904-Team Photograph Surname-P01."
     },
     "ITT-Submission": {
         "Category": "Texts and Presentations",
@@ -679,15 +794,55 @@
         "Path": "0-ProjectMilestones/Gateway1-PlanningApplication",
         "Description": "Documents compiled for the planning application submission (forms, drawings, reports). Submitted information, WIP drawings/documents to be saved elsewhere."
     },
+    "PQQ Bid Diagram": {
+        "Category": "Images and Photo",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9900-images",
+        "Description": "Diagram or graphic produced for the PQQ answers (practice capability, quality and resourcing diagrams, early-stage concept sketches where a design response is requested). Pre-qualification stage illustrative material only; not coordinated design information. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9902-Bid Diagram-P01."
+    },
+    "PQQ Bid Image": {
+        "Category": "Images and Photo",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9900-images",
+        "Description": "Image selected and prepared for use in the PQQ submission (completed project photography, precedent imagery, early-stage concept views). Check photographer credits, image rights and that the referenced client may be named. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9901-Bid Image-P01."
+    },
     "PQQ Client Documentation": {
         "Category": "Contracts and Legal",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/ClientDocumentation",
         "Description": "Pre-Qualification Questionnaire documents provided by the client during the pre-commission phase. External pre-commission info; outlines project basics and client requirements for initial bids. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'PQQ Client Documentation'."
     },
+    "PQQ Draft Answer": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9700-DraftAnswers",
+        "Description": "Working draft of the response to a single PQQ question. One file per question; keep drafting here until signed off, then collate into 9800-DraftSubmission. Reuse approved practice standard text where the question allows. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9701-Draft Answer Q01-P01."
+    },
+    "PQQ Draft Case Study": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9700-DraftAnswers",
+        "Description": "Draft comparable project case study written for the PQQ as evidence of relevant experience. Confirm figures, dates, images and client references are accurate and cleared before submission. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9703-Draft Case Study-P01."
+    },
+    "PQQ Draft CV": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9700-DraftAnswers",
+        "Description": "Bid-edited CV for a named team member, tailored to the PQQ role and word count. Use the current practice CV template; keep the named role consistent with the organisation chart. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9702-Draft CV Surname-P01."
+    },
+    "PQQ Draft Submission Document": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9800-DraftSubmission",
+        "Description": "Collated draft of the full PQQ response with all signed-off answers, imagery and formatting applied, ready for final review. Working version only; the issued package is saved in the PQQ Submission folder. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9801-Draft Submission-P01."
+    },
+    "PQQ Draft Submission Forms": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9800-DraftSubmission",
+        "Description": "Completed client-issued PQQ forms, certificates and declarations (insurances, health and safety, quality and environmental accreditations, financial information). Check every mandatory form is completed and signed, and accreditations are in date, before upload. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9802-Draft Submission Forms-P01."
+    },
+    "PQQ Draft Submission Review Comments": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9800-DraftSubmission",
+        "Description": "Review comments and mark-ups on the collated draft PQQ response ahead of sign-off. Close out every comment and record the sign-off decision; the approved file becomes the package saved in the PQQ Submission folder. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9803-Draft Submission Review Comments-P01."
+    },
     "PQQ Drawings": {
         "Category": "Drawings",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals",
-        "Description": "Drawings prepared by Bond Bryan for the Pre-Qualification Questionnaire submission. Internal drawings for PQQ; ensure they address client requirements at this early stage. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'PQQ Drawings'."
+        "Description": "Drawings prepared by Bond Bryan for the Pre-Qualification Questionnaire submission. Internal drawings for PQQ; ensure they address client requirements at this early stage. Bid-stage sketches and graphics used inside answers are saved with the other bid imagery in 9900-images. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'PQQ Drawings'."
     },
     "PQQ External Originals": {
         "Category": "Drawings",
@@ -698,6 +853,11 @@
         "Category": "Texts and Presentations",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/Submission",
         "Description": "Documents containing feedback or results from the PQQ process (e.g., shortlist outcomes). Outcome of pre-qualification; use insights to improve for the tender stage. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'PQQ Feedback and results'."
+    },
+    "PQQ Organisation Chart": {
+        "Category": "Images and Photo",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9900-images",
+        "Description": "Project team organisation chart prepared for the PQQ showing named roles, reporting lines and the wider consultant team. Keep aligned with the draft CVs and the resourcing described in the answers. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9903-Organisation Chart-P01."
     },
     "PQQ-Submission": {
         "Category": "Texts and Presentations",
