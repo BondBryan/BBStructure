@@ -24,6 +24,16 @@
         "Path": "Visualiser server",
         "Description": "3D scene file for visualisations (e.g., 3ds Max or Lumion format) used in project renders. Typically stored on the visualiser server; coordinate with the visualisation team for access or updates."
     },
+    "AI Generated visualisations": {
+        "Category": "Images and Photo",
+        "Path": "A-Architecture/I-Images/3000-Visualisations",
+        "Description": "Project visualisation images generated using AI tools or software. Bond Bryan internal imagery; use for concept presentations or design inspiration."
+    },
+    "Acoustic Report": {
+        "Category": "Texts and Presentations",
+        "Path": "OtherDisciplines/J-AcousticEngineer",
+        "Description": "Acoustic report provided by the acoustic consultant. External document; implement recommendations and coordinate with design details."
+    },
     "Additional Fees approved": {
         "Category": "Contracts and Legal",
         "Path": "0-ProjectGovernance/Fees/Final",
@@ -49,30 +59,15 @@
         "Path": "OtherDisciplines/Relevant issuing discipline",
         "Description": "Meeting agenda document received from an external party or consultant."
     },
-    "AI Generated visualisations": {
-        "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Images/3000-Visualisations",
-        "Description": "Project visualisation images generated using AI tools or software. Bond Bryan internal imagery; use for concept presentations or design inspiration."
+    "Areas Schedules": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0000-Areas",
+        "Description": "Area schedules (GIA/NIA etc.) produced from the BIM model. Series range 0000-0099. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0000-0099 'Areas Schedules'."
     },
     "Audio Recording": {
         "Category": "Other | Undefined",
         "Path": "A-Architecture/V-VideoAudio/1000-AudioFiles",
         "Description": "Audio file recorded for project purposes (e.g., meeting, interview, or site walkthrough). Internal audio record; transcribe or note key points for project documentation. does not replace meeting minutes."
-    },
-    "Backup models (rvt/pln)": {
-        "Category": "BIM and Models",
-        "Path": "0-ProjectMilestones/Backup-ArchivedBIMModels",
-        "Description": "Backup archive of BIM model files (e.g., Revit or ArchiCAD models) saved at key milestones. Stored with project milestones; use for restoring or reviewing earlier design versions."
-    },
-    "Balconies information": {
-        "Category": "Drawings",
-        "Path": "OtherDisciplines/X-Subcontractors/Balconies-CompanyName",
-        "Description": "Technical information, drawings, or specifications for balconies provided by a specialist. External subcontractor content; integrate relevant details into design coordination."
-    },
-    "Bespoke rulesets (solibri)": {
-        "Category": "BIM and Models",
-        "Path": "0-ProjectLibrary/00000-BIMlibrary/Translators",
-        "Description": "Custom Solibri model-checking rulesets tailored for this project."
     },
     "BIM BEP (draft BB produced)": {
         "Category": "Contracts and Legal",
@@ -93,21 +88,6 @@
         "Category": "BIM and Models",
         "Path": "A-Architecture/L-Lists/9000-Miscellaneous",
         "Description": "BIM clash issues file in BCF (BIM Collaboration Format) capturing model coordination problems. Use it to track and resolve clashes with other disciplines."
-    },
-    "BIM other contractual documents (draft external)": {
-        "Category": "Contracts and Legal",
-        "Path": "OtherDisciplines/Relevant issuing discipline",
-        "Description": "Draft version of other BIM-related contractual documents provided by an external party. Final version (agreed) in 0-ProjectGovernance/ContractualAndLegal."
-    },
-    "BIM other contractual documents (draft BB produced)": {
-        "Category": "Contracts and Legal",
-        "Path": "A-Architecture/T-Texts/9000-Miscellaneous",
-        "Description": "Draft version of other BIM-related contractual documents prepared by Bond Bryan. Final version (agreed) in 0-ProjectGovernance/ContractualAndLegal."
-    },
-    "BIM other contractual documents (final)": {
-        "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
-        "Description": "Finalised BIM-related contractual documents for the project. Official versions; they supersede earlier drafts and form part of the contract. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'BIM other contractual documents (final)'."
     },
     "BIM Project Protocol Standard (draft BB produced)": {
         "Category": "Contracts and Legal",
@@ -134,15 +114,60 @@
         "Path": "0-ProjectLibrary/00000-BIMlibrary/Translators",
         "Description": "Configuration files or translator settings for BIM software (e.g., for IFC export/import). Stored in the project BIM library; use for consistent data exchange between software platforms."
     },
+    "BIM other contractual documents (draft BB produced)": {
+        "Category": "Contracts and Legal",
+        "Path": "A-Architecture/T-Texts/9000-Miscellaneous",
+        "Description": "Draft version of other BIM-related contractual documents prepared by Bond Bryan. Final version (agreed) in 0-ProjectGovernance/ContractualAndLegal."
+    },
+    "BIM other contractual documents (draft external)": {
+        "Category": "Contracts and Legal",
+        "Path": "OtherDisciplines/Relevant issuing discipline",
+        "Description": "Draft version of other BIM-related contractual documents provided by an external party. Final version (agreed) in 0-ProjectGovernance/ContractualAndLegal."
+    },
+    "BIM other contractual documents (final)": {
+        "Category": "Contracts and Legal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Finalised BIM-related contractual documents for the project. Official versions; they supersede earlier drafts and form part of the contract. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'BIM other contractual documents (final)'."
+    },
     "BREEAM / LEED submission": {
         "Category": "Texts and Presentations",
         "Path": "OtherDisciplines/O-SustainabilityConsultant",
         "Description": "Submission documents for BREEAM or LEED certification, detailing sustainability compliance. Usually prepared by the sustainability consultant (external); include required reports and forms."
     },
+    "Backup models (rvt/pln)": {
+        "Category": "BIM and Models",
+        "Path": "0-ProjectMilestones/Backup-ArchivedBIMModels",
+        "Description": "Backup archive of BIM model files (e.g., Revit or ArchiCAD models) saved at key milestones. Stored with project milestones; use for restoring or reviewing earlier design versions."
+    },
+    "Balconies information": {
+        "Category": "Drawings",
+        "Path": "OtherDisciplines/X-Subcontractors/Balconies-CompanyName",
+        "Description": "Technical information, drawings, or specifications for balconies provided by a specialist. External subcontractor content; integrate relevant details into design coordination."
+    },
+    "Balcony Types Schedule": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0700-OtherSchedules",
+        "Description": "Schedule of balcony types. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0702 'Balcony Types Schedule'."
+    },
+    "Balustrade & Guarding Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Balustrade, guarding and balcony type details. Sub-series range 7250-7299. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7250-7299 'Balustrade & Guarding Details'."
+    },
+    "Bespoke rulesets (solibri)": {
+        "Category": "BIM and Models",
+        "Path": "0-ProjectLibrary/00000-BIMlibrary/Translators",
+        "Description": "Custom Solibri model-checking rulesets tailored for this project."
+    },
     "British Standard (project related)": {
         "Category": "Contracts and Legal",
         "Path": "0-ProjectLibrary/StandardsAndGuidance",
         "Description": "British Standard publication relevant to the project (e.g., building code or guidance document). Over and above Building Regulations and Clients' issued contractual documents (ExternalDiscipline/X-Client)."
+    },
+    "Building Control Decision Notice": {
+        "Category": "Texts and Presentations",
+        "Path": "OtherDisciplines/T-BuildingControl",
+        "Description": "Approval, decision, or completion certificate issued by Building Control or the Building Safety Regulator. External statutory record; retain for compliance and handover."
     },
     "Building Control Submission": {
         "Category": "Texts and Presentations",
@@ -159,15 +184,10 @@
         "Path": "OtherDisciplines/T-BuildingControl",
         "Description": "Original building control tracker document, likely provided by the building control authority or client. External baseline tracker; reference this for official requirements and updates (modify and save in A-Architecture/L-Lists/4000-Trackers)."
     },
-    "Calculations Parking": {
-        "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-Lists/6000-Calculations",
-        "Description": "Calculation sheet determining parking space requirements or counts for the project. Internal calculation; ensure it meets local parking standards and incorporate into site planning."
-    },
-    "Calculations Toilets": {
-        "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-Lists/6000-Calculations",
-        "Description": "Calculation sheet determining the required number of toilets (sanitary fixtures) for the project. Internal calculation; verify compliance with building regulations and occupancy needs."
+    "Building Grid and Cuboid": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Building grid and cuboid setting out drawing (PDF/DWG). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-6250 'Building Grid and Cuboid'."
     },
     "CDP drawings": {
         "Category": "Drawings",
@@ -179,6 +199,31 @@
         "Path": "A-Architecture/T-Texts/6000-Presentations",
         "Description": "Client Engagement Meeting. Bond Bryan internal presentation; refer to related meeting notes or context for full understanding."
     },
+    "COBie / Data client report": {
+        "Category": "Schedules and Lists",
+        "Path": "OtherDisciplines/O-InformationManager",
+        "Description": "COBie (Construction-Operations Building Information Exchange) data report prepared by the client Information Manager. Provided by the Information Manager (external); use it to align project data deliverables with client requirements."
+    },
+    "Calculations Parking": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/6000-Calculations",
+        "Description": "Calculation sheet determining parking space requirements or counts for the project. Internal calculation; ensure it meets local parking standards and incorporate into site planning."
+    },
+    "Calculations Toilets": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/6000-Calculations",
+        "Description": "Calculation sheet determining the required number of toilets (sanitary fixtures) for the project. Internal calculation; verify compliance with building regulations and occupancy needs."
+    },
+    "Ceiling Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Ceiling and bulkhead details. Sub-series range 7000-7049. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7000-7049 'Ceiling Details'."
+    },
+    "Ceiling Strategy": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Ceiling strategy drawings. Sub-series range 8000-8049 (first document = first number in range +1, e.g. 8001). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-8000-8049 'Ceiling Strategy'."
+    },
     "Change Control": {
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/3000-ChangeControl",
@@ -189,10 +234,25 @@
         "Path": "A-Architecture/T-Texts/4000-Reports",
         "Description": "Report detailing the results of clash detection runs between different discipline models. Use it to coordinate with consultants on resolving design conflicts."
     },
-    "COBie / Data client report": {
+    "Coat Cupboard Schedule": {
         "Category": "Schedules and Lists",
-        "Path": "OtherDisciplines/O-InformationManager",
-        "Description": "COBie (Construction-Operations Building Information Exchange) data report prepared by the client Information Manager. Provided by the Information Manager (external); use it to align project data deliverables with client requirements."
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0700-OtherSchedules",
+        "Description": "Schedule of coat cupboards. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0703 'Coat Cupboard Schedule'."
+    },
+    "Collateral Warranty (draft)": {
+        "Category": "Contracts and Legal",
+        "Path": "OtherDisciplines/X-Client",
+        "Description": "Draft collateral warranty received for review prior to execution. Review terms and check with PI insurers before signing. Final version (signed) in 0-ProjectGovernance/ContractualAndLegal."
+    },
+    "Collateral Warranty (signed)": {
+        "Category": "Contracts and Legal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Executed collateral warranty granting rights to a third party (e.g., funder, purchaser, or tenant). Official contractual record; retain with other executed agreements. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Collateral Warranty (signed)'."
+    },
+    "Column & Beams Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Column and beam details. Sub-series range 7650-7699. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7650-7699 'Column & Beams Details'."
     },
     "Comments CDP / Subcontractors": {
         "Category": "Texts and Presentations",
@@ -209,15 +269,45 @@
         "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8500-ComplianceReviews",
         "Description": "Review document checking project compliance with specific standards or requirements. Internal compliance check; identify any issues to resolve for regulatory or client requirements."
     },
+    "Construction Phase Plan": {
+        "Category": "Texts and Presentations",
+        "Path": "OtherDisciplines/X-Contractor",
+        "Description": "Construction Phase Plan produced by the principal contractor under CDM regulations. External H&S document; review before site activities commence."
+    },
     "Construction Record Drawings": {
         "Category": "Drawings",
         "Path": "0-ProjectMilestones/RIBAStage5-ManufacturingAndConstruction",
         "Description": "Final set of drawings showing the project as actually constructed. Do not issue 'As-built' but 'Construction Record'."
     },
+    "Contractor's Programme": {
+        "Category": "Schedules and Lists",
+        "Path": "OtherDisciplines/X-Contractor",
+        "Description": "Construction programme issued by the contractor. External schedule; align design information release with these timelines."
+    },
+    "Conveyance Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Conveyance plans for legal/land transaction purposes (9000 series). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-9002 'Conveyance Plans'."
+    },
     "Correspondence Record": {
         "Category": "Texts and Presentations",
         "Path": "A-Architecture/T-Texts/1000-Correspondence",
         "Description": "Record or log of project correspondence, including letters and official communications. To be read in conjunction with Change Control, Additional Fees approvals."
+    },
+    "Cost Plan": {
+        "Category": "Schedules and Lists",
+        "Path": "OtherDisciplines/Q-QuantitySurveying",
+        "Description": "Cost plan or estimate provided by the quantity surveyor. External cost document; review against design development and flag divergences early."
+    },
+    "Curtain Wall Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Curtain walling details. Sub-series range 7050-7099. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7050-7099 'Curtain Wall Details'."
+    },
+    "Curtain Wall Schedules and Elevations": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0300-CurtainWalls",
+        "Description": "Curtain wall schedules and elevations. As many documents as the project needs within the series. Series range 0300-0399. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0300-0399 'Curtain Wall Schedules and Elevations'."
     },
     "DEIR (modified)": {
         "Category": "Schedules and Lists",
@@ -229,10 +319,25 @@
         "Path": "OtherDisciplines/X-Client",
         "Description": "Original Employer’s Information Requirements (EIR) document likely provided by the client. External project requirements document; use as baseline for BIM and information delivery expectations. If modified save the new version to A-Architecture/L-Lists/1000-Programmes"
     },
-    "Design and Access Statement": {
+    "DTM Presentation": {
         "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/4000-Reports",
-        "Description": "Design and Access Statement explaining the design concept and site access, typically for planning. Prepared by Bond Bryan; required for planning submission to justify design decisions. Final version (when submitted) saved in 0-ProjectMilestones/Gateway1-PlanningApplication."
+        "Path": "A-Architecture/T-Texts/6000-Presentations",
+        "Description": "Design Team Meeting, prepared for a specific meeting or purpose. Bond Bryan internal presentation; consult meeting context or minutes for relevance and prepare relevant Agenda prior to the meeting."
+    },
+    "Delay Schedule": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/4000-Trackers",
+        "Description": "Record of delay events and their impact, maintained as a live tracker. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-4002 'Delay Schedule'."
+    },
+    "Demolition GA Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "General arrangement plans showing demolition scope. As many documents as the project needs within the series. Series range 2300-2399. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-2300-2399 'Demolition GA Plans'."
+    },
+    "Design GA Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "General arrangement floor plans, design stage (typically 1:200). As many documents as the project needs within the series. Series range 2000-2099. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-2000-2099 'Design GA Plans'."
     },
     "Design Guidelines (project related)": {
         "Category": "Contracts and Legal",
@@ -248,6 +353,41 @@
         "Category": "Texts and Presentations",
         "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8100-DesignReviews",
         "Description": "Document summarising discussions and outcomes of a design review meeting. Internal review record; use to implement agreed changes and track decisions."
+    },
+    "Design and Access Statement": {
+        "Category": "Texts and Presentations",
+        "Path": "A-Architecture/T-Texts/4000-Reports",
+        "Description": "Design and Access Statement explaining the design concept and site access, typically for planning. Prepared by Bond Bryan; required for planning submission to justify design decisions. Final version (when submitted) saved in 0-ProjectMilestones/Gateway1-PlanningApplication."
+    },
+    "Designers Risk Assessment": {
+        "Category": "Texts and Presentations",
+        "Path": "A-Architecture/T-Texts/4000-Reports",
+        "Description": "Designers risk assessment identifying and mitigating design-related health and safety risks (CDM). Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-4009 'Designers Risk Assessment'."
+    },
+    "Detailed Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Details Drawings": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Generic entry for all detail drawings (7000-7999); see the named sub-series entries for specific detail types. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7000-7999 'Details Drawings'."
+    },
+    "Door Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "External and internal door details, head/jamb/sill. Sub-series range 7100-7149. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7100-7149 'Door Details'."
+    },
+    "Door Schedules and Elevations": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0100-Doors",
+        "Description": "Internal and external door schedules and door elevations. As many documents as the project needs within the series. Series range 0100-0199. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0100-0199 'Door Schedules and Elevations'."
+    },
+    "Door and gates schedule (Landscape)": {
+        "Category": "Schedules and Lists",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0100-DoorsAndGates",
+        "Description": "Landscape schedule of doors and gates, including specifications and details. Internal landscape schedule; coordinate with architectural door schedules for consistency where relevant."
     },
     "Drawing Register": {
         "Category": "Schedules and Lists",
@@ -279,20 +419,15 @@
         "Path": "A-Architecture/D-Drawings/Current/PDF",
         "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder (e.g. 2000-FloorPlans)."
     },
-    "Drawings PDF WIP": {
-        "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/TransmittalSet",
-        "Description": "Drawing files in PDF format issued from ArchiCAD into a numbered TransmittalSet folder (XX-Description, e.g. 01-InternalDesignReview) while the transmittal register is still open. Files carry the '_WIP' suffix to show the issue is internal and uncontrolled. Once reviewed and approved, the register is closed, the suffix is dropped and the drawings are issued automatically as the next numbered set (e.g. 02-IssueToClient). Issue sets are point-in-time records; never edit or add files after creation."
-    },
     "Drawings PDF Issue Set": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/TransmittalSet",
         "Description": "Formal issue set of PDF drawings in a numbered TransmittalSet folder (XX-Description, e.g. 02-IssueToClient), created automatically from ArchiCAD when the transmittal register is closed. Files carry no '_WIP' suffix. Each set is a point-in-time record of exactly what was issued; never edit or add files after creation."
     },
-    "DTM Presentation": {
-        "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/6000-Presentations",
-        "Description": "Design Team Meeting, prepared for a specific meeting or purpose. Bond Bryan internal presentation; consult meeting context or minutes for relevance and prepare relevant Agenda prior to the meeting."
+    "Drawings PDF WIP": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/TransmittalSet",
+        "Description": "Drawing files in PDF format issued from ArchiCAD into a numbered TransmittalSet folder (XX-Description, e.g. 01-InternalDesignReview) while the transmittal register is still open. Files carry the '_WIP' suffix to show the issue is internal and uncontrolled. Once reviewed and approved, the register is closed, the suffix is dropped and the drawings are issued automatically as the next numbered set (e.g. 02-IssueToClient). Issue sets are point-in-time records; never edit or add files after creation."
     },
     "Duty of Care (draft)": {
         "Category": "Contracts and Legal",
@@ -304,15 +439,45 @@
         "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
         "Description": "Signed duty of care letter or agreement for the project. Official executed document; keep on record for compliance and reference. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Duty of Care (signed)'."
     },
-    "Elements Schedules (windows, doors,…)": {
+    "Ecology and Arboricultural Reports": {
+        "Category": "Texts and Presentations",
+        "Path": "OtherDisciplines/O-EcologistAndArboriculturist",
+        "Description": "Ecology, biodiversity, or arboricultural reports from the specialist consultant. External documents; coordinate with landscape design and planning requirements."
+    },
+    "Elements Schedules": {
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/0000-Schedules/Current",
         "Description": "Schedules listing building elements (e.g., windows, doors, etc.) produced by BIM software. File within the relevant schedule subfolder (e.g. 0100-Doors, 0200-WindowsAndLouvres)."
+    },
+    "Elevations (Architecture)": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Elevations (Interiors)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Elevations (Landscape)": {
+        "Category": "Drawings",
+        "Path": "L-LandscapeArchitecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
     },
     "Email saved (for record)": {
         "Category": "Contracts and Legal",
         "Path": "A-Architecture/T-Texts/1000-Correspondence",
         "Description": "Saved email correspondence kept on file for project record-keeping. Bond Bryan internal archive; key communications saved here for accountability and reference. Not all emails need to be saved."
+    },
+    "Existing Building Fabric analysis (Interior)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
+        "Description": "Description and analysis drawings and report of existing fabric of a building for refurbishments and retrofit projects."
+    },
+    "Existing GA Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "General arrangement floor plans of the existing building. As many documents as the project needs within the series. Series range 2200-2299. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-2200-2299 'Existing GA Plans'."
     },
     "Fees approved": {
         "Category": "Contracts and Legal",
@@ -334,6 +499,11 @@
         "Path": "A-Architecture/T-Texts/0000-NotesAndStatements",
         "Description": "Internal file note documenting a conversation, decision, or instruction for record. Used to capture informal decisions; ensure important points are recorded for future reference."
     },
+    "Finishes Drawings": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Generic entry for all finishes drawings (8000-8999); see the named sub-series entries for specific types. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-8000-8999 'Finishes Drawings'."
+    },
     "Finishes schedule": {
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0600-Finishes",
@@ -343,6 +513,56 @@
         "Category": "Texts and Presentations",
         "Path": "OtherDisciplines/K-FireEngineer",
         "Description": "Fire engineering report provided by the project's fire engineering consultant. External fire safety document; implement its recommendations and ensure code compliance."
+    },
+    "Fire Strategy drawings": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Floor Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Floor junction details and floor build-up types. Sub-series range 7150-7199. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7150-7199 'Floor Details'."
+    },
+    "Floor Finishes Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Floor finishes plans. Sub-series range 8150-8199 (first document = first number in range +1, e.g. 8151). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-8150-8199 'Floor Finishes Plans'."
+    },
+    "Floor Finishes Strategy": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Floor finishes strategy drawings. Sub-series range 8100-8149 (first document = first number in range +1, e.g. 8101). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-8100-8149 'Floor Finishes Strategy'."
+    },
+    "Furniture Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Fitted furniture and joinery details: reception desks, counters, cupboards, wardrobes. Sub-series range 7200-7249. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7200-7249 'Furniture Details'."
+    },
+    "Furniture schedule (Landscape)": {
+        "Category": "Schedules and Lists",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0300-Furniture",
+        "Description": "Landscape schedule of furniture, including specifications and details. Internal landscape schedule; coordinate with interior design furniture schedules for consistency where relevant."
+    },
+    "GA floor Plans (Interiors)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Gateway 2 Submission": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectMilestones/Gateway2-BuildingControlApplication",
+        "Description": "Documents submitted at Gateway 2 (Building Control application). Milestone record; keep the complete submitted package for audit."
+    },
+    "Gateway 3 Submission": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectMilestones/Gateway3-Completion",
+        "Description": "Documents compiled at Gateway 3 (completion), including completion certificates and handover records. Milestone record; archive the complete package."
+    },
+    "Glazed Screen Schedules and Elevations": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0200-WindowsAndLouvres",
+        "Description": "Internal glazed screen schedules and elevations. As many documents as the project needs within the series. Series range 0200-0299. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0200-0299 'Glazed Screen Schedules and Elevations'."
     },
     "H&S Designer Competence Assessment": {
         "Category": "Texts and Presentations",
@@ -354,6 +574,11 @@
         "Path": "O-PrincipalDesigner/CDM/T-Texts/0750-Reports",
         "Description": "Risk assessment focusing on design-stage health and safety considerations (CDM regulations). Internal CDM risk assessment; update as design evolves to address and mitigate risks."
     },
+    "HRB submission": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectMilestones/Gateway2-BuildingControlApplication",
+        "Description": "Submission documents for a Higher-Risk Building (HRB) in line with new building safety regulations. Regulatory submission; coordinate closely with the building safety regulator and include all required details."
+    },
     "Health and Safety File": {
         "Category": "Texts and Presentations",
         "Path": "O-PrincipalDesigner/CDM/T-Texts/0750-Reports",
@@ -364,50 +589,25 @@
         "Path": "A-Architecture/T-Texts/4000-Reports",
         "Description": "Report analysing building heat loss to inform thermal performance and insulation requirements. technical report with expertise from specialist; cross-check with M&E consultant data to ensure energy efficiency targets."
     },
+    "Historic analysis (Interior)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
+        "Description": "Description and analysis drawings and report of historic building for refurbishments and retrofit projects."
+    },
+    "Historic analysis (PDBR)": {
+        "Category": "Drawings",
+        "Path": "O-PrincipalDesigner/BR/D-Drawings/Current/PDF/0050-AnalysisDrawings",
+        "Description": "Description and analysis drawings and report of historic building for refurbishments and retrofit projects."
+    },
     "Historic building fabric analysis (retrofit)": {
         "Category": "Drawings",
         "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
         "Description": "Historic analysis drawings or documents to request specific surveys in retrofit projects."
     },
-    "HRB submission": {
-        "Category": "Texts and Presentations",
-        "Path": "0-ProjectMilestones/Gateway2-BuildingControlApplication",
-        "Description": "Submission documents for a Higher-Risk Building (HRB) in line with new building safety regulations. Regulatory submission; coordinate closely with the building safety regulator and include all required details."
-    },
     "IFC Library": {
         "Category": "BIM and Models",
         "Path": "0-ProjectLibrary/00000-BIMlibrary/IFC-Libraries",
         "Description": "Library of IFC (Industry Foundation Classes) files imported in BIM software. Delete old library files when not in use (only latest versions to be kept)."
-    },
-    "Images Precedent": {
-        "Category": "Images and Photo",
-        "Path": "0-ProjectLibrary/Precedents",
-        "Description": "Collection of precedent images (reference photos or case studies) relevant to the project. Stored in the project library; use for design inspiration or to communicate ideas to the client."
-    },
-    "Incoming Documents": {
-        "Category": "Texts and Presentations",
-        "Path": "OtherDisciplines/Relevant issuing discipline",
-        "Description": "General incoming documents from external parties. External documents; sort and file these into appropriate discipline folders after review and save in renamed YYYY-MM-DD Description folder."
-    },
-    "Incoming Drawings": {
-        "Category": "Drawings",
-        "Path": "OtherDisciplines/Relevant issuing discipline",
-        "Description": "General incoming drawings from external parties. External documents; sort and file these into appropriate discipline folders after review and save in renamed YYYY-MM-DD Description folder."
-    },
-    "Interior specific Documents (appointed)": {
-        "Category": "Texts and Presentations",
-        "Path": "I-InteriorDesign",
-        "Description": "Interior design documents produced by Bond Bryan interior design team (separately appointed)."
-    },
-    "Interior specific Drawings (appointed)": {
-        "Category": "Drawings",
-        "Path": "I-InteriorDesign",
-        "Description": "Interior design documents produced by Bond Bryan interior design team (separately appointed)."
-    },
-    "Interior specific Lists (appointed)": {
-        "Category": "Schedules and Lists",
-        "Path": "I-InteriorDesign",
-        "Description": "Interior design documents produced by Bond Bryan interior design team (separately appointed)."
     },
     "ITT Answer Plan": {
         "Category": "Texts and Presentations",
@@ -484,15 +684,15 @@
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9700-DraftAnswers",
         "Description": "Reviewer comments and mark-ups on draft answers (red team review), recorded against the question they relate to. Close out every comment and record the change in the bid tracker. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9704-Draft Answer Review Comments-P01."
     },
-    "ITT Draft Case Study": {
-        "Category": "Texts and Presentations",
-        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9700-DraftAnswers",
-        "Description": "Draft project case study written for the tender, developed from the experience sheets supplied in 9400-DisciplineInputs. Confirm figures, dates, images and client references are accurate and cleared before submission. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9703-Draft Case Study-P01."
-    },
     "ITT Draft CV": {
         "Category": "Texts and Presentations",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9700-DraftAnswers",
         "Description": "Bid-edited CV for a named team member, tailored to the ITT questions, role and word count. Edited from the discipline CV supplied in 9400-DisciplineInputs; keep the named role consistent with the organisation chart. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9702-Draft CV Surname-P01."
+    },
+    "ITT Draft Case Study": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9700-DraftAnswers",
+        "Description": "Draft project case study written for the tender, developed from the experience sheets supplied in 9400-DisciplineInputs. Confirm figures, dates, images and client references are accurate and cleared before submission. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9703-Draft Case Study-P01."
     },
     "ITT Draft Fee Proposal": {
         "Category": "Schedules and Lists",
@@ -554,6 +754,46 @@
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/Submission",
         "Description": "Submitted tender package documents for the Invitation to Tender. Final tender submission; archive this as the official bid sent to the client. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'ITT-Submission'."
     },
+    "Images Precedent": {
+        "Category": "Images and Photo",
+        "Path": "0-ProjectLibrary/Precedents",
+        "Description": "Collection of precedent images (reference photos or case studies) relevant to the project. Stored in the project library; use for design inspiration or to communicate ideas to the client."
+    },
+    "Incoming Documents": {
+        "Category": "Texts and Presentations",
+        "Path": "OtherDisciplines/Relevant issuing discipline",
+        "Description": "General incoming documents from external parties. External documents; sort and file these into appropriate discipline folders after review and save in renamed YYYY-MM-DD Description folder."
+    },
+    "Incoming Drawings": {
+        "Category": "Drawings",
+        "Path": "OtherDisciplines/Relevant issuing discipline",
+        "Description": "General incoming drawings from external parties. External documents; sort and file these into appropriate discipline folders after review and save in renamed YYYY-MM-DD Description folder."
+    },
+    "Individual Room Layouts": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Individual room/space layouts (typically 1:20). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-5002 'Individual Room Layouts'."
+    },
+    "Interior specific Documents (appointed)": {
+        "Category": "Texts and Presentations",
+        "Path": "I-InteriorDesign",
+        "Description": "Interior design documents produced by Bond Bryan interior design team (separately appointed)."
+    },
+    "Interior specific Drawings (appointed)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign",
+        "Description": "Interior design documents produced by Bond Bryan interior design team (separately appointed)."
+    },
+    "Interior specific Lists (appointed)": {
+        "Category": "Schedules and Lists",
+        "Path": "I-InteriorDesign",
+        "Description": "Interior design documents produced by Bond Bryan interior design team (separately appointed)."
+    },
+    "Ironmongery Sets Schedule": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0100-Doors",
+        "Description": "Schedule of ironmongery sets, coordinated with door schedules; numbered within the 0100 Doors series (TIDP example: 0105). Series range 0100-0199. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0100-0199 'Ironmongery Sets Schedule'."
+    },
     "JCT Contract (draft)": {
         "Category": "Contracts and Legal",
         "Path": "OtherDisciplines/X-Client",
@@ -584,50 +824,50 @@
         "Path": "L-LandscapeArchitecture",
         "Description": "Landscape architecture documents produced by the Bond Bryan landscape architect (separately appointed)."
     },
-    "Door and gates schedule (Landscape)": {
-        "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0100-DoorsAndGates",
-        "Description": "Landscape schedule of doors and gates, including specifications and details. Internal landscape schedule; coordinate with architectural door schedules for consistency where relevant."
-    },
-    "Planting schedule (Landscape)": {
-        "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0200-Planting",
-        "Description": "Landscape schedule of planting, including specifications and details."
-    },
-    "Urban Greening Factor UGF (Landscape)": {
-        "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0400-UrbanGreeningFactor",
-        "Description": "Landscape schedule of UGF, including requirements and proposed values."
-    },
-    "Furniture schedule (Landscape)": {
-        "Category": "Schedules and Lists",
-        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0300-Furniture",
-        "Description": "Landscape schedule of furniture, including specifications and details. Internal landscape schedule; coordinate with interior design furniture schedules for consistency where relevant."
-    },
     "Letter of compliance": {
         "Category": "Contracts and Legal",
         "Path": "A-Architecture/T-Texts/1000-Correspondence",
         "Description": "Letter certifying compliance with specific requirements or regulations for the project. Bond Bryan correspondence; retain for record to demonstrate adherence to standards or conditions."
+    },
+    "Lift Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Lift details. Sub-series range 7500-7549. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7500-7549 'Lift Details'."
     },
     "Lift information": {
         "Category": "Texts and Presentations",
         "Path": "OtherDisciplines/X-Subcontractors/LiftAndEscalators-CompanyName",
         "Description": "Technical information or specifications for lifts and escalators from the specialist supplier. External supplier data; incorporate into building design and coordinate with structural and MEP plans."
     },
+    "Location Plan": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Site location plan identifying the site in its wider context (typically 1:1250). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-1001 'Location Plan'."
+    },
     "Logos": {
         "Category": "Images and Photo",
         "Path": "0-ProjectLibrary/Logos",
         "Description": "Collection of project-related logos (client, consultants, etc.) in image format. For use in presentations and BIM model; ensure only current official logos are used."
     },
-    "Method Statement": {
-        "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/0000-NotesAndStatements",
-        "Description": "Method statement document describing how a specific work task will be carried out safely and effectively."
-    },
     "MIDP": {
         "Category": "Schedules and Lists",
         "Path": "OtherDisciplines/O-InformationManager",
         "Description": "Master Information Delivery Plan outlining all project information deliverables and responsibilities. Provided by the Information Manager (external); use to coordinate Bond Bryan's TIDP and overall deliverables."
+    },
+    "Maintenance strategy drawings": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Markup scanned": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/I-Images/4000-SketchesAndScans",
+        "Description": "Collection of scanned drawings and markups for the project. Internal creative drawings; use these for brainstorming and early client discussions. Mark up to specific CDP / designer packs to be saved in Comments folder."
+    },
+    "Method Statement": {
+        "Category": "Texts and Presentations",
+        "Path": "A-Architecture/T-Texts/0000-NotesAndStatements",
+        "Description": "Method statement document describing how a specific work task will be carried out safely and effectively."
     },
     "Milestone Records (Drawings, reports, contracts…)": {
         "Category": "Other",
@@ -664,15 +904,15 @@
         "Path": "A-Architecture/M-Models/1000-NativeModels",
         "Description": "Native BIM model files (e.g., Revit .rvt or ArchiCAD .pln) used for developing the design. Bond Bryan working models; keep versions archived and coordinate sharing as needed."
     },
-    "Other calculations": {
-        "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-Lists/6000-Calculations",
-        "Description": "Miscellaneous calculation documents or spreadsheets not covered by specific categories. Internal calculations; update and verify these as the design evolves."
+    "NDA / Confidentiality Agreement": {
+        "Category": "Contracts and Legal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Non-disclosure or confidentiality agreement relating to the project. Official executed document; check obligations before sharing project information externally. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'NDA / Confidentiality Agreement'."
     },
-    "Other comments": {
-        "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/5000-Comments/5700-OtherComments",
-        "Description": "General comment or review documents that do not fall under specific categories."
+    "Novation Agreement": {
+        "Category": "Contracts and Legal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Agreement novating Bond Bryan's appointment, typically from client to contractor on design and build projects. Official executed document; note the change of client for correspondence and instructions. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Novation Agreement'."
     },
     "Other Contract documents (draft)": {
         "Category": "Contracts and Legal",
@@ -684,6 +924,11 @@
         "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
         "Description": "Finalised miscellaneous contract documents for the project. Official documents on file; reference these for any contract clarifications. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Other Contract documents (final)'."
     },
+    "Other Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Other details not covered by the named 7000 sub-series. Sub-series range 7700-7999. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7700-7999 'Other Details'."
+    },
     "Other Reviews": {
         "Category": "Texts and Presentations",
         "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8600-OtherReviews",
@@ -693,6 +938,16 @@
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/9000-Miscellaneous",
         "Description": "Miscellaneous schedules or lists that don't fit other specific categories."
+    },
+    "Other calculations": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/6000-Calculations",
+        "Description": "Miscellaneous calculation documents or spreadsheets not covered by specific categories. Internal calculations; update and verify these as the design evolves."
+    },
+    "Other comments": {
+        "Category": "Texts and Presentations",
+        "Path": "A-Architecture/T-Texts/5000-Comments/5700-OtherComments",
+        "Description": "General comment or review documents that do not fall under specific categories."
     },
     "Outsourcing Briefing": {
         "Category": "Texts and Presentations",
@@ -769,30 +1024,10 @@
         "Path": "OtherDisciplines/O-PrincipalDesigner/CDM",
         "Description": "Lists or schedules from an external Principal Designer under CDM (e.g., risk assessments, registers). External H&S lists; ensure all items are tracked and addressed in project planning."
     },
-    "Photograph Existing": {
-        "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Images/2000-ProjectPhotographs",
-        "Description": "Photographs of the existing site or structures taken before project work begins. Internal project photo record; use as a baseline to compare against construction progress and completion."
-    },
-    "Photograph Post Completion": {
-        "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Images/2000-ProjectPhotographs",
-        "Description": "Photographs taken after project completion, showing the finished building and site. Notify marketing team."
-    },
-    "Pictures Site visit": {
-        "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Images/2000-ProjectPhotographs",
-        "Description": "Photographs captured during site visits to document progress or issues. Internal site visit photos; use for progress reports and to record on-site conditions."
-    },
-    "Planning consultation boards": {
-        "Category": "Texts and Presentations",
-        "Path": "A-Architecture/T-Texts/6000-Presentations",
-        "Description": "Display boards prepared for planning consultation events, showing project plans and information. Bond Bryan presentation materials; update these as the design evolves for public or stakeholder consultations."
-    },
-    "Planning Submission and documents": {
-        "Category": "Texts and Presentations",
-        "Path": "0-ProjectMilestones/Gateway1-PlanningApplication",
-        "Description": "Documents compiled for the planning application submission (forms, drawings, reports). Submitted information, WIP drawings/documents to be saved elsewhere."
+    "PI Insurance Certificate": {
+        "Category": "Contracts and Legal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Professional indemnity insurance certificate or evidence of cover for the project. Retain to satisfy appointment obligations; replace on annual renewal. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'PI Insurance Certificate'."
     },
     "PQQ Bid Diagram": {
         "Category": "Images and Photo",
@@ -814,15 +1049,15 @@
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9700-DraftAnswers",
         "Description": "Working draft of the response to a single PQQ question. One file per question; keep drafting here until signed off, then collate into 9800-DraftSubmission. Reuse approved practice standard text where the question allows. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9701-Draft Answer Q01-P01."
     },
-    "PQQ Draft Case Study": {
-        "Category": "Texts and Presentations",
-        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9700-DraftAnswers",
-        "Description": "Draft comparable project case study written for the PQQ as evidence of relevant experience. Confirm figures, dates, images and client references are accurate and cleared before submission. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9703-Draft Case Study-P01."
-    },
     "PQQ Draft CV": {
         "Category": "Texts and Presentations",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9700-DraftAnswers",
         "Description": "Bid-edited CV for a named team member, tailored to the PQQ role and word count. Use the current practice CV template; keep the named role consistent with the organisation chart. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9702-Draft CV Surname-P01."
+    },
+    "PQQ Draft Case Study": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9700-DraftAnswers",
+        "Description": "Draft comparable project case study written for the PQQ as evidence of relevant experience. Confirm figures, dates, images and client references are accurate and cleared before submission. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-9703-Draft Case Study-P01."
     },
     "PQQ Draft Submission Document": {
         "Category": "Texts and Presentations",
@@ -863,6 +1098,46 @@
         "Category": "Texts and Presentations",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/Submission",
         "Description": "Submitted Pre-Qualification Questionnaire documents (complete PQQ response package). Final PQQ submission; record of Bond Bryan's initial bid information. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'PQQ-Submission'."
+    },
+    "Photograph Existing": {
+        "Category": "Images and Photo",
+        "Path": "A-Architecture/I-Images/2000-ProjectPhotographs",
+        "Description": "Photographs of the existing site or structures taken before project work begins. Internal project photo record; use as a baseline to compare against construction progress and completion."
+    },
+    "Photograph Post Completion": {
+        "Category": "Images and Photo",
+        "Path": "A-Architecture/I-Images/2000-ProjectPhotographs",
+        "Description": "Photographs taken after project completion, showing the finished building and site. Notify marketing team."
+    },
+    "Pictures Site visit": {
+        "Category": "Images and Photo",
+        "Path": "A-Architecture/I-Images/2000-ProjectPhotographs",
+        "Description": "Photographs captured during site visits to document progress or issues. Internal site visit photos; use for progress reports and to record on-site conditions."
+    },
+    "Planning Decision Notice": {
+        "Category": "Texts and Presentations",
+        "Path": "OtherDisciplines/T-Planning",
+        "Description": "Formal decision notice issued by the local planning authority, including planning conditions. External statutory document; track the discharge of conditions through the project."
+    },
+    "Planning Submission and documents": {
+        "Category": "Texts and Presentations",
+        "Path": "0-ProjectMilestones/Gateway1-PlanningApplication",
+        "Description": "Documents compiled for the planning application submission (forms, drawings, reports). Submitted information, WIP drawings/documents to be saved elsewhere."
+    },
+    "Planning consultation boards": {
+        "Category": "Texts and Presentations",
+        "Path": "A-Architecture/T-Texts/6000-Presentations",
+        "Description": "Display boards prepared for planning consultation events, showing project plans and information. Bond Bryan presentation materials; update these as the design evolves for public or stakeholder consultations."
+    },
+    "Planting schedule (Landscape)": {
+        "Category": "Schedules and Lists",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0200-Planting",
+        "Description": "Landscape schedule of planting, including specifications and details."
+    },
+    "Pre-application Advice": {
+        "Category": "Texts and Presentations",
+        "Path": "OtherDisciplines/T-Planning",
+        "Description": "Pre-application advice or correspondence from the local planning authority. External guidance; use to shape the planning submission strategy."
     },
     "Presentation Main file (Affinity)": {
         "Category": "Texts and Presentations",
@@ -909,6 +1184,26 @@
         "Path": "A-Architecture/T-Texts/4000-Reports",
         "Description": "Outlines the quality assurance and control procedures for the project. Use as a reference for QA process expectations at all phases."
     },
+    "RIBA Stage Completion": {
+        "Category": "Drawings",
+        "Path": "0-ProjectMilestones/Relevant RIBAStage",
+        "Description": "Documents marking the completion of a RIBA work stage (deliverables compiled at stage end). Milestone records for each RIBA stage; archive these for reference and auditing."
+    },
+    "RVT Families": {
+        "Category": "BIM and Models",
+        "Path": "0-ProjectLibrary/00000-BIMlibrary/Families",
+        "Description": "Library of Revit family components (doors, windows, etc.) used in the project model. Stored in BIM library; ensure all team members use the approved families for consistency."
+    },
+    "Re-use schedule of elements": {
+        "Category": "Schedules and Lists",
+        "Path": "I-InteriorDesign/L-Lists/0000-Schedules/Current/0800-ReUseSchedules",
+        "Description": "Elements carefully set aside and reused in the design."
+    },
+    "Reflected Ceiling Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Reflected ceiling plans. Sub-series range 8050-8099 (first document = first number in range +1, e.g. 8051). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-8050-8099 'Reflected Ceiling Plans'."
+    },
     "Request for Information (RFI) Incoming": {
         "Category": "Schedules and Lists",
         "Path": "OtherDisciplines/X-Subcontractors/Relevant issuing company",
@@ -919,25 +1214,35 @@
         "Path": "A-Architecture/T-Texts/5000-Comments/5900-RequestForInformation",
         "Description": "Log of RFIs raised by BB and the corresponding clarifications provided by the design team. Helps track unresolved or pending technical clarifications."
     },
-    "Re-use schedule of elements": {
-        "Category": "Schedules and Lists",
-        "Path": "I-InteriorDesign/L-Lists/0000-Schedules/Current/0800-ReUseSchedules",
-        "Description": "Elements carefully set aside and reused in the design."
-    },
-    "RIBA Stage Completion": {
+    "Roof & Roof Accessories Details": {
         "Category": "Drawings",
-        "Path": "0-ProjectMilestones/Relevant RIBAStage",
-        "Description": "Documents marking the completion of a RIBA work stage (deliverables compiled at stage end). Milestone records for each RIBA stage; archive these for reference and auditing."
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Roof, roof accessories and external soffit details. Sub-series range 7300-7349. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7300-7349 'Roof & Roof Accessories Details'."
     },
     "Room Data Sheets (RDS)": {
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/5000-RoomDataSheets",
         "Description": "Room Data Sheets (RDS) detailing requirements and specifications for each room/space. Internal project documents; update these as design details are finalised and verify with client requirements."
     },
-    "RVT Families": {
-        "Category": "BIM and Models",
-        "Path": "0-ProjectLibrary/00000-BIMlibrary/Families",
-        "Description": "Library of Revit family components (doors, windows, etc.) used in the project model. Stored in BIM library; ensure all team members use the approved families for consistency."
+    "Room Elevations (Architecture)": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Room Elevations (Interiors)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Sales Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Sales and marketing plans (9000 series). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-9003 'Sales Plans'."
+    },
+    "Sanitary Layouts": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Individual sanitary space layouts (typically 1:20). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-5001 'Sanitary Layouts'."
     },
     "Sanitaryware schedule": {
         "Category": "Schedules and Lists",
@@ -949,6 +1254,36 @@
         "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0000-Areas",
         "Description": "Schedule of accommodation outlining all spaces/rooms and their areas against requirements."
     },
+    "Sections": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Sections (Interiors)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Sections (Landscape)": {
+        "Category": "Drawings",
+        "Path": "L-LandscapeArchitecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Signage Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Signage setting out and details. Sub-series range 7350-7399. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7350-7399 'Signage Details'."
+    },
+    "Site Plans (Architecture)": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
+    "Site Plans (Landscape)": {
+        "Category": "Drawings",
+        "Path": "L-LandscapeArchitecture/D-Drawings/Current/PDF",
+        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+    },
     "Site visit report": {
         "Category": "Texts and Presentations",
         "Path": "A-Architecture/T-Texts/4000-Reports",
@@ -959,10 +1294,10 @@
         "Path": "A-Architecture/I-Images/4000-SketchesAndScans",
         "Description": "Collection of sketch drawings and conceptual ideas for the project. Internal creative drawings; use these for brainstorming and early client discussions."
     },
-    "Markup scanned": {
+    "Slab & Waterproofing Details": {
         "Category": "Drawings",
-        "Path": "A-Architecture/I-Images/4000-SketchesAndScans",
-        "Description": "Collection of scanned drawings and markups for the project. Internal creative drawings; use these for brainstorming and early client discussions. Mark up to specific CDP / designer packs to be saved in Comments folder."
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Slab and waterproofing details. Sub-series range 7400-7449. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7400-7449 'Slab & Waterproofing Details'."
     },
     "Snagging Lists": {
         "Category": "Schedules and Lists",
@@ -983,6 +1318,11 @@
         "Category": "Texts and Presentations",
         "Path": "A-Architecture/T-Texts/4000-Reports",
         "Description": "Formal report summarising the work completed and decisions made at a project stage. Bond Bryan deliverable; provides a record of design progress at that RIBA stage for the client."
+    },
+    "Stairs & Ramp Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Stair and ramp plan and section details. Sub-series range 7450-7499. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7450-7499 'Stairs & Ramp Details'."
     },
     "Standards and guidance (outside of contract)": {
         "Category": "Contracts and Legal",
@@ -1029,6 +1369,11 @@
         "Path": "OtherDisciplines/S-StructuralEngineering",
         "Description": "Digital models (IFC format only) provided by the structural engineering consultant. Link or merge into the federated model for coordination."
     },
+    "Sub-consultant Appointment": {
+        "Category": "Contracts and Legal",
+        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
+        "Description": "Appointment agreement for sub-consultants engaged directly by Bond Bryan. Executed agreement; ensure scope and liability align with the main appointment. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Sub-consultant Appointment'."
+    },
     "Subconsultant Invoices": {
         "Category": "Contracts and Legal",
         "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
@@ -1069,6 +1414,16 @@
         "Path": "OtherDisciplines/Y-2DMapping",
         "Description": "Ordnance Survey map (2D) of the project area. Official mapping data; use as base for site plans and ensure usage complies with licensing."
     },
+    "Survey request markup (Interior)": {
+        "Category": "Drawings",
+        "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
+        "Description": "Mark up plans and documents for request of survey information for refurbishments and retrofit projects."
+    },
+    "Survey request markup (PDBR)": {
+        "Category": "Drawings",
+        "Path": "O-PrincipalDesigner/BR/D-Drawings/Current/PDF/0050-AnalysisDrawings",
+        "Description": "Mark up plans and documents for request of survey information for refurbishments and retrofit projects."
+    },
     "Sustainability Carbon Assessments": {
         "Category": "Texts and Presentations",
         "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8300-SustainabilityReviews",
@@ -1084,10 +1439,25 @@
         "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8300-SustainabilityReviews",
         "Description": "Review document evaluating the project against sustainability targets or criteria."
     },
+    "TIDP": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/1000-Programmes",
+        "Description": "Task Information Delivery Plan detailing specific information deliverables and who provides them. Bond Bryan's plan; aligns with the Master Information Delivery Plan (MIDP) to schedule information outputs."
+    },
+    "Technical GA Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "General arrangement floor plans, technical/construction stage (typically 1:100/1:50). As many documents as the project needs within the series. Series range 2100-2199. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-2100-2199 'Technical GA Plans'."
+    },
     "Technical Review": {
         "Category": "Texts and Presentations",
         "Path": "A-Architecture/T-Texts/8000-ProjectReviews/8200-TechnicalReviews",
         "Description": "Technical review report examining the design for technical quality and compliance. Internal design QA/QC document; address any issues identified to maintain technical excellence."
+    },
+    "Technical Submittals (Contractor)": {
+        "Category": "Texts and Presentations",
+        "Path": "OtherDisciplines/X-Contractor",
+        "Description": "Technical submittals issued by the contractor for review (product data, samples records, method details). External content; record review comments in the relevant Comments folder."
     },
     "Tender Queries and Responses": {
         "Category": "Schedules and Lists",
@@ -1109,10 +1479,10 @@
         "Path": "A-Architecture/T-Texts/4000-Reports",
         "Description": "Report or analysis focused on thermal bridging and insulation performance in the design. Requires expert documentation."
     },
-    "TIDP": {
-        "Category": "Schedules and Lists",
-        "Path": "A-Architecture/L-Lists/1000-Programmes",
-        "Description": "Task Information Delivery Plan detailing specific information deliverables and who provides them. Bond Bryan's plan; aligns with the Master Information Delivery Plan (MIDP) to schedule information outputs."
+    "Topographical Survey": {
+        "Category": "Other",
+        "Path": "OtherDisciplines/Y-TopographicalSurveying",
+        "Description": "Topographical survey data or drawings of the site from an external surveyor. Verify the coordinate system and datum match project settings before use."
     },
     "Transmittal Sheet": {
         "Category": "Schedules and Lists",
@@ -1124,10 +1494,25 @@
         "Path": "A-Architecture/M-Models/4000-VisualisationsModels",
         "Description": "3D visualisation scene file in Twinmotion format for rendering and animation. Internal visualisation content; update as the model changes and use for creating walkthroughs."
     },
+    "Urban Greening Factor UGF (Landscape)": {
+        "Category": "Schedules and Lists",
+        "Path": "L-LandscapeArchitecture/L-Lists/0000-Schedules/Current/0400-UrbanGreeningFactor",
+        "Description": "Landscape schedule of UGF, including requirements and proposed values."
+    },
+    "Utility Cupboard Schedule": {
+        "Category": "Schedules and Lists",
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0700-OtherSchedules",
+        "Description": "Schedule of utility cupboards. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0704 'Utility Cupboard Schedule'."
+    },
     "Video": {
         "Category": "Other",
         "Path": "A-Architecture/V-VideoAudio/2000-OtherVideo",
         "Description": "Project-related video file (e.g., site video, or meeting recording). Internal video content; store large files appropriately and compress if needed for sharing. Meeting recording does not replace formal minutes"
+    },
+    "Visualisation Output Images": {
+        "Category": "Images and Photo",
+        "Path": "A-Architecture/I-Images/3000-Visualisations",
+        "Description": "Rendered image outputs produced from the project's visualisation process. Final still images for presentations; organise these for easy access during meetings or submissions."
     },
     "Visualisation files export": {
         "Category": "BIM and Models",
@@ -1139,195 +1524,44 @@
         "Path": "A-Architecture/M-Models/4000-VisualisationsModels",
         "Description": "Native visualisation project files (original format scenes) used for creating renders."
     },
-    "Visualisation Output Images": {
-        "Category": "Images and Photo",
-        "Path": "A-Architecture/I-Images/3000-Visualisations",
-        "Description": "Rendered image outputs produced from the project's visualisation process. Final still images for presentations; organise these for easy access during meetings or submissions."
-    },
-    "Existing Building Fabric analysis (Interior)": {
-        "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
-        "Description": "Description and analysis drawings and report of existing fabric of a building for refurbishments and retrofit projects."
-    },
-    "Historic analysis (Interior)": {
-        "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
-        "Description": "Description and analysis drawings and report of historic building for refurbishments and retrofit projects."
-    },
-    "Survey request markup (Interior)": {
-        "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Current/PDF/1000-AnalysisDrawings",
-        "Description": "Mark up plans and documents for request of survey information for refurbishments and retrofit projects."
-    },
-    "Historic analysis (PDBR)": {
-        "Category": "Drawings",
-        "Path": "O-PrincipalDesigner/BR/D-Drawings/Current/PDF/0050-AnalysisDrawings",
-        "Description": "Description and analysis drawings and report of historic building for refurbishments and retrofit projects."
-    },
-    "Survey request markup (PDBR)": {
-        "Category": "Drawings",
-        "Path": "O-PrincipalDesigner/BR/D-Drawings/Current/PDF/0050-AnalysisDrawings",
-        "Description": "Mark up plans and documents for request of survey information for refurbishments and retrofit projects."
-    },
     "Visualisations Output Video": {
         "Category": "Other",
         "Path": "A-Architecture/V-VideoAudio/3000-Animations",
         "Description": "Rendered video output (animated walkthroughs or fly-throughs) from the project's visualisations. Final visualisation videos; use for client presentations and ensure file sizes are manageable for sharing."
     },
-    "Collateral Warranty (draft)": {
-        "Category": "Contracts and Legal",
-        "Path": "OtherDisciplines/X-Client",
-        "Description": "Draft collateral warranty received for review prior to execution. Review terms and check with PI insurers before signing. Final version (signed) in 0-ProjectGovernance/ContractualAndLegal."
+    "Wall Details": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "External and internal wall junction, section and build-up details. Sub-series range 7600-7649. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7600-7649 'Wall Details'."
     },
-    "Collateral Warranty (signed)": {
-        "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
-        "Description": "Executed collateral warranty granting rights to a third party (e.g., funder, purchaser, or tenant). Official contractual record; retain with other executed agreements. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Collateral Warranty (signed)'."
+    "Wall Finishes Strategy": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Wall finishes strategy drawings. Sub-series range 8200-8299 (first document = first number in range +1, e.g. 8201). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-8200-8299 'Wall Finishes Strategy'."
     },
-    "Novation Agreement": {
-        "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
-        "Description": "Agreement novating Bond Bryan's appointment, typically from client to contractor on design and build projects. Official executed document; note the change of client for correspondence and instructions. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Novation Agreement'."
+    "Wall Strategy Plans": {
+        "Category": "Drawings",
+        "Path": "A-Architecture/D-Drawings/Current/PDF",
+        "Description": "Wall strategy plans identifying wall types across the building; includes wall setting out plans. As many documents as the project needs within the series. Series range 6100-6199. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-6100-6199 'Wall Strategy Plans'."
     },
-    "Sub-consultant Appointment": {
-        "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
-        "Description": "Appointment agreement for sub-consultants engaged directly by Bond Bryan. Executed agreement; ensure scope and liability align with the main appointment. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'Sub-consultant Appointment'."
-    },
-    "PI Insurance Certificate": {
-        "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
-        "Description": "Professional indemnity insurance certificate or evidence of cover for the project. Retain to satisfy appointment obligations; replace on annual renewal. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'PI Insurance Certificate'."
-    },
-    "NDA / Confidentiality Agreement": {
-        "Category": "Contracts and Legal",
-        "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
-        "Description": "Non-disclosure or confidentiality agreement relating to the project. Official executed document; check obligations before sharing project information externally. Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-900x 'NDA / Confidentiality Agreement'."
-    },
-    "Planning Decision Notice": {
-        "Category": "Texts and Presentations",
-        "Path": "OtherDisciplines/T-Planning",
-        "Description": "Formal decision notice issued by the local planning authority, including planning conditions. External statutory document; track the discharge of conditions through the project."
-    },
-    "Pre-application Advice": {
-        "Category": "Texts and Presentations",
-        "Path": "OtherDisciplines/T-Planning",
-        "Description": "Pre-application advice or correspondence from the local planning authority. External guidance; use to shape the planning submission strategy."
-    },
-    "Building Control Decision Notice": {
-        "Category": "Texts and Presentations",
-        "Path": "OtherDisciplines/T-BuildingControl",
-        "Description": "Approval, decision, or completion certificate issued by Building Control or the Building Safety Regulator. External statutory record; retain for compliance and handover."
-    },
-    "Construction Phase Plan": {
-        "Category": "Texts and Presentations",
-        "Path": "OtherDisciplines/X-Contractor",
-        "Description": "Construction Phase Plan produced by the principal contractor under CDM regulations. External H&S document; review before site activities commence."
-    },
-    "Contractor's Programme": {
+    "Wardrobe Schedule": {
         "Category": "Schedules and Lists",
-        "Path": "OtherDisciplines/X-Contractor",
-        "Description": "Construction programme issued by the contractor. External schedule; align design information release with these timelines."
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0700-OtherSchedules",
+        "Description": "Schedule of wardrobes. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0705 'Wardrobe Schedule'."
     },
-    "Technical Submittals (Contractor)": {
-        "Category": "Texts and Presentations",
-        "Path": "OtherDisciplines/X-Contractor",
-        "Description": "Technical submittals issued by the contractor for review (product data, samples records, method details). External content; record review comments in the relevant Comments folder."
-    },
-    "Topographical Survey": {
-        "Category": "Other",
-        "Path": "OtherDisciplines/Y-TopographicalSurveying",
-        "Description": "Topographical survey data or drawings of the site from an external surveyor. Verify the coordinate system and datum match project settings before use."
-    },
-    "Acoustic Report": {
-        "Category": "Texts and Presentations",
-        "Path": "OtherDisciplines/J-AcousticEngineer",
-        "Description": "Acoustic report provided by the acoustic consultant. External document; implement recommendations and coordinate with design details."
-    },
-    "Cost Plan": {
+    "Window Schedules and Elevations": {
         "Category": "Schedules and Lists",
-        "Path": "OtherDisciplines/Q-QuantitySurveying",
-        "Description": "Cost plan or estimate provided by the quantity surveyor. External cost document; review against design development and flag divergences early."
+        "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0200-WindowsAndLouvres",
+        "Description": "Window and louvre schedules and elevations. As many documents as the project needs within the series. Series range 0200-0299. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0200-0299 'Window Schedules and Elevations'."
     },
-    "Ecology and Arboricultural Reports": {
-        "Category": "Texts and Presentations",
-        "Path": "OtherDisciplines/O-EcologistAndArboriculturist",
-        "Description": "Ecology, biodiversity, or arboricultural reports from the specialist consultant. External documents; coordinate with landscape design and planning requirements."
-    },
-    "Gateway 2 Submission": {
-        "Category": "Texts and Presentations",
-        "Path": "0-ProjectMilestones/Gateway2-BuildingControlApplication",
-        "Description": "Documents submitted at Gateway 2 (Building Control application). Milestone record; keep the complete submitted package for audit."
-    },
-    "Gateway 3 Submission": {
-        "Category": "Texts and Presentations",
-        "Path": "0-ProjectMilestones/Gateway3-Completion",
-        "Description": "Documents compiled at Gateway 3 (completion), including completion certificates and handover records. Milestone record; archive the complete package."
-    },
-    "Site Plans (Architecture)": {
+    "Window and Glazed Screen Details": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+        "Description": "Window and glazed screen head/jamb/sill details. Sub-series range 7550-7599. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-7550-7599 'Window and Glazed Screen Details'."
     },
-    "GA floor Plans": {
+    "Zoning & Circulation Strategy Plans": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },"Elevations (Architecture)": {
-        "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },"Sections": {
-        "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },"Room Elevations (Architecture)": {
-        "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },"Detailed Plans": {
-        "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },"Fire Strategy drawings": {
-        "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },"Maintenance strategy drawings": {
-        "Category": "Drawings",
-        "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },
-    "Site Plans (Landscape)": {
-        "Category": "Drawings",
-        "Path": "L-LandscapeArchitecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },
-    "Elevations (Landscape)": {
-        "Category": "Drawings",
-        "Path": "L-LandscapeArchitecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },
-    "Sections (Landscape)": {
-        "Category": "Drawings",
-        "Path": "L-LandscapeArchitecture/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },
-    "GA floor Plans (Interiors)": {
-        "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },"Elevations (Interiors)": {
-        "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },"Sections (Interiors)": {
-        "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
-    },"Room Elevations (Interiors)": {
-        "Category": "Drawings",
-        "Path": "I-InteriorDesign/D-Drawings/Current/PDF",
-        "Description": "Current set of drawing files in PDF format: the latest revision of every drawing regardless of issue date. Navigate here for the up-to-date set without superseded revisions alongside. File within the relevant drawing series subfolder"
+        "Description": "Zoning and circulation strategy plans. As many documents as the project needs within the series. Series range 6400-6499. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-6400-6499 'Zoning & Circulation Strategy Plans'."
     }
 }
