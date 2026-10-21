@@ -353,6 +353,43 @@
       line-height: 1.4;
       color: var(--ink);
     }
+    .ai-tier {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .ai-tier-heading {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .ai-tier-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid;
+      font-weight: 700;
+      font-size: 0.85rem;
+      line-height: 1.2;
+    }
+    /* Dark text on pale tint: all pairs exceed 7:1 contrast */
+    .ai-tier-badge[data-tier="1"] { background: #dcfce7; border-color: #15803d; color: #14532d; }
+    .ai-tier-badge[data-tier="2"] { background: #dbeafe; border-color: #1d4ed8; color: #1e3a8a; }
+    .ai-tier-badge[data-tier="3"] { background: #fef3c7; border-color: #b45309; color: #78350f; }
+    .ai-tier-badge[data-tier="4"] { background: #fee2e2; border-color: #b91c1c; color: #7f1d1d; }
+    .ai-tier-note {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: var(--ink);
+    }
+    .ai-tier-link {
+      font-size: 0.95rem;
+      color: var(--accent);
+    }
     .placeholder {
       margin: 0;
       color: var(--muted);
@@ -516,6 +553,12 @@
               </div>
               <div class="description-wrap hidden" id="description-wrap">
                 <p class="item-description" id="item-description"></p>
+                <div class="ai-tier hidden" id="ai-tier">
+                  <p class="ai-tier-heading">AI tier</p>
+                  <span class="ai-tier-badge" id="ai-tier-badge"></span>
+                  <p class="ai-tier-note" id="ai-tier-note"></p>
+                  <a class="ai-tier-link" href="https://hub.bondbryan.co.uk/knowledge/258762" target="_blank" rel="noopener">What can I put into Claude?</a>
+                </div>
               </div>
             </div>
           </div>
@@ -573,6 +616,9 @@
       const itemsGrid = document.getElementById('items-grid');
       const descriptionWrap = document.getElementById('description-wrap');
       const descriptionEl = document.getElementById('item-description');
+      const aiTierWrap = document.getElementById('ai-tier');
+      const aiTierBadge = document.getElementById('ai-tier-badge');
+      const aiTierNote = document.getElementById('ai-tier-note');
       const homeBtn = document.getElementById('home-btn');
       const logoBtn = document.getElementById('logo-btn');
       const detailHomeBtn = document.getElementById('detail-home-btn');
@@ -952,8 +998,29 @@
       function renderDescription(description, leafName) {
         if (!descriptionWrap || !descriptionEl) return;
         const show = Boolean(description) && Boolean(leafName);
-        descriptionWrap.classList.toggle('hidden', !show);
+        const tier = leafName ? aiTierForName(leafName) : null;
+        descriptionWrap.classList.toggle('hidden', !show && !tier);
+        descriptionEl.classList.toggle('hidden', !show);
         descriptionEl.textContent = show ? description : '';
+        renderAiTier(tier);
+      }
+
+      function renderAiTier(tier) {
+        if (!aiTierWrap || !aiTierBadge || !aiTierNote) return;
+        aiTierWrap.classList.toggle('hidden', !tier);
+        aiTierBadge.textContent = tier ? tier.label : '';
+        aiTierBadge.dataset.tier = tier ? String(tier.level) : '';
+        aiTierNote.textContent = tier ? tier.note : '';
+        aiTierNote.classList.toggle('hidden', !tier || !tier.note);
+      }
+
+      function aiTierForName(name) {
+        const meta = state.metaLookup.get(name);
+        const level = Number(meta?.AITier);
+        if (!Number.isInteger(level) || level < 1 || level > 4) return null;
+        const label = typeof meta.AITierLabel === 'string' && meta.AITierLabel ? meta.AITierLabel : `Tier ${level}`;
+        const note = typeof meta.AITierNote === 'string' ? meta.AITierNote : '';
+        return { level, label, note };
       }
 
       function switchView(view) {
