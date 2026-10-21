@@ -367,6 +367,13 @@
       font-size: 0.78rem;
       color: var(--muted);
     }
+    .ai-tier-heading:hover {
+      color: var(--ink);
+    }
+    .ai-tier-pill {
+      position: relative;
+      display: inline-block;
+    }
     .ai-tier-badge {
       display: inline-block;
       padding: 4px 10px;
@@ -374,6 +381,7 @@
       font-weight: 700;
       font-size: 0.85rem;
       line-height: 1.2;
+      cursor: help;
     }
     /* Dark text on pale tint: all pairs exceed 7:1 contrast */
     .ai-tier-badge[data-tier="1"] { background: #dcfce7; border-color: #15803d; color: #14532d; }
@@ -381,14 +389,27 @@
     .ai-tier-badge[data-tier="3"] { background: #fef3c7; border-color: #b45309; color: #78350f; }
     .ai-tier-badge[data-tier="4"] { background: #fee2e2; border-color: #b91c1c; color: #7f1d1d; }
     .ai-tier-note {
-      margin: 0;
-      font-size: 0.95rem;
+      position: absolute;
+      left: 0;
+      top: calc(100% + 6px);
+      z-index: 10;
+      width: max-content;
+      max-width: min(320px, 80vw);
+      padding: 8px 10px;
+      background: var(--ink);
+      color: #ffffff;
+      font-size: 0.85rem;
       line-height: 1.4;
-      color: var(--ink);
+      box-shadow: 0 6px 14px rgba(15, 23, 42, 0.2);
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.12s;
+      pointer-events: none;
     }
-    .ai-tier-link {
-      font-size: 0.95rem;
-      color: var(--accent);
+    .ai-tier-pill:hover .ai-tier-note,
+    .ai-tier-badge:focus + .ai-tier-note {
+      visibility: visible;
+      opacity: 1;
     }
     .placeholder {
       margin: 0;
@@ -554,10 +575,11 @@
               <div class="description-wrap hidden" id="description-wrap">
                 <p class="item-description" id="item-description"></p>
                 <div class="ai-tier hidden" id="ai-tier">
-                  <p class="ai-tier-heading">AI tier</p>
-                  <span class="ai-tier-badge" id="ai-tier-badge"></span>
-                  <p class="ai-tier-note" id="ai-tier-note"></p>
-                  <a class="ai-tier-link" href="https://hub.bondbryan.co.uk/knowledge/258762" target="_blank" rel="noopener">What can I put into Claude?</a>
+                  <a class="ai-tier-heading" href="https://hub.bondbryan.co.uk/knowledge/258762" target="_blank" rel="noopener" title="What can I put into Claude?" aria-label="AI tier: What can I put into Claude?">AI tier</a>
+                  <span class="ai-tier-pill">
+                    <span class="ai-tier-badge" id="ai-tier-badge" tabindex="0" aria-describedby="ai-tier-note"></span>
+                    <span class="ai-tier-note" id="ai-tier-note" role="tooltip"></span>
+                  </span>
                 </div>
               </div>
             </div>
