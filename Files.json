@@ -1,4 +1,13 @@
 {
+    "_meta": {
+        "Version": "V9",
+        "Status": "Ready for release",
+        "Date": "2026-10-27",
+        "Live": "Replaces V7 as the BB Project Filing Tool data when published. Folder tree unchanged: Server - All V7.json.",
+        "Entries": 314,
+        "Note": "Version is held here, not in the filename. Not a file type: tools reading Files.json must skip the _meta key.",
+        "Library": "Aligned to TIDP Builder Library v2026.20 numbering (Library takes precedence on clashes)."
+    },
     "2D Textures (HighRes)": {
         "Category": "Images and Photo",
         "Path": "A-Architecture/I-Images/5000-OtherImages",
@@ -234,7 +243,7 @@
     "Balcony Types Schedule": {
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0700-OtherSchedules",
-        "Description": "Schedule of balcony types. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0702 'Balcony Types Schedule'.",
+        "Description": "Schedule of balcony types. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0705 'Balcony Types Schedule'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -298,7 +307,7 @@
     "Building Grid and Cuboid": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Building grid and cuboid setting out drawing (PDF/DWG). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-6250 'Building Grid and Cuboid'.",
+        "Description": "Building grid and cuboid setting out drawing (PDF/DWG). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-6240 'Building Grid and Cuboid'. Landscape: save in L-LandscapeArchitecture/D-Drawings/Current/PDF as ABCDE-BBA-ZZ-ZZ-D-L-9020 'Building Grid and Cuboid' (9000 Miscellaneous series; landscape has no 6000 drawings series).",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -378,7 +387,7 @@
     "Coat Cupboard Schedule": {
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0700-OtherSchedules",
-        "Description": "Schedule of coat cupboards. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0703 'Coat Cupboard Schedule'.",
+        "Description": "Schedule of coat cupboards. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0710 'Coat Cupboard Schedule'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -458,7 +467,7 @@
     "Conveyance Plans": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Conveyance plans for legal/land transaction purposes (9000 series). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-9002 'Conveyance Plans'.",
+        "Description": "Conveyance plans for legal/land transaction purposes (9000 series). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-9010 'Conveyance Plans'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -522,7 +531,7 @@
     "Delay Schedule": {
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/4000-Trackers",
-        "Description": "Record of delay events and their impact, maintained as a live tracker. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-4002 'Delay Schedule'.",
+        "Description": "Record of delay events and their impact, maintained as a live tracker. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-4010 'Delay Schedule'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -554,7 +563,7 @@
     "Design Responsibility Matrix": {
         "Category": "Contracts and Legal",
         "Path": "0-ProjectGovernance/ContractualAndLegal/Final",
-        "Description": "Matrix defining the responsibility of each party for various design elements and deliverables. Contractual document; ensures clarity on roles and responsibilities across the design team. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-900x 'Design Responsibility Matrix'.",
+        "Description": "Matrix defining the responsibility of each party for various design elements and deliverables. Contractual document; ensures clarity on roles and responsibilities across the design team. Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-4020 'Design Responsibility Matrix' (TIDP number). Saved here in ContractualAndLegal/Final, not in L-Lists/4000.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -575,10 +584,10 @@
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
     },
-    "Designers Risk Assessment": {
+    "Designer's Risk Assessment and Residual Risk Register": {
         "Category": "Texts and Presentations",
         "Path": "A-Architecture/T-Texts/4000-Reports",
-        "Description": "Designers risk assessment identifying and mitigating design-related health and safety risks (CDM). Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-4009 'Designers Risk Assessment'.",
+        "Description": "Designer's risk assessment and residual risk register identifying and mitigating design-related health and safety risks (CDM). Naming and Numbering protocol: ABCDE-BBA-XX-XX-T-A-4009 'Designer's Risk Assessment and Residual Risk Register'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -993,7 +1002,7 @@
     },
     "ITT Bid Diagram": {
         "Category": "Images and Photo",
-        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-images",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-Images",
         "Description": "Diagram or graphic produced for the tender answers (early-stage concept sketches, site and massing diagrams, process, programme and organisation graphics). Bid-stage illustrative material only, not coordinated design information; do not reuse as project drawings. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9902-Bid Diagram-P01.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
@@ -1009,7 +1018,7 @@
     },
     "ITT Bid Image": {
         "Category": "Images and Photo",
-        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-images",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-Images",
         "Description": "Image selected and prepared for use in the tender submission (early-stage concept views, precedent imagery, completed project photography). Bid-stage imagery only; check photographer credits and image rights, and that the client may be named, before use. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9901-Bid Image-P01.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
@@ -1050,7 +1059,7 @@
     "ITT Discipline Input Images": {
         "Category": "Images and Photo",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9400-DisciplineInputs",
-        "Description": "Images, sketches and diagrams supplied by a discipline to support the bid (early-stage concept work, precedent projects, discipline-specific graphics). File in the relevant discipline folder and dated 'YYYY-MM_DD Description' subfolder; raw supplied material only, selected and resized images for the submission go to 9900-images. Check image rights before use. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-[A/I/L/O]-9404-Discipline Input Image-P01.",
+        "Description": "Images, sketches and diagrams supplied by a discipline to support the bid (early-stage concept work, precedent projects, discipline-specific graphics). File in the relevant discipline folder and dated 'YYYY-MM_DD Description' subfolder; raw supplied material only, selected and resized images for the submission go to 9900-Images. Check image rights before use. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-[A/I/L/O]-9404-Discipline Input Image-P01.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -1146,7 +1155,7 @@
     "ITT Drawings": {
         "Category": "Drawings",
         "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals",
-        "Description": "Drawings prepared by Bond Bryan for the Invitation to Tender package. Internal drawings for tender submission; ensure they meet client tender requirements. Bid-stage drawings and sketch proposals used inside answers are saved with the other bid graphics in 9900-images. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'ITT Drawings'.",
+        "Description": "Drawings prepared by Bond Bryan for the Invitation to Tender package. Internal drawings for tender submission; ensure they meet client tender requirements. Bid-stage drawings and sketch proposals used inside answers are saved with the other bid graphics in 9900-Images. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'ITT Drawings'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -1169,7 +1178,7 @@
     },
     "ITT Organisation Chart": {
         "Category": "Images and Photo",
-        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-images",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-Images",
         "Description": "Project team organisation chart prepared for the tender showing named roles, reporting lines and the wider consultant team. Keep aligned with the draft CVs and the resourcing described in the answers. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9903-Organisation Chart-P01.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
@@ -1193,7 +1202,7 @@
     },
     "ITT Team Photograph": {
         "Category": "Images and Photo",
-        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-images",
+        "Path": "0-ProjectGovernance/PreCommission/ITT-InvitationToTender/BBAOriginals/9900-Images",
         "Description": "Portrait photographs of the proposed team for use alongside the CVs in the submission. Use current practice portraits at a consistent crop and size across the whole team. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9904-Team Photograph Surname-P01.",
         "AITier": 4,
         "AITierLabel": "Tier 4 Restricted",
@@ -1234,7 +1243,7 @@
     "Individual Room Layouts": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Individual room/space layouts (typically 1:20). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-5002 'Individual Room Layouts'.",
+        "Description": "Individual room/space layouts (typically 1:20). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-5005 'Individual Room Layouts'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -1354,7 +1363,7 @@
     "Location Plan": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Site location plan identifying the site in its wider context (typically 1:1250). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-1001 'Location Plan'.",
+        "Description": "Site location plan identifying the site in its wider context (typically 1:1250). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-1001 'Location Plan'. Landscape: save in L-LandscapeArchitecture/D-Drawings/Current/PDF as ABCDE-BBA-ZZ-ZZ-D-L-1010 'Location Plan' (or D-L-1011 'Site Location Plan' on education projects).",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -1657,7 +1666,7 @@
     },
     "PQQ Bid Diagram": {
         "Category": "Images and Photo",
-        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9900-images",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9900-Images",
         "Description": "Diagram or graphic produced for the PQQ answers (practice capability, quality and resourcing diagrams, early-stage concept sketches where a design response is requested). Pre-qualification stage illustrative material only; not coordinated design information. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9902-Bid Diagram-P01.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
@@ -1665,7 +1674,7 @@
     },
     "PQQ Bid Image": {
         "Category": "Images and Photo",
-        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9900-images",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9900-Images",
         "Description": "Image selected and prepared for use in the PQQ submission (completed project photography, precedent imagery, early-stage concept views). Check photographer credits, image rights and that the referenced client may be named. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9901-Bid Image-P01.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
@@ -1730,7 +1739,7 @@
     "PQQ Drawings": {
         "Category": "Drawings",
         "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals",
-        "Description": "Drawings prepared by Bond Bryan for the Pre-Qualification Questionnaire submission. Internal drawings for PQQ; ensure they address client requirements at this early stage. Bid-stage sketches and graphics used inside answers are saved with the other bid imagery in 9900-images. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'PQQ Drawings'.",
+        "Description": "Drawings prepared by Bond Bryan for the Pre-Qualification Questionnaire submission. Internal drawings for PQQ; ensure they address client requirements at this early stage. Bid-stage sketches and graphics used inside answers are saved with the other bid imagery in 9900-Images. Naming and Numbering protocol: ABCDE-BBA-XX-XX-D-A-900x 'PQQ Drawings'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -1753,7 +1762,7 @@
     },
     "PQQ Organisation Chart": {
         "Category": "Images and Photo",
-        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9900-images",
+        "Path": "0-ProjectGovernance/PreCommission/PQQ-PreQualificationQuestionnaire/BBAOriginals/9900-Images",
         "Description": "Project team organisation chart prepared for the PQQ showing named roles, reporting lines and the wider consultant team. Keep aligned with the draft CVs and the resourcing described in the answers. Naming and Numbering protocol: ABCDE-BBA-XX-XX-I-A-9903-Organisation Chart-P01.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
@@ -1986,7 +1995,7 @@
     "Sales Plans": {
         "Category": "Drawings",
         "Path": "A-Architecture/D-Drawings/Current/PDF",
-        "Description": "Sales and marketing plans (9000 series). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-9003 'Sales Plans'.",
+        "Description": "Sales and marketing plans (9000 series). Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-D-A-9030 'Sales Plans'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -2410,7 +2419,7 @@
     "Utility Cupboard Schedule": {
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0700-OtherSchedules",
-        "Description": "Schedule of utility cupboards. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0704 'Utility Cupboard Schedule'.",
+        "Description": "Schedule of utility cupboards. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0715 'Utility Cupboard Schedule'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
@@ -2482,7 +2491,7 @@
     "Wardrobe Schedule": {
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0700-OtherSchedules",
-        "Description": "Schedule of wardrobes. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0705 'Wardrobe Schedule'.",
+        "Description": "Schedule of wardrobes. Part of the 0700-0999 Other Schedules series. Naming and Numbering protocol: ABCDE-BBA-ZZ-ZZ-L-A-0720 'Wardrobe Schedule'.",
         "AITier": 3,
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
