@@ -700,7 +700,11 @@
       async function init() {
         try {
           statusEl.textContent = 'Loading data…';
-          const combined = await fetchJson('Files.json', 'Files.json');
+          const raw = await fetchJson('Files.json', 'Files.json');
+          // Keys starting with "_" (e.g. _meta: version, status, date) are not file types.
+          const combined = Object.fromEntries(
+            Object.entries(raw || {}).filter(([name]) => !name.startsWith('_'))
+          );
 
           state.metaLookup = buildMetaLookup(combined);
           state.categoryLookup = buildCategoryLookup(combined);
