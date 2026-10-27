@@ -1263,6 +1263,14 @@
         "AITierLabel": "Tier 3 Project",
         "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first."
     },
+    "Invoicing Schedule": {
+        "Category": "Contracts and Legal",
+        "Path": "0-ProjectGovernance/Fees/Final",
+        "Description": "Bond Bryan's own invoicing schedule to the client: planned and issued fee invoices against the agreed fee (stages, dates, amounts). Read with Fees approved and Additional Fees approved; not for invoices received from sub-consultants (see Subconsultant Invoices). Naming and Numbering protocol: ABCDE-BBA-XX-XX-L-A-900x 'Invoicing Schedule'.",
+        "AITier": 3,
+        "AITierLabel": "Tier 3 Project",
+        "AITierNote": "Project information. Use only inside that job's Claude Project, never mixed across jobs. Check the client contract or framework first. Commercially sensitive."
+    },
     "Ironmongery Sets Schedule": {
         "Category": "Schedules and Lists",
         "Path": "A-Architecture/L-Lists/0000-Schedules/Current/0100-Doors",
